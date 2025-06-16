@@ -3,6 +3,11 @@
   --color-white: #F00;
 }
 
+:my_test2 {
+  --color-white: #F00;
+}
+
+/* GENERAL */
 :root {
   /* Colours */
   --color-white: #FFF;
