@@ -90,7 +90,6 @@ a:focus-visible {
 /* ------------------------------------------------------------------------------------- */
 /* affects entire page */
 .cf-page {
-  /* font-weight: normal; */
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5em;
@@ -102,7 +101,8 @@ a:focus-visible {
   overflow: visible;
 }
 
-/* header if used */
+/* ------------------------------------------------------------------------------------- */
+/* header */
 .cf-header {
   font-weight: bolder;
   background: var(--color-navyblue);
