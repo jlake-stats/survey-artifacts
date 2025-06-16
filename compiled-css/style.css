@@ -83,7 +83,6 @@ h4 {
 a {
   display: inline-block;
 }
-
 a:focus-visible {
   box-shadow: 0 0 0 3px var(--color-focus);
 }
@@ -113,44 +112,42 @@ a:focus-visible {
   transition: top 0.5s ease;
   z-index: 30;
 }
-
 @media (max-width: 1024px) {
-  .cf-header__inner {
+  .cf-header .cf-header__inner {
     margin: 0 16px;
     padding: 16px 16px;
   }
 }
-.cf-header__text {
+.cf-header .cf-header__text {
   color: var(--color-white);
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.cf-header__text a {
+@media (max-width: 641px) {
+  .cf-header .cf-header__text {
+    width: auto;
+  }
+}
+.cf-header .cf-header__text a {
   margin-left: 20px;
   font-size: 20px;
   color: var(--color-white);
   text-decoration: none;
 }
-
-.cf-header__text h3 {
-  margin: 0;
-}
-
-.cf-header__text a:hover {
+.cf-header .cf-header__text a:hover {
   text-decoration: underline;
 }
-
+.cf-header .cf-header__text h3 {
+  margin: 0;
+}
 @media (max-width: 641px) {
-  .cf-header__text {
-    width: auto;
-  }
-  .cf-header__text h3 {
+  .cf-header .cf-header__text h3 {
     display: none;
   }
 }
+
 /* ------------------------------------------------------------------------------------- */
 /* Star rating */
 .cf-question__content {
