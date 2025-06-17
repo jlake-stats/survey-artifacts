@@ -97,6 +97,8 @@ a:focus-visible {
   background-color: var(--color-background);
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* main */
 .cf-page__main {
   overflow: visible;
 }
@@ -447,6 +449,24 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+.cf-list__item {
+  background-color: var(--color-white);
+  border-radius: 0.4rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-border);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.cf-list__item:hover {
+  box-shadow: 0 0.1rem 0.8rem var(--color-hover);
+}
+.cf-list__item:focus-within {
+  border-color: var(--color-main);
+  outline: 0.1rem solid var(--color-main);
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* individual categories */
 .cf-radio-answer,
 .cf-checkbox-answer {
@@ -488,21 +508,17 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-.cf-list__item {
-  background-color: var(--color-white);
-  border-radius: 0.4rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--color-border);
-  cursor: pointer;
-  transition: border-color 0.15s ease;
+/* Radio & Checkboxes */
+.cf-radio {
+  border-radius: 1rem;
 }
-.cf-list__item:hover {
-  box-shadow: 0 0.1rem 0.8rem var(--color-hover);
+
+.cf-checkbox {
+  border-radius: 0.2rem;
 }
-.cf-list__item:focus-within {
-  border-color: var(--color-main);
-  outline: 0.1rem solid var(--color-main);
+
+.cf-radio-answer__text {
+  margin-top: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -713,20 +729,6 @@ button:disabled,
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Radio & Checkboxes */
-.cf-radio {
-  border-radius: 1rem;
-}
-
-.cf-checkbox {
-  border-radius: 0.2rem;
-}
-
-.cf-radio-answer__text {
-  margin-top: 0;
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* modal */
 .modal {
   background-color: rgba(0, 0, 0, 0.5);
@@ -763,15 +765,13 @@ button:disabled,
   background-color: var(--color-green);
 }
 
-.addRow {
-  float: right;
-}
-
+/* ------------------------------------------------------------------------------------- */
+/* Powered by */
 .cf-powered-by-confirmit {
   display: none;
 }
 
-/* More new code */
+/* ------------------------------------------------------------------------------------- */
 input.cf-open-list-answer__input,
 input.cf-numeric-list-answer__input,
 input[type=number],
@@ -858,11 +858,12 @@ input[type=text] {
   border-top: var(--color-red);
 }
 
-/* toast wrapper */
-.cf-toast--error .cf-toast__wrapper {
+/* ------------------------------------------------------------------------------------- */
+/* toast error */
+.cf-toast .cf-toast__wrapper {
   background-color: var(--color-red);
 }
-.cf-toast--error .cf-error-list {
+.cf-toast .cf-toast__wrapper .cf-error-list {
   list-style: none;
   padding: 0;
   margin: 0;
