@@ -149,6 +149,33 @@ a:focus-visible {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* Grid */
+.cf-grid-layout .cf-grid-layout__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+@media (min-width: 641px) {
+  .cf-grid-layout .cf-grid-layout__row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.cf-grid-layout .cf-grid-layout__row-text {
+  width: auto;
+  max-width: none;
+  padding: 0.7rem;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.cf-grid-layout .cf-grid-layout__row-control {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* Star rating */
 .cf-question--star-rating-single .cf-question__content {
   color: var(--color-font);
@@ -700,23 +727,6 @@ button:disabled,
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Grid */
-.cf-grid-layout__row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  margin-bottom: 0.8rem;
-  flex-wrap: wrap;
-}
-
-@media (min-width: 641px) {
-  .cf-grid-layout__row {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
-/* ------------------------------------------------------------------------------------- */
 /* modal */
 .modal {
   background-color: rgba(0, 0, 0, 0.5);
@@ -730,8 +740,7 @@ button:disabled,
   padding: 0 20px;
   z-index: 2;
 }
-
-.modal-inner {
+.modal .modal-inner {
   background-color: var(--color-white);
   border-radius: 3px;
   max-width: 500px;
@@ -750,7 +759,6 @@ button:disabled,
   color: var(--color-white);
   padding: 10px 20px;
 }
-
 #open:hover {
   background-color: var(--color-green);
 }
@@ -780,7 +788,6 @@ input[type=text] {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
 @media (max-width: 641px) {
   input.cf-open-list-answer__input,
   input.cf-numeric-list-answer__input,
@@ -790,6 +797,7 @@ input[type=text] {
     width: 100%;
   }
 }
+
 /* ------------------------------------------------------------------------------------- */
 /* #QBAS_Contact_content custom input styling */
 /* #QBAS_PostalUpdate_content custom input styling */
@@ -802,22 +810,14 @@ input[type=text] {
 /* QBAS_RecTotalWPIP_QBAS_RecTotalWPIP custom input styling */
 /* QBAS_UpdateConsentVal_QBAS_UpdateConsentVal custom input styling */
 /* $ XXX .00 */
+/* .c-dollar-form component */
 @media (min-width: 641px) {
+  .c-dollar-form .cf-open-list-answer__control,
   #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
   #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
   #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
     width: 200px;
   }
-}
-/* ------------------------------------------------------------------------------------- */
-/* .c-dollar-form component */
-.c-dollar-form .cf-open-list-answer__control {
-  width: 200px;
-}
-
-/* ------------------------------------------------------------------------------------- */
-.cf-grid-layout__row-control {
-  width: 100%;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -826,63 +826,20 @@ input[type=text] {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  /* gap: 10px; */
 }
-
-.cf-numeric-list-answer > div:nth-child(1),
-.cf-numeric-list-answer > div:nth-child(2) {
+.cf-numeric-list-answer div:nth-child(1),
+.cf-numeric-list-answer div:nth-child(2) {
   flex: 1 1 50%;
   margin: 0;
 }
-
-.cf-numeric-list-answer > div:nth-child(3) {
+.cf-numeric-list-answer div:nth-child(3) {
   flex: 1 1 100%;
 }
-
-.cf-numeric-list-answer__text {
+.cf-numeric-list-answer .cf-numeric-list-answer__text {
   margin: 0;
 }
 
-/* .cf-numeric-list-answer__input {
-  margin: 0;
-} */
 /* ------------------------------------------------------------------------------------- */
-.cf-grid-layout__row-text {
-  width: auto;
-  max-width: none;
-  padding: 0.7rem;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-/* @media (min-width: 641px) {
-  .cf-grid-layout__row-text {
-    width: 50%;
-  }
-} */
-/* .cf-open-list-answer cf-open-list-answer__control */
-/* .cf-open-list-answer .cf-open-list-answer__control {
-  position: relative;
-  padding-bottom: 50px;
-  max-width: 100%;
-} */
-/* #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
-#QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control {
-  padding-bottom: 50px;
-} */
-/* @media (min-width: 641px) {
-  .cf-open-list-answer .cf-open-list-answer__control {
-    max-width: 50%;
-  }
-} */
-/* .cf-open-list-answer .cf-open-list-answer__control .cf-error-block {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50px;
-  padding: 0;
-} */
 .cf-open-list-answer .cf-open-list-answer__text {
   font-size: 18px;
   margin: 0;
@@ -905,7 +862,6 @@ input[type=text] {
 .cf-toast--error .cf-toast__wrapper {
   background-color: var(--color-red);
 }
-
 .cf-toast--error .cf-error-list {
   list-style: none;
   padding: 0;
@@ -917,24 +873,20 @@ input[type=text] {
 .custom-table {
   width: 100%;
 }
-
 .custom-table table,
 .custom-table td,
 .custom-table th {
   border: 0px;
 }
-
 .custom-table td {
   vertical-align: top;
   padding: 3px;
   font-size: 16px;
   color: var(--color-black);
 }
-
 .custom-table td:first-child {
   font-weight: bold;
 }
-
 .custom-table td:last-child {
   font-weight: bold;
   color: var(--color-tealblue);
