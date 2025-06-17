@@ -152,7 +152,7 @@ a:focus-visible {
 
 /* ------------------------------------------------------------------------------------- */
 /* Grid */
-.cf-grid-layout .cf-grid-layout__row {
+.cf-grid-layout__row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -161,19 +161,21 @@ a:focus-visible {
   flex-wrap: wrap;
 }
 @media (min-width: 641px) {
-  .cf-grid-layout .cf-grid-layout__row {
+  .cf-grid-layout__row {
     flex-direction: row;
     flex-wrap: nowrap;
   }
 }
-.cf-grid-layout .cf-grid-layout__row-text {
+
+.cf-grid-layout__row-text {
   width: auto;
   max-width: none;
   padding: 0.7rem;
   padding-left: 0;
   margin-bottom: 0;
 }
-.cf-grid-layout .cf-grid-layout__row-control {
+
+.cf-grid-layout__row-control {
   width: 100%;
 }
 
