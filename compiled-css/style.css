@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* GENERAL STYLING */
 :root {
   /* Colours */
@@ -901,10 +902,105 @@ input[type=text] {
   font-size: 16px;
 }
 
+.addRow {
+  float: right;
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* Table */
 #SummaryTables_text {
   overflow-wrap: anywhere;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Language Toggle */
+.language-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.language-group h2 {
+  font-size: 14px;
+  color: #888;
+  margin-top: 0px;
+  margin-bottom: 6px;
+}
+
+.language-group .language-switch {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Fix Spacing Issue (Scoped to language-group) */
+.language-group .language-switch .english {
+  margin-right: 14px; /* Only right margin for English */
+}
+
+.language-group .language-switch .maori {
+  margin-left: 14px; /* Only left margin for Māori */
+}
+
+/* Toggle Button (Scoped) */
+.language-group .language-switch label {
+  width: 48px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.language-group .language-switch input[type=checkbox] {
+  display: none;
+}
+
+.language-group .language-switch label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s;
+}
+
+/* Active Toggle (Scoped) */
+.language-group .language-switch input:checked + label {
+  background: #c43b8b;
+}
+
+.language-group .language-switch input:checked + label::after {
+  transform: translateX(24px);
+}
+
+/* Language Text (Scoped) */
+.language-group .language-switch .english,
+.language-group .language-switch .maori {
+  transition: color 0.3s;
+}
+
+.language-group .language-switch input:checked ~ .english {
+  color: #aaa;
+}
+
+.language-group .language-switch input:not(:checked) ~ .maori {
+  color: #aaa;
+}
+
+.language-switch:has(input:checked) .english {
+  color: #aaa;
+}
+
+.language-switch:has(input:not(:checked)) .maori {
+  color: #aaa;
 }
 
 /* ------------------------------------------------------------------------------------- */
