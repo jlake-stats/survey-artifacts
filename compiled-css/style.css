@@ -230,8 +230,7 @@ a:focus-visible {
   margin: 20px;
   background: var(--color-progress-background);
 }
-
-.cf-progress__indicator {
+.cf-progress .cf-progress__indicator {
   background: var(--color-progress);
 }
 
@@ -239,7 +238,6 @@ a:focus-visible {
 .cf-page__question-list {
   /* margin-bottom: 1rem; */
 }
-
 @media (min-width: 641px) {
   .cf-page__question-list {
     /* padding: 1rem; */
@@ -248,6 +246,7 @@ a:focus-visible {
     margin: auto;
   }
 }
+
 /* Hide the border and padding of the fieldset */
 fieldset[aria-labelledby] {
   border: 0;
@@ -283,7 +282,6 @@ legend {
   max-width: var(--width-max-question-box);
   min-height: 0.1rem;
 }
-
 @media (max-width: 641px) {
   .cf-question {
     padding-right: 1rem;
@@ -309,13 +307,13 @@ legend {
   max-width: var(--width-max-question-box);
   min-height: 0.1rem;
 }
-
 @media (max-width: 641px) {
   .cf-question--info {
     padding-right: 1rem;
     padding-left: 1rem;
   }
 }
+
 /* title field */
 .cf-question__title {
   color: var(--color-font);
@@ -345,14 +343,12 @@ legend {
   border-left: 0.5rem solid var(--color-aquablue);
   background-color: var(--color-aquablue10);
   padding: 0.5rem 3rem 0.75rem 2rem;
+  /* hide empty instruction boxes */
 }
-
 .cf-question__instruction ul,
 .cf-question__instruction ol {
   padding-left: 2em;
 }
-
-/* hide empty instruction boxes */
 .cf-question__instruction:not(:has(*)) {
   display: none;
 }
