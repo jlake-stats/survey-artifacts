@@ -318,7 +318,6 @@ legend {
 .cf-question__title {
   color: var(--color-font);
 }
-
 .cf-question__title:not(:has(div)) {
   display: none;
 }
@@ -376,25 +375,21 @@ legend {
   width: 100%;
   gap: 6px;
 }
-
-.cf-affix-input-decorator__input-prefix,
-.cf-affix-input-decorator__input-suffix {
+.cf-affix-input-decorator .cf-affix-input-decorator__input-prefix,
+.cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
   flex: 0 0 auto;
   flex-shrink: 0;
   white-space: nowrap;
   margin-top: 15px;
   line-height: 1;
 }
-
-.cf-affix-input-decorator__input-prefix {
+.cf-affix-input-decorator .cf-affix-input-decorator__input-prefix {
   padding-right: 5px;
 }
-
-.cf-affix-input-decorator__input-suffix {
+.cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
   padding-left: 0;
 }
-
-.cf-affix-input-decorator__input-wrapper {
+.cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
