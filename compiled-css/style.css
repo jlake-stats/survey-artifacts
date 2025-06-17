@@ -49,8 +49,8 @@ body {
 }
 
 *,
-*::before,
-*::after {
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -234,6 +234,7 @@ a:focus-visible {
   background: var(--color-progress);
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* affects area around the array of questions */
 .cf-page__question-list {
   /* margin-bottom: 1rem; */
@@ -247,6 +248,7 @@ a:focus-visible {
   }
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* Hide the border and padding of the fieldset */
 fieldset[aria-labelledby] {
   border: 0;
@@ -254,6 +256,7 @@ fieldset[aria-labelledby] {
   margin: 0;
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* Visually hide the legend but keep it accessible to screen readers */
 legend {
   position: absolute;
@@ -267,6 +270,7 @@ legend {
   border: 0;
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* affects the question card */
 .cf-question {
   background-color: var(--color-white);
@@ -335,7 +339,6 @@ legend {
   font-weight: normal;
 }
 
-/* ------------------------------------------------------------------------------------- */
 .cf-question__instruction {
   color: var(--color-font);
   font-style: normal;
@@ -364,6 +367,7 @@ legend {
   /* visible to show the focus */
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* styles the affixes attached to list response fields*/
 .cf-affix-input-decorator {
   vertical-align: sub;
@@ -400,6 +404,7 @@ legend {
   min-width: 0;
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* individual categories and text fields bulk changes */
 .cf-list__item,
 .cf-text-box,
@@ -414,6 +419,7 @@ legend {
   margin-bottom: 0.75em;
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* individual categories */
 .cf-radio-answer,
 .cf-checkbox-answer {
@@ -439,23 +445,22 @@ legend {
   height: 24px;
   vertical-align: middle;
 }
+.cf-radio--selected:before {
+  background-color: var(--color-main);
+  position: static;
+}
 
 .cf-checkbox--selected {
   background-color: var(--color-main);
   width: 24px;
   height: 24px;
 }
-
-.cf-radio--selected::before {
-  background-color: var(--color-main);
-  position: static;
-}
-
-.cf-checkbox--selected::before {
+.cf-checkbox--selected:before {
   background-color: var(--color-main);
   position: relative;
 }
 
+/* ------------------------------------------------------------------------------------- */
 .cf-list__item {
   background-color: var(--color-white);
   border-radius: 0.4rem;
@@ -465,18 +470,16 @@ legend {
   cursor: pointer;
   transition: border-color 0.15s ease;
 }
-
 .cf-list__item:hover {
   box-shadow: 0 0.1rem 0.8rem var(--color-hover);
 }
-
 .cf-list__item:focus-within {
   border-color: var(--color-main);
   outline: 0.1rem solid var(--color-main);
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* individual text entry */
-/*--Dieter Add this-Start---*/
 .cf-text-area {
   width: 100%;
   max-width: 100%;
@@ -487,6 +490,8 @@ legend {
 .cf-text-box {
   width: 100%;
   max-width: 100%;
+  height: 3rem;
+  padding: 10px;
 }
 
 .cf-text-box,
@@ -495,17 +500,10 @@ legend {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
 }
-
 .cf-text-box:focus,
 .cf-text-area:focus {
   outline: 0.1rem solid var(--color-main);
   box-shadow: none;
-}
-
-/* this grabs most last text fields details */
-.cf-text-box {
-  height: 3rem;
-  padding: 10px;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -513,23 +511,18 @@ legend {
 .cf-navigation {
   display: flex;
   justify-content: space-between;
-  /* Spreads buttons far left and right */
   gap: 1rem;
-  /* Optional: adds spacing if more than two buttons */
   width: 100%;
-  /* Ensure full width so space-between works correctly */
   max-width: var(--width-max-question-box);
   margin: 0 auto 2rem auto;
   padding: 0;
   background: none;
 }
-
-.custom-cf-navigation .cf-navigation-back {
+.cf-navigation .cf-navigation-back {
   order: 2;
   margin-left: 0;
 }
-
-.custom-cf-navigation .cf-navigation-next {
+.cf-navigation .cf-navigation-next {
   order: 1;
   margin-right: 0;
 }
@@ -573,7 +566,6 @@ button,
   border: 2px solid var(--color-main);
   color: var(--color-white);
 }
-
 button:hover,
 .cf-navigation-next:hover,
 .cf-navigation-ok:hover {
@@ -581,20 +573,20 @@ button:hover,
   border-color: var(--color-accent);
   color: var(--color-black);
 }
-
-button:active,
-button:focus,
+button:active, button:focus,
 .cf-navigation-next:active,
-.cf-navigation-next:focus {
+.cf-navigation-next:focus,
+.cf-navigation-ok:active,
+.cf-navigation-ok:focus {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-black);
   outline: solid 2px var(--color-focus);
   outline-offset: 2px;
 }
-
 button:disabled,
-.cf-navigation-next:disabled {
+.cf-navigation-next:disabled,
+.cf-navigation-ok:disabled {
   cursor: not-allowed;
   background-color: var(--color-button-disabled);
   border-color: var(--color-button-disabled);
@@ -608,16 +600,13 @@ button:disabled,
   padding: 0.5rem 2rem;
   position: relative;
 }
-
 .button-secondary:hover,
 .cf-navigation-back:hover {
   background: var(--color-accent);
   color: var(--color-black);
   border-color: var(--color-accent);
 }
-
-.button-secondary:active,
-.button-secondary:focus,
+.button-secondary:active, .button-secondary:focus,
 .cf-navigation-back:active,
 .cf-navigation-back:focus {
   background: var(--color-accent);
@@ -626,15 +615,12 @@ button:disabled,
   outline: solid 2px var(--color-focus);
   outline-offset: 2px;
 }
-
 .button-secondary:disabled,
 .cf-navigation-back:disabled {
   color: var(--color-button-inverted-disabled);
   border-color: var(--color-button-inverted-disabled);
 }
-
-.button-secondary:disabled:focus,
-.button-secondary:disabled:hover,
+.button-secondary:disabled:focus, .button-secondary:disabled:hover,
 .cf-navigation-back:disabled:focus,
 .cf-navigation-back:disabled:hover {
   background: transparent;
