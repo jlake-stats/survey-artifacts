@@ -60,7 +60,7 @@ body {
 /* ------------------------------------------------------------------------------------- */
 /* Typo */
 h1 {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.2em;
   /* keep em */
 }
@@ -144,11 +144,11 @@ a:focus-visible {
 .cf-header .cf-header__text a:hover {
   text-decoration: underline;
 }
-.cf-header .cf-header__text h3 {
+.cf-header .cf-header__text .headline {
   margin: 0;
 }
 @media (max-width: 641px) {
-  .cf-header .cf-header__text h3 {
+  .cf-header .cf-header__text .headline {
     display: none;
   }
 }
@@ -894,7 +894,6 @@ input[type=text] {
   font-weight: bold;
 }
 .custom-table td:last-child {
-  font-weight: bold;
   color: var(--color-tealblue);
 }
 
