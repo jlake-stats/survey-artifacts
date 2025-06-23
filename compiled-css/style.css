@@ -916,6 +916,11 @@ input[type=text] {
 /* ------------------------------------------------------------------------------------- */
 /* CENSUS STYLING */
 /* ------------------------------------------------------------------------------------- */
+.cf-header .cf-header .cf-header__text {
+  justify-content: flex-end;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* Language Toggle */
 .language-group {
   display: flex;
@@ -924,7 +929,7 @@ input[type=text] {
 }
 .language-group h2 {
   font-size: 14px;
-  color: #888;
+  color: var(--color-white);
   margin-top: 0px;
   margin-bottom: 6px;
 }
@@ -933,7 +938,7 @@ input[type=text] {
   align-items: center;
   font-size: 16px;
   font-weight: bold;
-  color: #666;
+  color: var(--color-white);
   /* Language Text (Scoped) */
   /* Fix Spacing Issue (Scoped to language-group) */
   /* Toggle Button (Scoped) */
@@ -952,7 +957,7 @@ input[type=text] {
 .language-group .language-switch label {
   width: 48px;
   height: 24px;
-  background: #ccc;
+  background: var(--color-white);
   border-radius: 12px;
   position: relative;
   cursor: pointer;
@@ -963,7 +968,7 @@ input[type=text] {
   content: "";
   width: 18px;
   height: 18px;
-  background: white;
+  background: var(--color-white);
   border-radius: 50%;
   position: absolute;
   top: 3px;
@@ -978,18 +983,6 @@ input[type=text] {
 }
 .language-group .language-switch input:checked + label:after {
   transform: translateX(24px);
-}
-.language-group .language-switch input:checked ~ .english {
-  color: #aaa;
-}
-.language-group .language-switch input:not(:checked) ~ .maori {
-  color: #aaa;
-}
-.language-group .language-switch:has(input:checked) .english {
-  color: #aaa;
-}
-.language-group .language-switch:has(input:not(:checked)) .maori {
-  color: #aaa;
 }
 
 /* ------------------------------------------------------------------------------------- */
