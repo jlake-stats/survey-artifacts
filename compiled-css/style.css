@@ -944,6 +944,11 @@ input[type=text] {
   /* Toggle Button (Scoped) */
   /* Active Toggle (Scoped) */
 }
+@media (max-width: 641px) {
+  .language-group .language-switch {
+    font-size: 12px;
+  }
+}
 .language-group .language-switch .english,
 .language-group .language-switch .maori {
   transition: color 0.3s;
