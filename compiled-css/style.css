@@ -979,7 +979,7 @@ input[type=text] {
   display: none;
 }
 .language-group .language-switch input:checked + label {
-  background: #c43b8b;
+  background: var(--color-aquablue);
 }
 .language-group .language-switch input:checked + label:after {
   transform: translateX(24px);
