@@ -686,7 +686,6 @@ button:disabled,
   flex-direction: column;
   float: right;
   font-weight: 600;
-  margin-top: -0.2rem;
   padding: 0;
   text-align: center;
   cursor: pointer;
@@ -709,10 +708,10 @@ button:disabled,
   background: var(--color-main);
   border-radius: 50%;
   color: var(--color-white);
-  height: 30px;
-  width: 30px;
-  font-size: 1.3rem;
-  line-height: 30px;
+  height: 32px;
+  width: 32px;
+  font-size: 22px;
+  line-height: 32px;
   padding: 0;
   margin: 0;
 }
