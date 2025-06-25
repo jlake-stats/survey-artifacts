@@ -1194,3 +1194,41 @@ input[type=text] {
 }
 
 /* HSP-navigation OLD PAGE start (only used for CAPI) */
+/* ------------------------------------------------------------------------------------- */
+.cf-searchable-question__selected-answers-column,
+.cf-searchable-question__selected-count,
+.cf-searchable-question__selected-count--in-search-panel,
+.cf-searchable-question__expand,
+.cf-searchable-question__collapse {
+  display: none;
+}
+
+.cf-searchable-question__no-result {
+  display: none !important;
+}
+
+.cf-searchable-question__answers-column {
+  border: none;
+}
+
+.cf-searchable-question__answer-list-wrapper--filtered-answers {
+  height: 0;
+  overflow-y: auto;
+}
+
+.noResults .cf-searchable-question__answer-list-wrapper--filtered-answers {
+  height: 0;
+  overflow-y: auto;
+}
+
+.cf-searchable-question__other-answers {
+  display: none;
+}
+
+.cf-searchable-question__other-answers, .cf-searchable-question__exclusive-answers {
+  border-top: none;
+}
+
+.cf-searchable-question__answer-list-wrapper--filtered-answers {
+  margin-top: 0;
+}
