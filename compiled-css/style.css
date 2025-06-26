@@ -870,6 +870,9 @@ input[type=text] {
 
 /* ------------------------------------------------------------------------------------- */
 /* toast error */
+.cf-toast {
+  display: none;
+}
 .cf-toast .cf-toast__wrapper {
   background-color: var(--color-red);
 }
