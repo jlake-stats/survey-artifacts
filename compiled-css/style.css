@@ -748,15 +748,21 @@ button:disabled,
   height: 100%;
   overflow: auto;
   display: none;
-  padding: 0 20px;
+  padding: 0;
   z-index: 2;
 }
 .modal .modal-inner {
   background-color: var(--color-white);
-  border-radius: 3px;
-  max-width: 500px;
-  margin: 50px auto;
+  border-radius: 1rem;
+  margin: 100px auto 50px auto;
   padding: 20px;
+  width: 1184px;
+  max-width: 80%;
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+.modal .modal-inner:-webkit-scrollbar-thumb {
+  border-radius: 1rem;
 }
 
 /* Placed on the body while a modal is open to prevent scrolling. */
