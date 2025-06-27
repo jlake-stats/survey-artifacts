@@ -761,9 +761,15 @@ button:disabled,
   width: 1184px;
   max-width: 80%;
   overflow-y: scroll;
-  max-height: 80vh;
+  max-height: 90vh;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+}
+@media (max-width: 641px) {
+  .modal .modal-inner {
+    padding: 15px 30px;
+    max-width: 95%;
+  }
 }
 .modal .modal-inner::-webkit-scrollbar, .modal .modal-inner::-webkit-scrollbar-button {
   display: none; /* Chrome */
