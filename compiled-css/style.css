@@ -50,6 +50,8 @@ body {
   max-width: 100%;
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 *,
 *:before,
 *:after {
@@ -758,11 +760,14 @@ button:disabled,
   padding: 20px;
   width: 1184px;
   max-width: 80%;
-  overflow-y: scroll;
+  overflow: hidden;
   max-height: 80vh;
+  height: 100%;
 }
-.modal .modal-inner:-webkit-scrollbar-thumb {
-  border-radius: 1rem;
+.modal .modal-inner .modal-content {
+  overflow-y: scroll;
+  padding: 20px 40px;
+  height: 100%;
 }
 
 /* Placed on the body while a modal is open to prevent scrolling. */
