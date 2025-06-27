@@ -578,7 +578,6 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 /* Buttons */
-button,
 .cf-navigation-next,
 .cf-navigation-back,
 .cf-navigation-ok {
@@ -609,7 +608,6 @@ button,
 }
 
 /* ---------------------- primary / next / ok ---------------------- */
-button,
 .cf-navigation-next,
 .cf-navigation-ok {
   text-transform: capitalize;
@@ -617,16 +615,13 @@ button,
   border: 2px solid var(--color-main);
   color: var(--color-white);
 }
-button:hover,
 .cf-navigation-next:hover,
 .cf-navigation-ok:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-black);
 }
-button:active, button:focus,
-.cf-navigation-next:active,
-.cf-navigation-next:focus,
+.cf-navigation-next:active, .cf-navigation-next:focus,
 .cf-navigation-ok:active,
 .cf-navigation-ok:focus {
   background-color: var(--color-accent);
@@ -635,7 +630,6 @@ button:active, button:focus,
   outline: solid 2px var(--color-focus);
   outline-offset: 2px;
 }
-button:disabled,
 .cf-navigation-next:disabled,
 .cf-navigation-ok:disabled {
   cursor: not-allowed;
@@ -778,6 +772,10 @@ button:disabled,
   position: absolute;
   top: 0;
   right: 0;
+  color: var(--color-main);
+}
+.modal .modal-inner .modal-content .close-btn:hover {
+  color: var(--color-hover);
 }
 .modal .modal-inner::-webkit-scrollbar, .modal .modal-inner::-webkit-scrollbar-button {
   display: none; /* Chrome */
