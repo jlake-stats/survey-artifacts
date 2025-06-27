@@ -756,12 +756,12 @@ button:disabled,
 .modal .modal-inner {
   background-color: var(--color-white);
   border-radius: 1rem;
-  margin: 100px auto 50px auto;
+  margin: 100px auto 0 auto;
   padding: 30px 60px;
   width: 1184px;
   max-width: 80%;
   overflow-y: scroll;
-  max-height: 90vh;
+  max-height: 80vh;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
@@ -770,6 +770,14 @@ button:disabled,
     padding: 15px 30px;
     max-width: 95%;
   }
+}
+.modal .modal-inner .modal-content {
+  position: relative;
+}
+.modal .modal-inner .modal-content .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .modal .modal-inner::-webkit-scrollbar, .modal .modal-inner::-webkit-scrollbar-button {
   display: none; /* Chrome */
