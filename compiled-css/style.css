@@ -608,6 +608,7 @@ legend {
 }
 
 /* ---------------------- primary / next / ok ---------------------- */
+.button-primary,
 .cf-navigation-next,
 .cf-navigation-ok {
   text-transform: capitalize;
@@ -615,13 +616,16 @@ legend {
   border: 2px solid var(--color-main);
   color: var(--color-white);
 }
+.button-primary:hover,
 .cf-navigation-next:hover,
 .cf-navigation-ok:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-black);
 }
-.cf-navigation-next:active, .cf-navigation-next:focus,
+.button-primary:active, .button-primary:focus,
+.cf-navigation-next:active,
+.cf-navigation-next:focus,
 .cf-navigation-ok:active,
 .cf-navigation-ok:focus {
   background-color: var(--color-accent);
@@ -630,6 +634,7 @@ legend {
   outline: solid 2px var(--color-focus);
   outline-offset: 2px;
 }
+.button-primary:disabled,
 .cf-navigation-next:disabled,
 .cf-navigation-ok:disabled {
   cursor: not-allowed;
