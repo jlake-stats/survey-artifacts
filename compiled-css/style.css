@@ -751,7 +751,7 @@ legend {
 .modal .modal-inner {
   background-color: var(--color-white);
   border-radius: 1rem;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 30px auto;
   width: 800px;
   max-width: 90%;
 }
