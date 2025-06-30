@@ -742,7 +742,8 @@ legend {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   display: none;
   padding: 0;
   z-index: 2;
@@ -751,13 +752,8 @@ legend {
   background-color: var(--color-white);
   border-radius: 1rem;
   margin: 100px auto 0 auto;
-  padding: 30px 60px;
-  width: 1184px;
-  max-width: 80%;
-  overflow-y: scroll;
-  max-height: 80vh;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  width: 800px;
+  max-width: 90%;
 }
 @media (max-width: 641px) {
   .modal .modal-inner {
@@ -765,13 +761,10 @@ legend {
     max-width: 95%;
   }
 }
-.modal .modal-inner .modal-content {
-  position: relative;
-}
-.modal .modal-inner .modal-content .modal-close {
+.modal .modal-inner .modal-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 30px;
+  right: 30px;
   color: var(--color-main);
   padding: 0;
   margin: 0;
@@ -782,15 +775,19 @@ legend {
   height: 30px;
   cursor: pointer;
 }
-.modal .modal-inner .modal-content .modal-close svg {
+.modal .modal-inner .modal-close svg {
   width: 100%;
   height: 100%;
 }
-.modal .modal-inner .modal-content .modal-close svg path {
+.modal .modal-inner .modal-close svg path {
   fill: var(--color-main);
 }
-.modal .modal-inner .modal-content .modal-close:hover svg path {
+.modal .modal-inner .modal-close:hover svg path {
   fill: var(--color-accent);
+}
+.modal .modal-inner .modal-content {
+  position: relative;
+  padding: 30px 60px;
 }
 .modal .modal-inner::-webkit-scrollbar, .modal .modal-inner::-webkit-scrollbar-button {
   display: none; /* Chrome */
