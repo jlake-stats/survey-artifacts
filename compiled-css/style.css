@@ -754,10 +754,10 @@ legend {
   margin: 100px auto 30px auto;
   width: 800px;
   max-width: 90%;
+  position: relative;
 }
 @media (max-width: 641px) {
   .modal .modal-inner {
-    padding: 15px 30px;
     max-width: 95%;
   }
 }
@@ -774,6 +774,7 @@ legend {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  z-index: 2;
 }
 .modal .modal-inner .modal-close svg {
   width: 100%;
@@ -787,7 +788,11 @@ legend {
 }
 .modal .modal-inner .modal-content {
   position: relative;
-  padding: 30px 60px;
+  padding: 40px 60px;
+}
+.modal .modal-inner .modal-content > button {
+  float: right;
+  margin-top: 15px;
 }
 .modal .modal-inner::-webkit-scrollbar, .modal .modal-inner::-webkit-scrollbar-button {
   display: none; /* Chrome */
@@ -948,6 +953,10 @@ input[type=text] {
 
 .addRow {
   float: right;
+}
+
+.clearfix {
+  clear: both;
 }
 
 /* ------------------------------------------------------------------------------------- */
