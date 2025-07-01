@@ -782,6 +782,12 @@ legend {
   cursor: pointer;
   z-index: 2;
 }
+@media (max-width: 641px) {
+  .modal .modal-inner .modal-close:has(svg) {
+    width: 20px;
+    height: 20px;
+  }
+}
 .modal .modal-inner .modal-close svg {
   width: 100%;
   height: 100%;
@@ -795,6 +801,11 @@ legend {
 .modal .modal-inner .modal-content {
   position: relative;
   padding: 40px 60px;
+}
+@media (max-width: 641px) {
+  .modal .modal-inner .modal-content {
+    padding: 20px 40px;
+  }
 }
 .modal .modal-inner .modal-content > button {
   float: right;
