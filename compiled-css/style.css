@@ -633,8 +633,8 @@ legend {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-black);
-  outline: solid 2px var(--color-focus);
-  outline-offset: 2px;
+  outline: solid 3px var(--color-focus);
+  outline-offset: 3px;
 }
 .button-primary:disabled,
 .cf-navigation-next:disabled,
@@ -663,8 +663,8 @@ legend {
   background: var(--color-accent);
   color: var(--color-black);
   border-color: var(--color-accent);
-  outline: solid 2px var(--color-focus);
-  outline-offset: 2px;
+  outline: solid 3px var(--color-focus);
+  outline-offset: 3px;
 }
 .button-secondary:disabled,
 .cf-navigation-back:disabled {
@@ -735,7 +735,7 @@ legend {
   right: -0.4rem;
   bottom: -0.4rem;
   border-radius: 50%;
-  border: 0.2rem solid var(--color-focus);
+  border: 3px solid var(--color-focus);
   transition: border-color 0.15s ease;
 }
 
@@ -799,8 +799,9 @@ legend {
   fill: var(--color-accent);
 }
 .modal .modal-inner .modal-close:active, .modal .modal-inner .modal-close:focus {
-  outline: solid 2px var(--color-focus);
-  outline-offset: 2px;
+  outline: solid 3px var(--color-focus);
+  outline-offset: 8px;
+  border-radius: 50%;
 }
 .modal .modal-inner .modal-content {
   position: relative;
