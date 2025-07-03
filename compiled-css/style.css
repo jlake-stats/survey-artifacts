@@ -1128,7 +1128,6 @@ input[type=text] {
   font-weight: 600;
   cursor: default;
 }
-
 .hsp-status::after {
   content: "";
   display: inline-block;
@@ -1200,13 +1199,17 @@ input[type=text] {
   transition: all 0.2s ease;
   width: fit-content;
 }
+.hsp-button:disabled,
+.hsp-button-ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 .hsp-button {
   background-color: #B4278A;
   color: white;
   border: none;
 }
-
 .hsp-button:hover {
   background-color: #9e1f7b;
 }
@@ -1220,26 +1223,16 @@ input[type=text] {
   border: 2px solid #b91c87;
   outline: none;
 }
-
-.hsp-button-ghost:hover,
-.hsp-button-ghost:focus,
-.hsp-button-ghost:active {
+.hsp-button-ghost:hover, .hsp-button-ghost:focus, .hsp-button-ghost:active {
   background-color: rgba(185, 28, 135, 0.1);
   color: #b91c87;
   border-color: #b91c87;
   outline: none;
   box-shadow: none;
 }
-
 .hsp-button-ghost:focus-visible {
   outline: 2px solid #b91c87;
   outline-offset: 2px;
-}
-
-.hsp-button:disabled,
-.hsp-button-ghost:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 
 /* HSP-navigation end */
