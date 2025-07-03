@@ -798,6 +798,10 @@ legend {
 .modal .modal-inner .modal-close:hover svg path {
   fill: var(--color-accent);
 }
+.modal .modal-inner .modal-close:active, .modal .modal-inner .modal-close:focus {
+  outline: solid 2px var(--color-focus);
+  outline-offset: 2px;
+}
 .modal .modal-inner .modal-content {
   position: relative;
   padding: 40px 60px;
