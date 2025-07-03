@@ -788,17 +788,17 @@ legend {
     height: 20px;
   }
 }
-.modal .modal-inner .modal-close svg {
+.modal .modal-inner .modal-close:has(svg) svg {
   width: 100%;
   height: 100%;
 }
-.modal .modal-inner .modal-close svg path {
+.modal .modal-inner .modal-close:has(svg) svg path {
   fill: var(--color-main);
 }
-.modal .modal-inner .modal-close:hover svg path {
+.modal .modal-inner .modal-close:has(svg):hover svg path {
   fill: var(--color-accent);
 }
-.modal .modal-inner .modal-close:active, .modal .modal-inner .modal-close:focus {
+.modal .modal-inner .modal-close:has(svg):active, .modal .modal-inner .modal-close:has(svg):focus {
   outline: solid 3px var(--color-focus);
   outline-offset: 8px;
   border-radius: 50%;
