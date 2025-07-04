@@ -15,6 +15,7 @@
   --color-aquablue10: #E6F7F9;
   --color-tealblue: #005c75;
   --color-navyblue: #172a45;
+  --color-orange: #ed7218;
   --color-purple: #c92c99;
   /* Main colours */
   --color-main: var(--color-tealblue);
@@ -1058,7 +1059,7 @@ input[type=text] {
   display: none;
 }
 .language-group .language-switch input:checked + label {
-  background: var(--color-aquablue);
+  background: var(--color-orange);
 }
 .language-group .language-switch input:checked + label:after {
   transform: translateX(24px);
