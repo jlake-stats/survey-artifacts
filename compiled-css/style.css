@@ -18,14 +18,14 @@
   --color-orange: #ed7218;
   --color-purple: #c92c99;
   /* Main colours */
-  --color-main: var(--color-tealblue);
-  --color-accent: var(--color-aquablue);
+  --color-main: var(--color-navyblue);
+  --color-accent: var(--color-tealblue);
   /* Specific colours */
   --color-font: var(--color-black);
   --color-background: #f4f4f4;
   --color-border: var(--color-lightgrey);
   --color-hover: rgba(39, 37, 37, .2);
-  --color-focus: var(--color-red);
+  --color-focus: var(--color-accent);
   --color-error: var(--color-red);
   --color-float-border: rgba(112, 111, 110, .147353);
   --color-float-shadow: rgba(0, 0, 0, .098);
@@ -624,7 +624,6 @@ legend {
 .cf-navigation-ok:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
-  color: var(--color-black);
 }
 .button-primary:active, .button-primary:focus,
 .cf-navigation-next:active,
@@ -633,7 +632,6 @@ legend {
 .cf-navigation-ok:focus {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
-  color: var(--color-black);
   outline: solid 3px var(--color-focus);
   outline-offset: 3px;
 }
