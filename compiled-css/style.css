@@ -61,6 +61,15 @@ body {
 
 /* ------------------------------------------------------------------------------------- */
 /* Typo */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-main);
+}
+
 h1 {
   font-size: 22px;
   line-height: 1.2em;
@@ -81,6 +90,12 @@ h3 {
 
 h4 {
   font-size: 18px;
+  line-height: 1.2em;
+  /* keep em */
+}
+
+h5 {
+  font-size: 16px;
   line-height: 1.2em;
   /* keep em */
 }
@@ -517,7 +532,7 @@ legend {
 /* ------------------------------------------------------------------------------------- */
 /* Radio & Checkboxes */
 .cf-radio {
-  border-radius: 1rem;
+  border-radius: 50%;
 }
 
 .cf-checkbox {
