@@ -653,14 +653,14 @@ legend {
 .button-secondary:hover,
 .cf-navigation-back:hover {
   background: var(--color-accent);
-  color: var(--color-black);
+  color: var(--color-white);
   border-color: var(--color-accent);
 }
 .button-secondary:active, .button-secondary:focus,
 .cf-navigation-back:active,
 .cf-navigation-back:focus {
   background: var(--color-accent);
-  color: var(--color-black);
+  color: var(--color-white);
   border-color: var(--color-accent);
   outline: solid 3px var(--color-focus);
   outline-offset: 3px;
