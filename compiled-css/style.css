@@ -752,15 +752,15 @@ div:has(> .question-help__toggle-link) {
   color: var(--color-main);
   display: flex;
   flex-direction: column;
-  float: right;
   font-weight: 600;
   padding: 0;
+  margin-left: 15px;
   text-align: center;
   cursor: pointer;
 }
 .question-help__toggle-link .question-help__toggle-link-text {
   margin: 0.3rem 0 0.5rem;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
 }
 .question-help__toggle-link .question-help__toggle-link-image {
