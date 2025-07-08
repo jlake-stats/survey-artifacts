@@ -52,7 +52,6 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
 *,
 *:before,
 *:after {
@@ -740,6 +739,12 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 /* Help button */
+div:has(> .question-help__toggle-link) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
 .question-help__toggle-link {
   align-items: center;
   background: none;
