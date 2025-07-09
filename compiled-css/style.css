@@ -1200,6 +1200,17 @@ input[type=text] {
   width: 100%;
 }
 
+#HSP_remove_people .hsp-bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 2em;
+  flex-wrap: wrap;
+  border: 0;
+  box-shadow: none;
+}
+
 .hsp-flex {
   display: flex;
   justify-content: space-between;
