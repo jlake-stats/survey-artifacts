@@ -1135,7 +1135,7 @@ input[type=text] {
   max-width: 100%;
 }
 #HSP_navigation .cf-group-heading {
-  margin: 0;
+  margin: 0 0 2em 0;
 }
 #HSP_navigation .cf-group-heading .cf-group-heading__title {
   color: var(--color-main);
@@ -1150,7 +1150,7 @@ input[type=text] {
 }
 #HSP_navigation .cf-list__item:hover, #HSP_navigation .cf-list__item:focus {
   box-shadow: none;
-  border-color: inherit;
+  border-color: var(--color-border);
   outline: none;
 }
 #HSP_navigation .hsp-bottom-buttons {
