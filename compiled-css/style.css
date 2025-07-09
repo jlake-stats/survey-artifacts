@@ -706,6 +706,7 @@ legend {
 /* ---------------------- secondary / back ---------------------- */
 .button-secondary,
 .cf-navigation-back {
+  background: transparent;
   color: var(--color-main);
   border: 2px solid var(--color-main);
   position: relative;
