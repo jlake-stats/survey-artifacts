@@ -1190,15 +1190,7 @@ input[type=text] {
   flex-shrink: 0;
 }
 
-.hsp-status {
-  font-size: 0.85rem;
-  color: black;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  cursor: default;
-}
-.hsp-status::after {
+.button-status::after {
   content: "";
   display: inline-block;
   width: 16px;
