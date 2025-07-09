@@ -1212,17 +1212,6 @@ input[type=text] {
   background-image: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/person.svg");
 }
 
-.cf-list__item.hsp-list-item {
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  box-sizing: border-box;
-}
-
 .cf-group-heading__content.hsp-group-heading-content {
   display: flex;
   flex-direction: column;
@@ -1235,16 +1224,27 @@ input[type=text] {
   padding: 0 4px;
 }
 
-.cf-list--narrow.hsp-list-narrow {
+.cf-list--narrow {
   max-width: 100%;
 }
 
 .hsp-bottom-buttons {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   gap: 10px;
   margin-top: 2em;
   flex-wrap: wrap;
+  border: 0;
+  box-shadow: none;
+}
+.hsp-bottom-buttons .cf-list__item {
+  background: none;
+  border: 0;
+}
+.hsp-bottom-buttons .cf-list__item:hover, .hsp-bottom-buttons .cf-list__item:focus {
+  border: 0;
+  box-shadow: none;
 }
 
 /* HSP-navigation end */
@@ -1309,14 +1309,6 @@ input[type=text] {
 .hsp-bottom-buttons .cf-button--selected {
   background-color: transparent;
   border-color: transparent;
-}
-
-.hsp-bottom-buttons .cf-list__item {
-  border-color: transparent;
-}
-
-.hsp-bottom-buttons .cf-list__item.hsp-list-item {
-  border-bottom: 0;
 }
 
 /* used by one click */
