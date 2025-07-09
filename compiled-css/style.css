@@ -1134,6 +1134,12 @@ input[type=text] {
 #HSP_navigation .cf-list--narrow {
   max-width: 100%;
 }
+#HSP_navigation .cf-list__item {
+  box-shadow: none;
+}
+#HSP_navigation .cf-list__item:hover {
+  box-shadow: none;
+}
 #HSP_navigation .hsp-bottom-buttons {
   display: flex;
   flex-direction: row;
