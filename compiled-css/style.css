@@ -1202,7 +1202,7 @@ input[type=text] {
 
 #HSP_remove_people .hsp-bottom-buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   gap: 10px;
   margin-top: 2em;
