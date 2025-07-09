@@ -1131,8 +1131,46 @@ input[type=text] {
 
 /* ------------------------------------------------------------------------------------- */
 /* HSP-navigation start */
+#HSP_navigation .cf-list--narrow {
+  max-width: 100%;
+}
+#HSP_navigation .hsp-bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 2em;
+  flex-wrap: wrap;
+  border: 0;
+  box-shadow: none;
+}
+#HSP_navigation .hsp-bottom-buttons .cf-list__item {
+  background: none;
+  border: 0;
+}
+#HSP_navigation .hsp-bottom-buttons .cf-list__item:hover, #HSP_navigation .hsp-bottom-buttons .cf-list__item:focus {
+  border: 0;
+  box-shadow: none;
+}
+#HSP_navigation .button-status {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+#HSP_navigation .button-status::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  vertical-align: middle;
+  background: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/icon-tick.svg") no-repeat center center;
+  background-size: contain;
+}
 #HSP_navigation .cf-button {
   padding: 0;
+  background: inherit;
+  min-height: unset;
+  color: inherit;
 }
 #HSP_navigation .cf-button-answer__button .cf-button-answer__text {
   width: 100%;
@@ -1173,17 +1211,6 @@ input[type=text] {
   min-width: 170px;
 }
 
-.button-status::after {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-left: 6px;
-  vertical-align: middle;
-  background: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/icon-tick.svg") no-repeat center center;
-  background-size: contain;
-}
-
 .hsp-name {
   font-size: 0.95rem;
   font-weight: 600;
@@ -1222,29 +1249,6 @@ input[type=text] {
 .cf-group-heading__title.hsp-group-heading-title {
   color: black;
   padding: 0 4px;
-}
-
-.cf-list--narrow {
-  max-width: 100%;
-}
-
-.hsp-bottom-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-top: 2em;
-  flex-wrap: wrap;
-  border: 0;
-  box-shadow: none;
-}
-.hsp-bottom-buttons .cf-list__item {
-  background: none;
-  border: 0;
-}
-.hsp-bottom-buttons .cf-list__item:hover, .hsp-bottom-buttons .cf-list__item:focus {
-  border: 0;
-  box-shadow: none;
 }
 
 /* HSP-navigation end */
