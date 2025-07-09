@@ -1134,11 +1134,24 @@ input[type=text] {
 #HSP_navigation .cf-list--narrow {
   max-width: 100%;
 }
+#HSP_navigation .cf-group-heading {
+  margin: 0;
+}
+#HSP_navigation .cf-group-heading .cf-group-heading__title {
+  color: var(--color-main);
+}
+#HSP_navigation .cf-group-heading .cf-group-heading__content {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 #HSP_navigation .cf-list__item {
   box-shadow: none;
 }
-#HSP_navigation .cf-list__item:hover {
+#HSP_navigation .cf-list__item:hover, #HSP_navigation .cf-list__item:focus {
   box-shadow: none;
+  border-color: inherit;
+  outline: none;
 }
 #HSP_navigation .hsp-bottom-buttons {
   display: flex;
@@ -1157,6 +1170,10 @@ input[type=text] {
 #HSP_navigation .hsp-bottom-buttons .cf-list__item:hover, #HSP_navigation .hsp-bottom-buttons .cf-list__item:focus {
   border: 0;
   box-shadow: none;
+}
+#HSP_navigation .hsp-bottom-buttons .cf-button--selected {
+  background-color: transparent;
+  border-color: transparent;
 }
 #HSP_navigation .button-status {
   cursor: not-allowed;
@@ -1245,18 +1262,6 @@ input[type=text] {
   background-image: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/person.svg");
 }
 
-.cf-group-heading__content.hsp-group-heading-content {
-  display: flex;
-  flex-direction: column;
-  padding-top: 8px;
-  border: none;
-}
-
-.cf-group-heading__title.hsp-group-heading-title {
-  color: black;
-  padding: 0 4px;
-}
-
 /* HSP-navigation end */
 /* HSP-navigation OLD PAGE start (only used for CAPI) */
 .cf-button-answer__button.hsp-disabled {
@@ -1313,12 +1318,3 @@ input[type=text] {
 .cf-searchable-question__answer-list-wrapper--filtered-answers {
   margin-top: 0;
 }
-
-/* ------------------------------------------------------------------------------------- */
-/* used by one click */
-.hsp-bottom-buttons .cf-button--selected {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-/* used by one click */
