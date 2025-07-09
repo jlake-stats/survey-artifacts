@@ -1247,6 +1247,7 @@ input[type=text] {
   justify-content: flex-start;
   gap: 10px;
   margin-top: 2em;
+  flex-wrap: wrap;
 }
 
 /* Shared button styles */
@@ -1361,3 +1362,20 @@ input[type=text] {
 .cf-searchable-question__answer-list-wrapper--filtered-answers {
   margin-top: 0;
 }
+
+/* ------------------------------------------------------------------------------------- */
+/* used by one click */
+.hsp-bottom-buttons .cf-button--selected {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.hsp-bottom-buttons .cf-list__item {
+  border-color: transparent;
+}
+
+.hsp-bottom-buttons .cf-list__item.hsp-list-item {
+  border-bottom: 0;
+}
+
+/* used by one click */
