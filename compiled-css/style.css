@@ -1132,6 +1132,18 @@ input[type=text] {
 
 /* ------------------------------------------------------------------------------------- */
 /* HSP-navigation start */
+#HSP_navigation .cf-list__item,
+#HSP_remove_people .cf-list__item {
+  box-shadow: none;
+}
+#HSP_navigation .cf-list__item:hover, #HSP_navigation .cf-list__item:focus,
+#HSP_remove_people .cf-list__item:hover,
+#HSP_remove_people .cf-list__item:focus {
+  box-shadow: none;
+  border-color: var(--color-border);
+  outline: none;
+}
+
 #HSP_navigation .cf-list--narrow {
   max-width: 100%;
 }
@@ -1145,14 +1157,6 @@ input[type=text] {
   border: 0;
   margin: 0;
   padding: 0;
-}
-#HSP_navigation .cf-list__item {
-  box-shadow: none;
-}
-#HSP_navigation .cf-list__item:hover, #HSP_navigation .cf-list__item:focus {
-  box-shadow: none;
-  border-color: var(--color-border);
-  outline: none;
 }
 #HSP_navigation .hsp-bottom-buttons {
   display: flex;
@@ -1176,20 +1180,6 @@ input[type=text] {
   background-color: transparent;
   border-color: transparent;
 }
-#HSP_navigation .button-status {
-  cursor: not-allowed;
-  opacity: 0.2;
-}
-#HSP_navigation .button-status::after {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-left: 6px;
-  vertical-align: middle;
-  background: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/icon-tick.svg") no-repeat center center;
-  background-size: contain;
-}
 #HSP_navigation .cf-button {
   padding: 0;
   background: inherit;
@@ -1211,6 +1201,21 @@ input[type=text] {
   box-shadow: none;
 }
 
+.button-status {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+.button-status::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  vertical-align: middle;
+  background: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/icon-tick.svg") no-repeat center center;
+  background-size: contain;
+}
+
 .hsp-flex {
   display: flex;
   justify-content: space-between;
@@ -1222,7 +1227,7 @@ input[type=text] {
   min-height: 50px;
   cursor: default;
 }
-@media (max-width: 480px) {
+@media (max-width: 641px) {
   .hsp-flex {
     flex-direction: column;
     align-items: flex-start;
