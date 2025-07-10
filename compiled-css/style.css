@@ -639,9 +639,9 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 /* Buttons */
-.button-primary, .button-primary-sm,
+.button-primary, .button-primary--sm,
 .button-secondary,
-.button-secondary-sm,
+.button-secondary--sm,
 .cf-navigation-next,
 .cf-navigation-back,
 .cf-navigation-ok {
@@ -672,20 +672,20 @@ legend {
 }
 
 /* ---------------------- primary / next / ok ---------------------- */
-.button-primary, .button-primary-sm,
+.button-primary, .button-primary--sm,
 .cf-navigation-next,
 .cf-navigation-ok {
   background: var(--color-main);
   border: 2px solid var(--color-main);
   color: var(--color-white);
 }
-.button-primary:hover, .button-primary-sm:hover,
+.button-primary:hover, .button-primary--sm:hover,
 .cf-navigation-next:hover,
 .cf-navigation-ok:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
-.button-primary:active, .button-primary-sm:active, .button-primary:focus, .button-primary-sm:focus,
+.button-primary:active, .button-primary--sm:active, .button-primary:focus, .button-primary--sm:focus,
 .cf-navigation-next:active,
 .cf-navigation-next:focus,
 .cf-navigation-ok:active,
@@ -695,7 +695,7 @@ legend {
   outline: solid 3px var(--color-focus);
   outline-offset: 3px;
 }
-.button-primary:disabled, .button-primary-sm:disabled,
+.button-primary:disabled, .button-primary--sm:disabled,
 .cf-navigation-next:disabled,
 .cf-navigation-ok:disabled {
   cursor: not-allowed;
@@ -704,20 +704,20 @@ legend {
 }
 
 /* ---------------------- secondary / back ---------------------- */
-.button-secondary, .button-secondary-sm,
+.button-secondary, .button-secondary--sm,
 .cf-navigation-back {
   background: transparent;
   color: var(--color-main);
   border: 2px solid var(--color-main);
   position: relative;
 }
-.button-secondary:hover, .button-secondary-sm:hover,
+.button-secondary:hover, .button-secondary--sm:hover,
 .cf-navigation-back:hover {
   background: var(--color-accent);
   color: var(--color-white);
   border-color: var(--color-accent);
 }
-.button-secondary:active, .button-secondary-sm:active, .button-secondary:focus, .button-secondary-sm:focus,
+.button-secondary:active, .button-secondary--sm:active, .button-secondary:focus, .button-secondary--sm:focus,
 .cf-navigation-back:active,
 .cf-navigation-back:focus {
   background: var(--color-accent);
@@ -726,12 +726,12 @@ legend {
   outline: solid 3px var(--color-focus);
   outline-offset: 3px;
 }
-.button-secondary:disabled, .button-secondary-sm:disabled,
+.button-secondary:disabled, .button-secondary--sm:disabled,
 .cf-navigation-back:disabled {
   color: var(--color-button-inverted-disabled);
   border-color: var(--color-button-inverted-disabled);
 }
-.button-secondary:disabled:focus, .button-secondary-sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary-sm:disabled:hover,
+.button-secondary:disabled:focus, .button-secondary--sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary--sm:disabled:hover,
 .cf-navigation-back:disabled:focus,
 .cf-navigation-back:disabled:hover {
   background: transparent;
@@ -739,12 +739,12 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-.button-primary-sm {
+.button-primary--sm {
   font-size: 16px;
   padding: 1rem 1.4rem;
 }
 
-.button-secondary-sm {
+.button-secondary--sm {
   font-size: 16px;
   padding: 1rem 1.4rem;
 }
