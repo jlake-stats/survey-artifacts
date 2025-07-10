@@ -657,7 +657,7 @@ legend {
   line-height: 1;
   outline: 0;
   margin: 0;
-  padding: 1rem 1.8rem;
+  padding: 1.1rem 1.8rem;
   position: relative;
   text-decoration: none;
   -webkit-user-select: none;
@@ -741,12 +741,12 @@ legend {
 /* ------------------------------------------------------------------------------------- */
 .button-primary-sm {
   font-size: 16px;
-  padding: 1rem 1.4rem;
+  padding: 0.8rem 1.1rem;
 }
 
 .button-secondary-sm {
   font-size: 16px;
-  padding: 1rem 1.4rem;
+  padding: 0.8rem 1.1rem;
 }
 
 /* ------------------------------------------------------------------------------------- */
