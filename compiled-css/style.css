@@ -1142,7 +1142,7 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* HSP-navigation start */
+/* HSP-navigation */
 #HSP_navigation .cf-list__item,
 #HSP_remove_people .cf-list__item {
   box-shadow: none;
@@ -1212,6 +1212,7 @@ input[type=text] {
   box-shadow: none;
 }
 
+/* ------------------------------------------------------------------------------------- */
 .button-status {
   cursor: not-allowed;
   opacity: 0.2;
@@ -1235,7 +1236,6 @@ input[type=text] {
   padding: 6px 12px;
   border-radius: 6px;
   width: 100%;
-  min-height: 50px;
   cursor: default;
 }
 @media (max-width: 641px) {
@@ -1249,27 +1249,19 @@ input[type=text] {
   align-items: center;
   gap: 8px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  flex-grow: 1;
   width: 100%;
-  cursor: default;
 }
 .hsp-flex .hsp-right {
   flex-shrink: 0;
 }
 .hsp-flex button {
-  min-width: 170px;
+  min-width: 120px;
 }
 
+/* ------------------------------------------------------------------------------------- */
 .hsp-name {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
-  flex-grow: 1;
-  text-align: left;
-  color: black;
-  overflow: hidden;
-  cursor: default;
 }
 
 .hsp-icon-dwelling,
@@ -1279,7 +1271,6 @@ input[type=text] {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  flex-shrink: 0;
 }
 
 .hsp-icon-dwelling {
@@ -1290,7 +1281,7 @@ input[type=text] {
   background-image: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/person.svg");
 }
 
-/* HSP-navigation end */
+/* ------------------------------------------------------------------------------------- */
 /* HSP-navigation OLD PAGE start (only used for CAPI) */
 .cf-button-answer__button.hsp-disabled {
   background-color: #e2e2e2 !important;
