@@ -401,7 +401,7 @@ legend {
   padding-top: 0;
   padding-right: 3rem;
   padding-left: 3rem;
-  padding-bottom: 0;
+  padding-bottom: 3rem;
   margin: auto;
   margin-bottom: 1rem;
   max-width: var(--width-max-question-box);
