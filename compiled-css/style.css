@@ -1213,11 +1213,17 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-.button-status {
-  cursor: not-allowed;
-  opacity: 0.2;
+.hsp-status {
+  font-size: 16px;
+  line-height: 1;
+  padding: 0.8rem 1.1rem;
+  min-width: 120px;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
 }
-.button-status::after {
+.hsp-status::after {
   content: "";
   display: inline-block;
   width: 16px;
@@ -1226,6 +1232,10 @@ input[type=text] {
   vertical-align: middle;
   background: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/icon-tick.svg") no-repeat center center;
   background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 .hsp-flex {
