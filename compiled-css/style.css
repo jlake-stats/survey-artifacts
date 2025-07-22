@@ -1346,6 +1346,9 @@ input[type=text] {
 .cf-question--login .cf-login {
   max-width: 80%;
 }
+.cf-question--login .cf-login .cf-login__field-icon {
+  display: none;
+}
 .cf-question--login .cf-login .cf-login__field-input {
   flex: 1 1 auto;
   min-width: 0;
