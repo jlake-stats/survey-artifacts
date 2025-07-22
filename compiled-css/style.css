@@ -160,6 +160,7 @@ a:focus-visible {
   font-style: normal;
   line-height: 1.5;
   background-color: var(--color-background);
+  background-size: cover;
 }
 
 /* ------------------------------------------------------------------------------------- */
