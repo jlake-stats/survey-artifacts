@@ -892,7 +892,9 @@ div:has(> .question-help__toggle-link) {
     padding: 20px 40px;
   }
 }
-.modal .modal-inner .modal-content > button {
+.modal .modal-inner .modal-content .button-primary, .modal .modal-inner .modal-content .button-primary-sm,
+.modal .modal-inner .modal-content .button-secondary,
+.modal .modal-inner .modal-content .button-secondary-sm {
   float: right;
   margin-top: 15px;
 }
