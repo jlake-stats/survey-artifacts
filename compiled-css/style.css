@@ -1342,3 +1342,18 @@ input[type=text] {
 .cf-searchable-question__answer-list-wrapper--filtered-answers {
   margin-top: 0;
 }
+
+.cf-question--login .cf-login {
+  max-width: 80%;
+}
+.cf-question--login .cf-login .cf-login__field-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  height: unset;
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 0.5em;
+}
