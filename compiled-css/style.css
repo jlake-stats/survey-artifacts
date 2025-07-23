@@ -1370,10 +1370,6 @@ input[type=text] {
   min-height: 250px;
 }
 
-.cf-dropdown:focus {
-  border-color: #2684ff !important;
-}
-
 #IF_iwi_region > div.search-container {
   display: none;
 }
@@ -1395,22 +1391,6 @@ input[type=text] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.cf-question:not(:first-child), .cf-question--info {
-  border-radius: 0 0 1rem 1rem;
-}
-
-.cf-question, .cf-question--info {
-  margin-top: -24px;
-  border: unset;
-  margin-bottom: 0px;
-  /*clip-path: inset(0px -10px -10px -10px);*/
-  box-shadow: 0px 4px 4px var(--color-float-shadow);
-}
-
-.cf-question:last-child {
-  margin-top: -40px;
 }
 
 #ChathamIslands > path:nth-child(2) {
@@ -1496,12 +1476,6 @@ input[type=text] {
 
 .iwi-toggle-button[aria-pressed=true] .iwi-toggle-slider {
   transform: translateX(100%);
-}
-
-svg {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 path:hover, path:focus {
