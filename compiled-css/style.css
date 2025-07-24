@@ -1397,9 +1397,6 @@ input[type=text] {
   fill: #b3cbaa;
   cursor: pointer;
 }
-#IF_iwi_region #iwi-svg-container #ChathamIslands > path:nth-child(2) {
-  fill: #FFF;
-}
 #IF_iwi_region #iwi-svg-container path.iwi-map__region:focus,
 #IF_iwi_region #iwi-svg-container #iwi-region-map > g:focus path.iwi-map__region-inner {
   outline: unset;
@@ -1409,6 +1406,9 @@ input[type=text] {
 #IF_iwi_region #iwi-svg-container #ChathamIslands > path:nth-child(1):focus {
   fill: #b3cbaa;
   cursor: unset;
+}
+#IF_iwi_region #iwi-svg-container #ChathamIslands > path:nth-child(2) {
+  fill: #FFF;
 }
 #IF_iwi_region #iwi-svg-container .iwi-selected {
   fill: #b3cbaa !important;
