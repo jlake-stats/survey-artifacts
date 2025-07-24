@@ -1370,6 +1370,11 @@ input[type=text] {
   flex-wrap: wrap;
   justify-content: normal;
 }
+#IF_iwi_region #iwi-instruction {
+  font-size: 14px;
+  padding: 20px 25px;
+  background: #f3f3f3;
+}
 #IF_iwi_region #iwi-svg-container {
   width: 100%;
 }
@@ -1378,10 +1383,6 @@ input[type=text] {
 #IF_iwi_iwiSelect > .search-container > #search-results {
   overflow-y: scroll;
   min-height: 250px;
-}
-
-.cf-dropdown:focus {
-  border-color: #2684ff !important;
 }
 
 #IF_iwi_region > div.search-container {
@@ -1456,7 +1457,7 @@ border-radius: 0 0 1rem 1rem;
   overflow: hidden;
   transition: background-color 0.3s ease;
   padding: 0;
-  font-family: inherit;
+  margin: 20px 0;
 }
 
 .iwi-toggle-option {
