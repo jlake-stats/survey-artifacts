@@ -1365,6 +1365,11 @@ input[type=text] {
   letter-spacing: 0.5em;
 }
 
+#IF_iwi_region {
+  border: unset;
+  margin-bottom: 0px;
+  box-shadow: 0px 4px 4px var(--color-float-shadow);
+}
 #IF_iwi_region #IF_iwi_region_text {
   flex-direction: row;
   flex-wrap: wrap;
@@ -1377,6 +1382,37 @@ input[type=text] {
 }
 #IF_iwi_region #iwi-svg-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#IF_iwi_region #iwi-svg-container svg {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#IF_iwi_region #iwi-svg-container path:hover,
+#IF_iwi_region #iwi-svg-container path:focus {
+  /* opacity: 0.6; */
+  fill: #b3cbaa;
+  cursor: pointer;
+}
+#IF_iwi_region #iwi-svg-container #ChathamIslands > path:nth-child(2) {
+  fill: #FFF;
+}
+#IF_iwi_region #iwi-svg-container path.iwi-map__region:focus,
+#IF_iwi_region #iwi-svg-container #iwi-region-map > g:focus path.iwi-map__region-inner {
+  outline: unset;
+  fill: #b3cbaa;
+}
+#IF_iwi_region #iwi-svg-container #ChathamIslands > path:nth-child(1):hover,
+#IF_iwi_region #iwi-svg-container #ChathamIslands > path:nth-child(1):focus {
+  fill: #b3cbaa;
+  cursor: unset;
+}
+#IF_iwi_region #iwi-svg-container .iwi-selected {
+  fill: #b3cbaa !important;
+  stroke: black;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -1411,12 +1447,6 @@ input[type=text] {
 /*.cf-question:not(:first-child), .cf-question--info {
 border-radius: 0 0 1rem 1rem;
 }*/
-#IF_iwi_region {
-  border: unset;
-  margin-bottom: 0px;
-  box-shadow: 0px 4px 4px var(--color-float-shadow);
-}
-
 #IF_iwi_iwiSelect,
 #IF_iwi_manualDisplay {
   margin-top: -24px;
@@ -1432,18 +1462,8 @@ border-radius: 0 0 1rem 1rem;
   box-shadow: 0px 4px 4px var(--color-float-shadow);
 }
 
-#ChathamIslands > path:nth-child(2) {
-  fill: #FFF;
-}
-
 #IF_iwi_region_text {
   padding: 0.9rem 1.2rem 0 1.2rem;
-}
-
-#iwi-svg-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .iwi-toggle-button {
@@ -1518,29 +1538,4 @@ border-radius: 0 0 1rem 1rem;
 
 .iwi-toggle-button[aria-pressed=true] .iwi-toggle-slider {
   transform: translateX(100%);
-}
-
-path:hover,
-path:focus {
-  /* opacity: 0.6; */
-  fill: #b3cbaa;
-  cursor: pointer;
-}
-
-path.iwi-map__region:focus,
-#iwi-region-map > g:focus path.iwi-map__region-inner {
-  outline: unset;
-  fill: #b3cbaa;
-}
-
-#ChathamIslands > path:nth-child(1):hover,
-#ChathamIslands > path:nth-child(1):focus {
-  /*fill: unset;*/
-  fill: #b3cbaa;
-  cursor: unset;
-}
-
-.iwi-selected {
-  fill: #b3cbaa !important;
-  stroke: black;
 }
