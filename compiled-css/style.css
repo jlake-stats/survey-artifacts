@@ -1499,11 +1499,11 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-#IF_iwi_iwiSelect {
-  margin-top: -24px;
+#IF_iwi_iwiSelect.cf-question {
   border: 0;
   margin-bottom: 0;
   border-radius: 0;
+  margin-top: -24px;
 }
 #IF_iwi_iwiSelect > .search-container > #search-results {
   overflow-y: scroll;
@@ -1528,11 +1528,11 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-#IF_iwi_manualDisplay {
-  margin-top: -24px;
+#IF_iwi_manualDisplay.cf-question {
   border: 0;
   margin-bottom: 0;
   border-radius: 0;
+  margin-top: -24px;
 }
 
 #IF_iwi_iwiListFinal {
