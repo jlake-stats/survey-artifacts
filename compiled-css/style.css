@@ -153,6 +153,10 @@ a:focus-visible {
   box-shadow: 0 0 0 3px var(--color-focus);
 }
 
+.custom-link {
+  font-size: 16px;
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* affects entire page */
 .cf-page {
@@ -1050,11 +1054,12 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Helpers */
-.custom-link {
-  font-size: 16px;
+/* Table */
+#SummaryTables_text {
+  overflow-wrap: anywhere;
 }
 
+/* Helpers */
 .addRow {
   float: right;
 }
@@ -1063,10 +1068,8 @@ input[type=text] {
   clear: both;
 }
 
-/* ------------------------------------------------------------------------------------- */
-/* Table */
-#SummaryTables_text {
-  overflow-wrap: anywhere;
+.help-wrapper {
+  flex-direction: row;
 }
 
 /* ------------------------------------------------------------------------------------- */
