@@ -1497,6 +1497,9 @@ input[type=text] {
   fill: #b3cbaa !important;
   stroke: black;
 }
+#IF_iwi_region #IF_iwi_region_content .cf-dropdown:focus {
+  border-color: #2684ff !important;
+}
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_iwiSelect.cf-question {
@@ -1528,6 +1531,7 @@ input[type=text] {
   box-sizing: border-box;
 }
 
+/* ------------------------------------------------------------------------------------- */
 #IF_iwi_manualDisplay.cf-question {
   border: 0;
   margin-bottom: 0;
@@ -1535,12 +1539,11 @@ input[type=text] {
   margin-top: -24px;
 }
 
+/* ------------------------------------------------------------------------------------- */
 #IF_iwi_iwiListFinal {
   margin-top: 0;
   border: 0;
   border-radius: 0 0 1rem 1rem;
 }
 
-/*.cf-question:not(:first-child), .cf-question--info {
-border-radius: 0 0 1rem 1rem;
-}*/
+/* ------------------------------------------------------------------------------------- */
