@@ -758,7 +758,7 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 /* Help button */
-div:has(> .question-help__toggle-link) {
+.cf-question__text:has(> .question-help__toggle-link) {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -1071,7 +1071,9 @@ input[type=text] {
 }
 
 .help-wrapper {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 /* ------------------------------------------------------------------------------------- */
