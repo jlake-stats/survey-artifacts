@@ -1398,23 +1398,19 @@ input[type=text] {
   background: #f3f3f3;
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button {
-  display: block;
-  width: 100%;
-  height: 60px;
-  border: none;
-  border-radius: 30px;
   position: relative;
+  display: flex;
+  width: 100%;
+  border: 1px solid var(--color-main);
+  border-radius: 1rem;
   cursor: pointer;
-  overflow: hidden;
   transition: background-color 0.3s ease;
   padding: 0;
   margin: 20px 0;
+  background-color: var(--color-white);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-option {
-  position: absolute;
-  top: 0;
   width: 50%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1427,26 +1423,19 @@ input[type=text] {
   font-size: 16px;
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-option.off {
-  left: 0;
-  /* justify-content: flex-start; */
-  padding-left: 20px;
-  opacity: 1;
+  color: var(--color-white);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-option.on {
-  right: 0;
-  /* justify-content: flex-end; */
-  padding-right: 20px;
-  opacity: 0.5;
+  color: var(--color-main);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-slider {
   width: 50%;
   height: 100%;
   background-color: white;
-  /* opacity: 0.3; */
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 30px;
+  border-radius: 1rem;
   transition: transform 0.3s ease;
   z-index: 1;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -1455,10 +1444,10 @@ input[type=text] {
   color: var(--color-white);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.off {
-  opacity: 0.5;
+  color: var(--color-main);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.on {
-  opacity: 1;
+  color: var(--color-white);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true] .iwi-toggle-slider {
   transform: translateX(100%);
