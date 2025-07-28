@@ -1409,10 +1409,6 @@ input[type=text] {
   margin: 20px 0;
   background-color: var(--color-white);
 }
-#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus {
-  outline: solid 3px var(--color-focus);
-  outline-offset: 3px;
-}
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button::after {
   content: "";
   width: 50%;
@@ -1455,6 +1451,16 @@ input[type=text] {
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true]::after {
   transform: translateX(100%);
+}
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus {
+  outline: solid 3px var(--color-focus);
+  outline-offset: 3px;
+}
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.on {
+  text-decoration: underline;
+}
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus.iwi-toggle-button[aria-pressed=false] .iwi-toggle-option.off {
+  text-decoration: underline;
 }
 #IF_iwi_region #iwi-svg-container {
   width: 100%;
