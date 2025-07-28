@@ -25,7 +25,7 @@
   --color-background: #f4f4f4;
   --color-border: var(--color-lightgrey);
   --color-hover: rgba(39, 37, 37, .2);
-  --color-focus: var(--color-accent);
+  --color-focus: var(--color-main);
   --color-error: var(--color-red);
   --color-float-border: rgba(112, 111, 110, .147353);
   --color-float-shadow: rgba(0, 0, 0, .098);
@@ -1408,6 +1408,10 @@ input[type=text] {
   padding: 0;
   margin: 20px 0;
   background-color: var(--color-white);
+}
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus {
+  outline: solid 3px var(--color-focus);
+  outline-offset: 3px;
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button::after {
   content: "";
