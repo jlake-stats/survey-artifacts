@@ -1420,7 +1420,8 @@ input[type=text] {
   transition: transform 0.3s ease;
   z-index: 1;
   background: var(--color-main);
-  border: 2px solid var(--color-main);
+  border: 0;
+  outline: 1px solid var(--color-main);
   color: var(--color-white);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-option {
