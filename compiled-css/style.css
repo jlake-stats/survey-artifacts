@@ -1410,6 +1410,7 @@ input[type=text] {
   background-color: var(--color-white);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button::after {
+  content: "";
   width: 50%;
   height: 100%;
   position: absolute;
