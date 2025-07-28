@@ -14,6 +14,7 @@
   --color-aquablue: #00b2c3;
   --color-aquablue10: #E6F7F9;
   --color-tealblue: #005c75;
+  --color-tealblue15: #CED6DD;
   --color-navyblue: #172a45;
   --color-orange: #ed7218;
   --color-purple: #c92c99;
@@ -1451,6 +1452,9 @@ input[type=text] {
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true]::after {
   transform: translateX(100%);
+}
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus {
+  background-color: var(--color-tealblue15);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.off {
   text-decoration: underline;
