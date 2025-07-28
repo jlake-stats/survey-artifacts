@@ -1409,6 +1409,19 @@ input[type=text] {
   margin: 20px 0;
   background-color: var(--color-white);
 }
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button::after {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  background: var(--color-main);
+  border: 2px solid var(--color-main);
+  color: var(--color-white);
+}
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-option {
   width: 50%;
   display: flex;
@@ -1428,26 +1441,13 @@ input[type=text] {
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-option.on {
   color: var(--color-main);
 }
-#IF_iwi_region #iwi-map-toggle.iwi-toggle-button .iwi-toggle-slider {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-  z-index: 1;
-  background: var(--color-main);
-  border: 2px solid var(--color-main);
-  color: var(--color-white);
-}
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.off {
   color: var(--color-main);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.on {
   color: var(--color-white);
 }
-#IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true] .iwi-toggle-slider {
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button.iwi-toggle-button[aria-pressed=true]::after {
   transform: translateX(100%);
 }
 #IF_iwi_region #iwi-svg-container {
