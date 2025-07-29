@@ -28,6 +28,7 @@
   --color-hover: rgba(39, 37, 37, .2);
   --color-focus: var(--color-main);
   --color-error: var(--color-red);
+  --color-disabled: #4D5B6133;
   --color-float-border: rgba(112, 111, 110, .147353);
   --color-float-shadow: rgba(0, 0, 0, .098);
   --color-instruction-background: var(--color-aquablue10);
@@ -707,8 +708,8 @@ legend {
 .cf-navigation-next:disabled,
 .cf-navigation-ok:disabled {
   cursor: not-allowed;
-  background-color: var(--color-button-disabled);
-  border-color: var(--color-button-disabled);
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
 }
 
 /* ---------------------- secondary / back ---------------------- */
@@ -736,14 +737,14 @@ legend {
 }
 .button-secondary:disabled, .button-secondary-sm:disabled,
 .cf-navigation-back:disabled {
-  color: var(--color-button-inverted-disabled);
-  border-color: var(--color-button-inverted-disabled);
+  color: var(--color-disabled);
+  border-color: var(--color-disabled);
 }
 .button-secondary:disabled:focus, .button-secondary-sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary-sm:disabled:hover,
 .cf-navigation-back:disabled:focus,
 .cf-navigation-back:disabled:hover {
   background: transparent;
-  color: var(--color-button-inverted-disabled);
+  color: var(--color-disabled);
 }
 
 /* ------------------------------------------------------------------------------------- */
