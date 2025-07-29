@@ -1456,13 +1456,13 @@ input[type=text] {
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button:hover {
   background-color: var(--color-tealblue15);
 }
-#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus-within {
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus-visible {
   background-color: var(--color-tealblue15);
 }
-#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus-within.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.off {
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus-visible.iwi-toggle-button[aria-pressed=true] .iwi-toggle-option.off {
   text-decoration: underline;
 }
-#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus-within.iwi-toggle-button[aria-pressed=false] .iwi-toggle-option.on {
+#IF_iwi_region #iwi-map-toggle.iwi-toggle-button:focus-visible.iwi-toggle-button[aria-pressed=false] .iwi-toggle-option.on {
   text-decoration: underline;
 }
 #IF_iwi_region #iwi-svg-container {
