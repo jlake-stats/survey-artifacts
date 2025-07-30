@@ -534,12 +534,8 @@ legend {
   cursor: pointer;
   transition: border-color 0.15s ease;
 }
-.cf-list__item:hover {
-  box-shadow: 0 0.1rem 0.8rem var(--color-hover);
-}
 .cf-list__item:focus-within {
   border-color: var(--color-main);
-  outline: 0.1rem solid var(--color-main);
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -740,9 +736,10 @@ legend {
   color: var(--color-disabled);
   border-color: var(--color-disabled);
 }
-.button-secondary:disabled:focus, .button-secondary-sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary-sm:disabled:hover,
+.button-secondary:disabled:focus, .button-secondary-sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary-sm:disabled:hover, .button-secondary:disabled:active, .button-secondary-sm:disabled:active,
 .cf-navigation-back:disabled:focus,
-.cf-navigation-back:disabled:hover {
+.cf-navigation-back:disabled:hover,
+.cf-navigation-back:disabled:active {
   background: transparent;
   color: var(--color-disabled);
   outline: none;
