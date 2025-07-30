@@ -745,6 +745,8 @@ legend {
 .cf-navigation-back:disabled:hover {
   background: transparent;
   color: var(--color-disabled);
+  outline: none;
+  cursor: not-allowed;
 }
 
 /* ------------------------------------------------------------------------------------- */
