@@ -1082,6 +1082,7 @@ input[type=text] {
 /* ------------------------------------------------------------------------------------- */
 .cf-header .cf-header__text {
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 .cf-header .cf-header__text .header-address {
   margin-right: auto;
@@ -1090,6 +1091,8 @@ input[type=text] {
   background: transparent;
   color: var(--color-white);
   border: 2px solid var(--color-white);
+  font-size: 16px;
+  margin-left: 40px;
 }
 .cf-header .cf-header__text .header-logout:hover, .cf-header .cf-header__text .header-logout:focus {
   background: var(--color-accent);
