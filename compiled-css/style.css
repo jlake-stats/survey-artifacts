@@ -1566,9 +1566,19 @@ input[type=text] {
   border-radius: 0;
   margin-top: -24px;
 }
+#IF_iwi_iwiSelect .cf-question__text {
+  margin: 0;
+}
 #IF_iwi_iwiSelect .cf-question__text > p {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  font-size: 16px;
+}
+#IF_iwi_iwiSelect .cf-question__text > p a {
+  white-space: nowrap;
+  font-weight: 600;
 }
 #IF_iwi_iwiSelect > .search-container > #search-results {
   overflow-y: scroll;
