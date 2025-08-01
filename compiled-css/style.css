@@ -1566,6 +1566,10 @@ input[type=text] {
   border-radius: 0;
   margin-top: -24px;
 }
+#IF_iwi_iwiSelect .cf-question__text > p {
+  display: flex;
+  justify-content: space-between;
+}
 #IF_iwi_iwiSelect > .search-container > #search-results {
   overflow-y: scroll;
   min-height: 250px;
