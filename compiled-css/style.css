@@ -1400,6 +1400,10 @@ input[type=text] {
   text-align: left;
   letter-spacing: 0.5em;
 }
+.cf-question--login .login-modal {
+  display: block;
+  margin-top: 40px;
+}
 
 /* ------------------------------------------------------------------------------------- */
 /* IWI MAP STYLING */
