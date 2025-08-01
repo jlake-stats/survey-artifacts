@@ -1087,6 +1087,14 @@ input[type=text] {
 .cf-header .cf-header__text .header-address {
   margin-right: auto;
 }
+.cf-header .cf-header__text .header-address + span {
+  margin-right: auto;
+}
+@media (max-width: 641px) {
+  .cf-header .cf-header__text .header-address + span {
+    display: none;
+  }
+}
 .cf-header .cf-header__text .header-logout {
   background: transparent;
   color: var(--color-white);
