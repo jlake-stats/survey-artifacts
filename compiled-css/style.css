@@ -1580,7 +1580,10 @@ input[type=text] {
   white-space: nowrap;
   font-weight: 600;
 }
-#IF_iwi_iwiSelect > .search-container > #search-results {
+#IF_iwi_iwiSelect .search-container .no-match {
+  padding: 0 1.2rem 0.9rem 1.2rem;
+}
+#IF_iwi_iwiSelect .search-container .search-results {
   overflow-y: scroll;
   min-height: 250px;
 }
