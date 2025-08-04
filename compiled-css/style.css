@@ -1622,3 +1622,41 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
+#manual-selection {
+  display: none;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 15px;
+  margin-bottom: 9px;
+  margin-top: 10px;
+}
+
+#iwi-manual-toggle {
+  cursor: pointer;
+  width: 35%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+#manual-entry, #manual-save-add-entry, #cancel-entry {
+  cursor: pointer;
+  width: 32%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  min-height: 65px;
+}
+
+.manual-selection__active {
+  background: #558497;
+}
+
+#iwi-manual-toggle:focus:after, #iwi-manual-toggle:active:after {
+  border: 0.2rem solid transparent;
+}
+
+#region-manual > div:nth-child(2) > ul:nth-child(3) {
+  z-index: 1 !important;
+}
+
+/* ------------------------------------------------------------------------------------- */
