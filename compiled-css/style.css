@@ -1660,3 +1660,14 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
+#IF_iwi_iwiListFinal_content {
+  display: none;
+}
+
+#IF_iwi_edit > .search-container > #search-results {
+  z-index: 9 !important;
+}
+
+#region-edit > .search-container > #search-results {
+  z-index: 8 !important;
+}
