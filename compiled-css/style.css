@@ -1437,8 +1437,10 @@ input[type=text] {
 /* IWI MAP STYLING */
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_region {
-  border-bottom: 0;
   margin-bottom: 0;
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 #IF_iwi_region > div.search-container {
   display: none;
@@ -1624,17 +1626,19 @@ input[type=text] {
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_manualDisplay.cf-question {
-  border: 0;
-  margin-bottom: 0;
-  border-radius: 0;
   margin-top: -24px;
+  margin-bottom: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_iwiListFinal {
   margin-top: 0;
   border: 0;
-  border-radius: 0 0 1rem 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
