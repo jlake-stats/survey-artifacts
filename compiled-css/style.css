@@ -1682,6 +1682,10 @@ input[type=text] {
 #IF_iwi_manualDisplay .search-container .search-results:not(:has(li)) {
   border: 0;
 }
+#IF_iwi_manualDisplay .search-container .search-results:has(li) {
+  border-color: #2684ff;
+  box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.2);
+}
 #IF_iwi_manualDisplay .search-container .search-results .result-item {
   font-size: 16px;
 }
