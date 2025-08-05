@@ -1437,9 +1437,8 @@ input[type=text] {
 /* IWI MAP STYLING */
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_region {
-  border: unset;
-  margin-bottom: 0px;
-  box-shadow: 0px 4px 4px var(--color-float-shadow);
+  border-bottom: 0;
+  margin-bottom: 0;
 }
 #IF_iwi_region > div.search-container {
   display: none;
@@ -1577,7 +1576,7 @@ input[type=text] {
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_iwiSelect.cf-question {
-  border: 0;
+  border-bottom: 0;
   margin-bottom: 0;
   border-radius: 0;
   margin-top: -24px;
@@ -1638,14 +1637,6 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-#manual-selection {
-  display: none;
-  border: 1px solid rgb(200, 200, 200);
-  padding: 15px;
-  margin-bottom: 9px;
-  margin-top: 10px;
-}
-
 #iwi-manual-toggle {
   cursor: pointer;
   width: 35%;
@@ -1653,22 +1644,29 @@ input[type=text] {
   border: none;
   outline: none;
 }
+#iwi-manual-toggle.manual-selection__active {
+  background: #558497;
+}
+#iwi-manual-toggle:focus:after, #iwi-manual-toggle:active:after {
+  border: 0.2rem solid transparent;
+}
 
-#manual-entry, #manual-save-add-entry, #cancel-entry {
+#manual-selection {
+  display: none;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 15px;
+  margin-bottom: 9px;
+  margin-top: 10px;
+}
+#manual-selection #manual-entry,
+#manual-selection #manual-save-add-entry,
+#manual-selection #cancel-entry {
   cursor: pointer;
   width: 32%;
   border: none;
   outline: none;
   font-size: 14px;
   min-height: 65px;
-}
-
-.manual-selection__active {
-  background: #558497;
-}
-
-#iwi-manual-toggle:focus:after, #iwi-manual-toggle:active:after {
-  border: 0.2rem solid transparent;
 }
 
 #region-manual > div:nth-child(2) > ul:nth-child(3) {
