@@ -1654,6 +1654,10 @@ input[type=text] {
   margin-bottom: 9px;
   margin-top: 10px;
 }
+#IF_iwi_manualDisplay #manual-selection p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 #IF_iwi_manualDisplay #manual-selection .manual-buttons {
   display: flex;
   margin: 0 -5px;
@@ -1673,6 +1677,7 @@ input[type=text] {
 #IF_iwi_manualDisplay .search-container .search-results {
   overflow-y: scroll;
   max-height: 290px;
+  margin-top: -0.75em;
 }
 #IF_iwi_manualDisplay .search-container .search-results:not(:has(li)) {
   border: 0;
