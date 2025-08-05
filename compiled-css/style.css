@@ -1622,6 +1622,9 @@ input[type=text] {
   max-height: 290px;
   border-top: 1px solid #ddd;
 }
+#IF_iwi_iwiSelect .search-container .search-results:not(:has(li)) {
+  border: 0;
+}
 #IF_iwi_iwiSelect .search-container .search-results .result-item {
   font-size: 16px;
 }
