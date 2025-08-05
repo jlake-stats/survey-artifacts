@@ -1445,21 +1445,6 @@ input[type=text] {
 #IF_iwi_region > div.search-container {
   display: none;
 }
-#IF_iwi_region .search-container {
-  padding-bottom: 290px;
-}
-#IF_iwi_region .search-container .no-match {
-  padding: 0 1.2rem 0.9rem 1.2rem;
-}
-#IF_iwi_region .search-container .search-results {
-  overflow-y: scroll;
-  min-height: 290px;
-  max-height: 290px;
-  border-top: 1px solid #ddd;
-}
-#IF_iwi_region .search-container .search-results .result-item {
-  font-size: 16px;
-}
 #IF_iwi_region #IF_iwi_region_text {
   flex-direction: row;
   flex-wrap: wrap;
@@ -1623,6 +1608,24 @@ input[type=text] {
 #IF_iwi_iwiSelect #IF_iwi_iwiSelect_input {
   display: none;
 }
+#IF_iwi_iwiSelect .search-container {
+  padding-bottom: 290px;
+}
+#IF_iwi_iwiSelect .search-container .no-match {
+  padding: 0 1.2rem 0.9rem 1.2rem;
+}
+#IF_iwi_iwiSelect .search-container #IF_iwi_iwiSelect_input {
+  display: none;
+}
+#IF_iwi_iwiSelect .search-container .search-results {
+  overflow-y: scroll;
+  min-height: 290px;
+  max-height: 290px;
+  border-top: 1px solid #ddd;
+}
+#IF_iwi_iwiSelect .search-container .search-results .result-item {
+  font-size: 16px;
+}
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_manualDisplay.cf-question {
@@ -1661,6 +1664,21 @@ input[type=text] {
   outline: none;
   font-size: 14px;
   min-height: 65px;
+}
+#IF_iwi_manualDisplay .search-container {
+  padding-bottom: 290px;
+}
+#IF_iwi_manualDisplay .search-container .no-match {
+  padding: 0 1.2rem 0.9rem 1.2rem;
+}
+#IF_iwi_manualDisplay .search-container .search-results {
+  overflow-y: scroll;
+  min-height: 290px;
+  max-height: 290px;
+  border-top: 1px solid #ddd;
+}
+#IF_iwi_manualDisplay .search-container .search-results .result-item {
+  font-size: 16px;
 }
 
 /* ------------------------------------------------------------------------------------- */
