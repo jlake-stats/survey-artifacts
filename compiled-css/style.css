@@ -1679,17 +1679,27 @@ input[type=text] {
   width: 100%;
   margin: 0 5px;
 }
+#IF_iwi_manualDisplay .search-container #IF_iwi_manual_input {
+  position: relative;
+  z-index: 4;
+}
+#IF_iwi_manualDisplay .search-container #IF_iwi_manual_input + .search-results {
+  z-index: 3;
+}
+#IF_iwi_manualDisplay .search-container #IF_iwi_manualRegion_input {
+  position: relative;
+  z-index: 2;
+}
+#IF_iwi_manualDisplay .search-container #IF_iwi_manualRegion_input + .search-results {
+  z-index: 1;
+}
 #IF_iwi_manualDisplay .search-container .search-results {
   overflow-y: scroll;
-  max-height: 290px;
-  margin-top: -0.75em;
+  max-height: 270px;
+  margin-top: -12px;
 }
 #IF_iwi_manualDisplay .search-container .search-results:not(:has(li)) {
   border: 0;
-}
-#IF_iwi_manualDisplay .search-container .search-results:has(li) {
-  border-color: #2684ff;
-  box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.2);
 }
 #IF_iwi_manualDisplay .search-container .search-results .result-item {
   font-size: 16px;
