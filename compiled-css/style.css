@@ -1635,6 +1635,7 @@ input[type=text] {
 #IF_iwi_manualDisplay.cf-question {
   margin-top: -24px;
   margin-bottom: 0;
+  padding-bottom: 0;
   border-top: 0;
   border-bottom: 0;
   border-radius: 0;
@@ -1707,7 +1708,7 @@ input[type=text] {
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_iwiListFinal {
-  margin-top: 0;
+  margin-top: -24px;
   border-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
