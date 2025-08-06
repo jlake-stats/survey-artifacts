@@ -1409,6 +1409,11 @@ input[type=text] {
 .cf-question--login .cf-login {
   max-width: 80%;
 }
+@media (max-width: 641px) {
+  .cf-question--login .cf-login {
+    max-width: 100%;
+  }
+}
 .cf-question--login .cf-login .cf-login__field {
   margin: 0;
 }
