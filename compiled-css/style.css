@@ -1404,12 +1404,26 @@ input[type=text] {
 /* ------------------------------------------------------------------------------------- */
 /* LOGIN STYLING */
 /* ------------------------------------------------------------------------------------- */
+.cf-question--login {
+  padding: 2.4rem 4.2rem 4.2rem 4.2rem;
+}
+@media (max-width: 641px) {
+  .cf-question--login {
+    padding: 1.4rem 2.2rem 2.2rem 2.2rem;
+  }
+}
+.cf-question--login .cf-question__text {
+  padding: 0;
+}
 .cf-question--login .cf-error-block {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 .cf-question--login .cf-error-block .cf-error-list {
   font-size: 16px;
+}
+.cf-question--login .cf-question__content {
+  padding: 0;
 }
 .cf-question--login .cf-login {
   max-width: 80%;
