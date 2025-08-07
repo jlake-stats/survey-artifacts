@@ -1650,13 +1650,6 @@ input[type=text] {
   border-bottom: 0;
   border-radius: 0;
 }
-#IF_iwi_manualDisplay #iwi-manual-toggle {
-  cursor: pointer;
-  width: 35%;
-  font-size: 16px;
-  border: none;
-  outline: none;
-}
 #IF_iwi_manualDisplay #iwi-manual-toggle.manual-selection__active {
   background: #558497;
 }
