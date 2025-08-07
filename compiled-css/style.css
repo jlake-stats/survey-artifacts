@@ -1717,7 +1717,7 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-#IF_iwi_iwiListFinal {
+#IF_iwi_iwiListFinal.cf-question {
   margin-top: -24px;
   border-top: 0;
   border-top-left-radius: 0;
