@@ -1723,16 +1723,33 @@ input[type=text] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+#IF_iwi_iwiListFinal .search-container #IF_iwi_edit_input {
+  position: relative;
+  z-index: 4;
+}
+#IF_iwi_iwiListFinal .search-container #IF_iwi_edit_input + .search-results {
+  z-index: 3;
+}
+#IF_iwi_iwiListFinal .search-container #IF_iwi_editRegion_input {
+  position: relative;
+  z-index: 2;
+}
+#IF_iwi_iwiListFinal .search-container #IF_iwi_editRegion_input + .search-results {
+  z-index: 1;
+}
+#IF_iwi_iwiListFinal .search-container .search-results {
+  overflow-y: scroll;
+  max-height: 270px;
+  margin-top: -12px;
+}
+#IF_iwi_iwiListFinal .search-container .search-results:not(:has(li)) {
+  border: 0;
+}
+#IF_iwi_iwiListFinal .search-container .search-results .result-item {
+  font-size: 16px;
+}
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_iwiListFinal_content {
   display: none;
-}
-
-#IF_iwi_edit > .search-container > #search-results {
-  z-index: 9 !important;
-}
-
-#region-edit > .search-container > #search-results {
-  z-index: 8 !important;
 }
