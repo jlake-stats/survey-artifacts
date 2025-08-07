@@ -148,11 +148,16 @@ ol {
   }
 }
 
-a {
+a, .cf-question--login .helpful-link {
   display: inline-block;
 }
-a:focus-visible {
-  box-shadow: 0 0 0 3px var(--color-focus);
+a:hover, .cf-question--login .helpful-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+a:focus-visible, .cf-question--login .helpful-link:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
 }
 
 .custom-link {
@@ -205,13 +210,13 @@ a:focus-visible {
     width: auto;
   }
 }
-.cf-header .cf-header__text a {
+.cf-header .cf-header__text a, .cf-header .cf-header__text .cf-question--login .helpful-link, .cf-question--login .cf-header .cf-header__text .helpful-link {
   margin-left: 20px;
   font-size: 20px;
   color: var(--color-white);
   text-decoration: none;
 }
-.cf-header .cf-header__text a:hover {
+.cf-header .cf-header__text a:hover, .cf-header .cf-header__text .cf-question--login .helpful-link:hover, .cf-question--login .cf-header .cf-header__text .helpful-link:hover {
   text-decoration: underline;
 }
 .cf-header .cf-header__text .headline {
@@ -697,7 +702,7 @@ legend {
 .cf-navigation-ok:focus {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
-  outline: solid 3px var(--color-focus);
+  outline: 3px solid var(--color-focus);
   outline-offset: 3px;
 }
 .button-primary:disabled, .button-primary-sm:disabled,
@@ -728,7 +733,7 @@ legend {
   background: var(--color-accent);
   color: var(--color-white);
   border-color: var(--color-accent);
-  outline: solid 3px var(--color-focus);
+  outline: 3px solid var(--color-focus);
   outline-offset: 3px;
 }
 .button-secondary:disabled, .button-secondary-sm:disabled,
@@ -884,7 +889,7 @@ legend {
   fill: var(--color-accent);
 }
 .modal .modal-inner .modal-close:has(svg):active, .modal .modal-inner .modal-close:has(svg):focus {
-  outline: solid 3px var(--color-focus);
+  outline: 3px solid var(--color-focus);
   outline-offset: 8px;
   border-radius: 50%;
 }
