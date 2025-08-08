@@ -1712,18 +1712,19 @@ input[type=text] {
 #IF_iwi_manualDisplay .selection-card .manual-buttons {
   display: flex;
   margin: 0 -5px;
-  flex-wrap: nowrap;
-}
-@media (max-width: 641px) {
-  #IF_iwi_manualDisplay #manual-selection .manual-buttons,
-  #IF_iwi_manualDisplay .selection-card .manual-buttons {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #IF_iwi_manualDisplay #manual-selection .manual-buttons button,
 #IF_iwi_manualDisplay .selection-card .manual-buttons button {
-  width: 100%;
+  width: auto;
   margin: 0 5px 5px 5px;
+}
+@media (max-width: 641px) {
+  #IF_iwi_manualDisplay #manual-selection .manual-buttons button,
+  #IF_iwi_manualDisplay .selection-card .manual-buttons button {
+    width: 100%;
+  }
 }
 #IF_iwi_manualDisplay .search-container #IF_iwi_manual_input {
   position: relative;
