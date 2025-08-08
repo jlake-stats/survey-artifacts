@@ -1771,6 +1771,7 @@ input[type=text] {
 #IF_iwi_iwiListFinal .selection-card #changes-cont {
   display: flex;
   margin: 0 -5px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 #IF_iwi_iwiListFinal .selection-card #changes-cont button {
