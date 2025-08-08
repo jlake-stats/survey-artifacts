@@ -1688,6 +1688,7 @@ input[type=text] {
 }
 #IF_iwi_manualDisplay #iwi-manual-toggle.manual-selection__active {
   background: #558497;
+  margin-bottom: 10px;
 }
 #IF_iwi_manualDisplay #iwi-manual-toggle:focus:after, #IF_iwi_manualDisplay #iwi-manual-toggle:active:after {
   border: 0.2rem solid transparent;
@@ -1697,8 +1698,8 @@ input[type=text] {
   display: none;
   border: 1px solid rgb(200, 200, 200);
   padding: 15px 15px 10px 15px;
-  margin-bottom: 9px;
-  margin-top: 10px;
+  margin: 0;
+  width: 100%;
 }
 #IF_iwi_manualDisplay #manual-selection p, #IF_iwi_manualDisplay #manual-selection .cf-question--login .helpful-link, .cf-question--login #IF_iwi_manualDisplay #manual-selection .helpful-link,
 #IF_iwi_manualDisplay .selection-card p,
@@ -1722,8 +1723,7 @@ input[type=text] {
 #IF_iwi_manualDisplay #manual-selection .manual-buttons button,
 #IF_iwi_manualDisplay .selection-card .manual-buttons button {
   width: 100%;
-  margin: 0 5px;
-  margin-bottom: 5px;
+  margin: 0 5px 5px 5px;
 }
 #IF_iwi_manualDisplay .search-container #IF_iwi_manual_input {
   position: relative;
@@ -1761,8 +1761,7 @@ input[type=text] {
 #IF_iwi_iwiListFinal .selection-card {
   border: 1px solid rgb(200, 200, 200);
   padding: 15px 15px 10px 15px;
-  margin-bottom: 9px;
-  margin-top: 10px;
+  margin: 0;
   width: 100%;
 }
 #IF_iwi_iwiListFinal .selection-card p, #IF_iwi_iwiListFinal .selection-card .cf-question--login .helpful-link, .cf-question--login #IF_iwi_iwiListFinal .selection-card .helpful-link {
@@ -1770,10 +1769,12 @@ input[type=text] {
   margin-bottom: 10px;
 }
 #IF_iwi_iwiListFinal .selection-card .changes-cont {
-  flex-wrap: wrap;
+  display: flex;
+  margin: 0 -5px;
 }
 #IF_iwi_iwiListFinal .selection-card .changes-cont button {
-  margin-bottom: 5px;
+  width: 100%;
+  margin: 0 5px 5px 5px;
 }
 #IF_iwi_iwiListFinal .search-container #IF_iwi_edit_input {
   position: relative;
