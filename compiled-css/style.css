@@ -1778,6 +1778,11 @@ input[type=text] {
   width: auto;
   margin: 0 5px 5px 5px;
 }
+@media (max-width: 641px) {
+  #IF_iwi_iwiListFinal .selection-card #changes-cont button {
+    width: 100%;
+  }
+}
 #IF_iwi_iwiListFinal .search-container #IF_iwi_edit_input {
   position: relative;
   z-index: 4;
