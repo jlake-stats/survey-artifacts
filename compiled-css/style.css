@@ -1721,16 +1721,9 @@ input[type=text] {
 }
 #IF_iwi_manualDisplay #manual-selection .manual-buttons button,
 #IF_iwi_manualDisplay .selection-card .manual-buttons button {
-  margin-bottom: 5px;
-}
-#IF_iwi_manualDisplay #manual-selection #manual-entry,
-#IF_iwi_manualDisplay #manual-selection #manual-save-add-entry,
-#IF_iwi_manualDisplay #manual-selection #cancel-entry,
-#IF_iwi_manualDisplay .selection-card #manual-entry,
-#IF_iwi_manualDisplay .selection-card #manual-save-add-entry,
-#IF_iwi_manualDisplay .selection-card #cancel-entry {
   width: 100%;
   margin: 0 5px;
+  margin-bottom: 5px;
 }
 #IF_iwi_manualDisplay .search-container #IF_iwi_manual_input {
   position: relative;
