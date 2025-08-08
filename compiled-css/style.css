@@ -1768,12 +1768,13 @@ input[type=text] {
   margin-top: 0;
   margin-bottom: 10px;
 }
-#IF_iwi_iwiListFinal .selection-card .changes-cont {
+#IF_iwi_iwiListFinal .selection-card #changes-cont {
   display: flex;
   margin: 0 -5px;
+  justify-content: space-between;
 }
-#IF_iwi_iwiListFinal .selection-card .changes-cont button {
-  width: 100%;
+#IF_iwi_iwiListFinal .selection-card #changes-cont button {
+  width: auto;
   margin: 0 5px 5px 5px;
 }
 #IF_iwi_iwiListFinal .search-container #IF_iwi_edit_input {
