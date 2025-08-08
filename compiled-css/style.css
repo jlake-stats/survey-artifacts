@@ -1406,6 +1406,8 @@ input[type=text] {
 /* ------------------------------------------------------------------------------------- */
 .cf-question--login {
   padding: 2.4rem 4.2rem 4.2rem 4.2rem;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 641px) {
   .cf-question--login {
@@ -1414,23 +1416,30 @@ input[type=text] {
 }
 .cf-question--login .cf-question__text {
   padding: 0;
+  order: 1;
+}
+.cf-question--login .cf-question__instruction {
+  order: 2;
 }
 .cf-question--login .cf-error-block {
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  order: 4;
 }
 .cf-question--login .cf-error-block .cf-error-list {
   font-size: 16px;
 }
 .cf-question--login .cf-question__content {
   padding: 0;
+  order: 3;
 }
 .cf-question--login .cf-login {
-  max-width: 80%;
+  width: 370px;
+  max-width: 100%;
 }
 @media (max-width: 641px) {
   .cf-question--login .cf-login {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .cf-question--login .cf-login .cf-login__field {
@@ -1445,12 +1454,14 @@ input[type=text] {
   margin: 0;
   height: unset;
   padding: 10px 15px;
-  font-size: 20px;
-  text-align: left;
-  letter-spacing: 0.5em;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.4em;
 }
 .cf-question--login .login-submit {
   margin-top: 40px;
+  align-self: flex-start;
+  order: 4;
 }
 .cf-question--login .helpful-link {
   display: block;
@@ -1460,6 +1471,8 @@ input[type=text] {
   width: auto;
   overflow: visible;
   background: transparent;
+  align-self: flex-start;
+  order: 5;
 }
 
 /* ------------------------------------------------------------------------------------- */
