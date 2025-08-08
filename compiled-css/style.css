@@ -1458,6 +1458,12 @@ input[type=text] {
   text-align: center;
   letter-spacing: 0.4em;
 }
+@media (max-width: 641px) {
+  .cf-question--login .cf-login .cf-login__field-input {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
+}
 .cf-question--login .cf-login .cf-login__field-input::placeholder {
   font-weight: 900;
 }
