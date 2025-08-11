@@ -204,6 +204,11 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
     margin: 0;
   }
 }
+.cf-header .cf-header__logo .cf-header-logo__img {
+  width: 100px;
+  max-width: 100%;
+  max-height: none;
+}
 .cf-header .cf-header__text {
   color: var(--color-white);
   width: 100%;
