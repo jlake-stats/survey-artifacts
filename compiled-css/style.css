@@ -1126,9 +1126,25 @@ input[type=text] {
 /* ------------------------------------------------------------------------------------- */
 /* CENSUS STYLING */
 /* ------------------------------------------------------------------------------------- */
+.cf-header .cf-header__inner .cf-header__logo .header-logout {
+  display: none;
+}
+@media (max-width: 575px) {
+  .cf-header .cf-header__inner .cf-header__logo .header-logout {
+    display: inline-block;
+  }
+}
 .cf-header .cf-header__inner .cf-header__text {
   justify-content: flex-end;
   flex-wrap: wrap;
+}
+.cf-header .cf-header__inner .cf-header__text .header-logout {
+  display: inline-block;
+}
+@media (max-width: 575px) {
+  .cf-header .cf-header__inner .cf-header__text .header-logout {
+    display: none;
+  }
 }
 .cf-header .cf-header__inner .cf-header__text .header-address {
   margin-right: auto;
