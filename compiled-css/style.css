@@ -1159,7 +1159,7 @@ input[type=text] {
 .cf-header .cf-header__inner .cf-header__text .header-address + span {
   margin-right: auto;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .cf-header .cf-header__inner .cf-header__text .header-address + span {
     display: none;
   }
