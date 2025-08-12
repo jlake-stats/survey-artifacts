@@ -1126,6 +1126,13 @@ input[type=text] {
 /* ------------------------------------------------------------------------------------- */
 /* CENSUS STYLING */
 /* ------------------------------------------------------------------------------------- */
+@media (max-width: 575px) {
+  .cf-header .cf-header__inner .cf-header__logo {
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 .cf-header .cf-header__inner .cf-header__logo .header-logout {
   display: none;
 }
@@ -1137,6 +1144,13 @@ input[type=text] {
 .cf-header .cf-header__inner .cf-header__text {
   justify-content: flex-end;
   flex-wrap: wrap;
+}
+@media (max-width: 575px) {
+  .cf-header .cf-header__inner .cf-header__text {
+    margin: 10px 0 0 0;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 .cf-header .cf-header__inner .cf-header__text .header-logout {
   display: inline-block;
