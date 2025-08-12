@@ -1170,6 +1170,11 @@ input[type=text] {
 .cf-header .cf-header__inner .cf-header__text .header-address :last-child {
   display: block;
 }
+@media (max-width: 575px) {
+  .cf-header .cf-header__inner .cf-header__text .header-address :last-child {
+    font-size: 12px;
+  }
+}
 .cf-header .cf-header__inner .cf-header__text .header-address + span {
   margin-right: auto;
 }
@@ -1199,8 +1204,9 @@ input[type=text] {
   flex-direction: column;
   align-items: flex-start;
 }
-.language-group h2 {
+.language-group .language-title {
   font-size: 12px;
+  line-height: 1;
   color: var(--color-white);
   margin-top: 0px;
   margin-bottom: 6px;
