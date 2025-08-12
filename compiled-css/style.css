@@ -1126,7 +1126,7 @@ input[type=text] {
 /* ------------------------------------------------------------------------------------- */
 /* CENSUS STYLING */
 /* ------------------------------------------------------------------------------------- */
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .cf-header .cf-header__inner .cf-header__logo {
     margin: 0;
     width: 100%;
@@ -1136,7 +1136,7 @@ input[type=text] {
 .cf-header .cf-header__inner .cf-header__logo .header-logout {
   display: none;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .cf-header .cf-header__inner .cf-header__logo .header-logout {
     display: inline-block;
   }
@@ -1145,7 +1145,7 @@ input[type=text] {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .cf-header .cf-header__inner .cf-header__text {
     margin: 10px 0 0 0;
     width: 100%;
@@ -1155,7 +1155,7 @@ input[type=text] {
 .cf-header .cf-header__inner .cf-header__text .header-logout {
   display: inline-block;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .cf-header .cf-header__inner .cf-header__text .header-logout {
     display: none;
   }
