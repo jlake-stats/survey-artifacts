@@ -1521,7 +1521,7 @@ input[type=text] {
   height: unset;
   padding: 10px 15px;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.4em;
 }
 @media (max-width: 575px) {
