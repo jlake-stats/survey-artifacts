@@ -1547,7 +1547,11 @@ input[type=text] {
   overflow: visible;
   background: transparent;
   align-self: flex-start;
+  text-decoration: underline;
   order: 5;
+}
+.cf-question--login .helpful-link:hover {
+  color: var(--color-focus);
 }
 
 /* ------------------------------------------------------------------------------------- */
