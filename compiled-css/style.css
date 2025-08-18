@@ -61,110 +61,6 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Typo */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-main);
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 36px;
-}
-@media (max-width: 575px) {
-  h1 {
-    font-size: 36px;
-  }
-}
-
-h2 {
-  font-size: 32px;
-}
-@media (max-width: 575px) {
-  h2 {
-    font-size: 32px;
-  }
-}
-
-h3 {
-  font-size: 28px;
-}
-@media (max-width: 575px) {
-  h3 {
-    font-size: 28px;
-  }
-}
-
-h4 {
-  font-size: 24px;
-}
-@media (max-width: 575px) {
-  h4 {
-    font-size: 26px;
-  }
-}
-
-h5 {
-  font-size: 22px;
-}
-@media (max-width: 575px) {
-  h5 {
-    font-size: 24px;
-  }
-}
-
-h6 {
-  font-size: 20px;
-}
-@media (max-width: 575px) {
-  h6 {
-    font-size: 22px;
-  }
-}
-
-p, .cf-question--login .helpful-link {
-  font-size: 18px;
-  line-height: 1.5;
-}
-@media (max-width: 575px) {
-  p, .cf-question--login .helpful-link {
-    font-size: 16px;
-  }
-}
-
-ul,
-ol {
-  font-size: 18px;
-  line-height: 1.5;
-}
-@media (max-width: 575px) {
-  ul,
-  ol {
-    font-size: 16px;
-  }
-}
-
-a, .cf-question--login .helpful-link {
-  display: inline-block;
-}
-a:hover, .cf-question--login .helpful-link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-a:focus-visible, .cf-question--login .helpful-link:focus-visible {
-  outline: 3px solid var(--color-focus);
-  outline-offset: 3px;
-}
-
-.custom-link {
-  font-size: 16px;
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* affects entire page */
 .cf-page {
   font-optical-sizing: auto;
@@ -498,7 +394,8 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* styles the affixes attached to list response fields*/
+/* Input */
+/* Base cf-affix-input-decorator */
 .cf-affix-input-decorator {
   font-size: 18px;
   width: 100%;
@@ -519,6 +416,70 @@ legend {
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
   padding-left: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Custom cf-affix-input-decorator */
+.custom-input-xxx .cf-affix-input-decorator {
+  font-size: 18px;
+  width: 100%;
+  vertical-align: sub;
+  font-weight: bold;
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-prefix,
+.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin-top: 15px;
+  line-height: 1;
+}
+.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-prefix {
+  padding-right: 5px;
+}
+.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
+  padding-left: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
+input.cf-open-list-answer__input,
+input.cf-numeric-list-answer__input,
+input[type=number],
+input[type=text] {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  min-width: 60px;
+  padding: 6px 8px;
+  font-size: inherit;
+  box-sizing: border-box;
+  text-align: right;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 575px) {
+  input.cf-open-list-answer__input,
+  input.cf-numeric-list-answer__input,
+  input[type=number],
+  input[type=text] {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -943,55 +904,6 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-input.cf-open-list-answer__input,
-input.cf-numeric-list-answer__input,
-input[type=number],
-input[type=text] {
-  display: block;
-  width: auto;
-  max-width: 100%;
-  min-width: 60px;
-  padding: 6px 8px;
-  font-size: inherit;
-  box-sizing: border-box;
-  text-align: right;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-@media (max-width: 575px) {
-  input.cf-open-list-answer__input,
-  input.cf-numeric-list-answer__input,
-  input[type=number],
-  input[type=text] {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-/* ------------------------------------------------------------------------------------- */
-/* #QBAS_Contact_content custom input styling */
-/* #QBAS_PostalUpdate_content custom input styling */
-#QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text,
-#QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text {
-  min-width: 200px;
-}
-
-/* QBAS_RTotalWPIP_QBAS_RTotalWPIP custom input styling */
-/* QBAS_RecTotalWPIP_QBAS_RecTotalWPIP custom input styling */
-/* QBAS_UpdateConsentVal_QBAS_UpdateConsentVal custom input styling */
-/* $ XXX .00 */
-/* .c-dollar-form component */
-@media (min-width: 575px) {
-  .c-dollar-form .cf-open-list-answer__control,
-  #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
-  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
-  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
-    width: 200px;
-  }
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* cf-question--numeric-list & Validation error messages */
 .cf-numeric-list-answer {
   display: flex;
@@ -1098,6 +1010,111 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* Typo */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-main);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 36px;
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+@media (max-width: 575px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+}
+@media (max-width: 575px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+}
+@media (max-width: 575px) {
+  h4 {
+    font-size: 26px;
+  }
+}
+
+h5 {
+  font-size: 22px;
+}
+@media (max-width: 575px) {
+  h5 {
+    font-size: 24px;
+  }
+}
+
+h6 {
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  h6 {
+    font-size: 22px;
+  }
+}
+
+p, .cf-question--login .helpful-link {
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (max-width: 575px) {
+  p, .cf-question--login .helpful-link {
+    font-size: 16px;
+  }
+}
+
+ul,
+ol {
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (max-width: 575px) {
+  ul,
+  ol {
+    font-size: 16px;
+  }
+}
+
+a, .cf-question--login .helpful-link {
+  display: inline-block;
+}
+a:hover, .cf-question--login .helpful-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+a:focus-visible, .cf-question--login .helpful-link:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.custom-link {
+  font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 /* HELPERS STYLING */
 /* ------------------------------------------------------------------------------------- */
 .addRow,
@@ -1148,6 +1165,28 @@ input[type=text] {
   border-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* #QBAS_Contact_content custom input styling */
+/* #QBAS_PostalUpdate_content custom input styling */
+#QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text,
+#QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text {
+  min-width: 200px;
+}
+
+/* QBAS_RTotalWPIP_QBAS_RTotalWPIP custom input styling */
+/* QBAS_RecTotalWPIP_QBAS_RecTotalWPIP custom input styling */
+/* QBAS_UpdateConsentVal_QBAS_UpdateConsentVal custom input styling */
+/* $ XXX .00 */
+/* .c-dollar-form component */
+@media (min-width: 575px) {
+  .c-dollar-form .cf-open-list-answer__control,
+  #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
+  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
+  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
+    width: 200px;
+  }
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -1496,6 +1535,7 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 /* LOGIN STYLING */
 /* ------------------------------------------------------------------------------------- */
 .cf-question--login {
@@ -1582,6 +1622,7 @@ input[type=text] {
   color: var(--color-focus);
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* IWI MAP STYLING */
 /* ------------------------------------------------------------------------------------- */
