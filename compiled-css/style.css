@@ -1090,6 +1090,31 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* Baisc tables */
+.basic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  border-top: 1px solid #D3D3D2;
+  border-bottom: 1px solid #D3D3D2;
+  font-size: 16px;
+}
+.basic-table th, .basic-table td {
+  text-align: center;
+  padding: 10px;
+}
+.basic-table thead th {
+  font-weight: bold;
+  border-bottom: 1px solid #000; /* black line under headers */
+}
+.basic-table tbody tr:nth-child(odd) {
+  background-color: #f4f4f4; /* light grey */
+}
+.basic-table tbody tr:nth-child(even) {
+  background-color: #fff; /* white */
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* Table */
 #SummaryTables_text {
   overflow-wrap: anywhere;
