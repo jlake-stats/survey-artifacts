@@ -262,28 +262,18 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 /* Grid */
 .cf-grid-layout__row {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  margin-bottom: 0.8rem;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-@media (min-width: 575px) {
-  .cf-grid-layout__row {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-}
-
-.cf-grid-layout__row-text {
-  width: auto;
-  max-width: none;
-  padding: 0.7rem;
-  padding-left: 0;
+  align-items: flex-start;
   margin-bottom: 0;
 }
-
-.cf-grid-layout__row-control {
+.cf-grid-layout__row .cf-grid-layout__row-text {
+  width: auto;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.cf-grid-layout__row .cf-grid-layout__row-control {
   width: 100%;
 }
 
@@ -510,14 +500,11 @@ legend {
 /* ------------------------------------------------------------------------------------- */
 /* styles the affixes attached to list response fields*/
 .cf-affix-input-decorator {
-  vertical-align: sub;
   font-size: 18px;
-  font-weight: bold;
-  display: inline-flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
   width: 100%;
-  gap: 6px;
+}
+.cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
+  width: 100%;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-prefix,
 .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
@@ -532,16 +519,6 @@ legend {
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
   padding-left: 0;
-}
-.cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 1;
-  flex-grow: 0;
-  flex-basis: auto;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
