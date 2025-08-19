@@ -1281,8 +1281,11 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 #HSP_navigation .cf-list--narrow {
   max-width: 100%;
 }
+#HSP_navigation .cf-list--narrow:last-child {
+  margin: 0;
+}
 #HSP_navigation .cf-group-heading {
-  margin: 0 0 2em 0;
+  margin: 0 0 24px 0;
 }
 #HSP_navigation .cf-group-heading .cf-group-heading__title {
   color: var(--color-main);
