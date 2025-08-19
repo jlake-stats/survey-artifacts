@@ -616,121 +616,6 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Buttons */
-.button-primary, .button-primary-sm,
-.button-secondary,
-.button-secondary-sm,
-.cf-navigation-next,
-.cf-navigation-back,
-.cf-navigation-ok {
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 1rem;
-  cursor: pointer;
-  display: inline-block;
-  font-family: var(--font-main);
-  font-size: 1.2rem;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  outline: 0;
-  margin: 0;
-  padding: 1.1rem 1.8rem;
-  position: relative;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  width: auto;
-  min-width: 140px;
-  max-width: 100%;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-/* ---------------------- primary / next / ok ---------------------- */
-.button-primary, .button-primary-sm,
-.cf-navigation-next,
-.cf-navigation-ok {
-  background: var(--color-main);
-  border: 2px solid var(--color-main);
-  color: var(--color-white);
-}
-.button-primary:hover, .button-primary-sm:hover,
-.cf-navigation-next:hover,
-.cf-navigation-ok:hover {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
-}
-.button-primary:active, .button-primary-sm:active, .button-primary:focus, .button-primary-sm:focus,
-.cf-navigation-next:active,
-.cf-navigation-next:focus,
-.cf-navigation-ok:active,
-.cf-navigation-ok:focus {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
-  outline: 3px solid var(--color-focus);
-  outline-offset: 3px;
-}
-.button-primary:disabled, .button-primary-sm:disabled,
-.cf-navigation-next:disabled,
-.cf-navigation-ok:disabled {
-  cursor: not-allowed;
-  background-color: var(--color-disabled);
-  border-color: var(--color-disabled);
-}
-
-/* ---------------------- secondary / back ---------------------- */
-.button-secondary, .button-secondary-sm,
-.cf-navigation-back {
-  background: transparent;
-  color: var(--color-main);
-  border: 2px solid var(--color-main);
-  position: relative;
-}
-.button-secondary:hover, .button-secondary-sm:hover,
-.cf-navigation-back:hover {
-  background: var(--color-accent);
-  color: var(--color-white);
-  border-color: var(--color-accent);
-}
-.button-secondary:active, .button-secondary-sm:active, .button-secondary:focus, .button-secondary-sm:focus,
-.cf-navigation-back:active,
-.cf-navigation-back:focus {
-  background: var(--color-accent);
-  color: var(--color-white);
-  border-color: var(--color-accent);
-  outline: 3px solid var(--color-focus);
-  outline-offset: 3px;
-}
-.button-secondary:disabled, .button-secondary-sm:disabled,
-.cf-navigation-back:disabled {
-  color: var(--color-disabled);
-  border-color: var(--color-disabled);
-}
-.button-secondary:disabled:focus, .button-secondary-sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary-sm:disabled:hover, .button-secondary:disabled:active, .button-secondary-sm:disabled:active,
-.cf-navigation-back:disabled:focus,
-.cf-navigation-back:disabled:hover,
-.cf-navigation-back:disabled:active {
-  background: transparent;
-  color: var(--color-disabled);
-  outline: none;
-  cursor: not-allowed;
-}
-
-/* ------------------------------------------------------------------------------------- */
-.button-primary-sm {
-  font-size: 16px;
-  padding: 0.8rem 1.1rem;
-}
-
-.button-secondary-sm {
-  font-size: 16px;
-  padding: 0.8rem 1.1rem;
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* cf-question--numeric-list & Validation error messages */
 .cf-numeric-list-answer {
   display: flex;
@@ -890,6 +775,121 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 
 .custom-link {
   font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Buttons */
+.button-primary, .button-primary-sm,
+.button-secondary,
+.button-secondary-sm,
+.cf-navigation-next,
+.cf-navigation-back,
+.cf-navigation-ok {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  outline: 0;
+  margin: 0;
+  padding: 1.1rem 1.8rem;
+  position: relative;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  width: auto;
+  min-width: 140px;
+  max-width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* ---------------------- primary / next / ok ---------------------- */
+.button-primary, .button-primary-sm,
+.cf-navigation-next,
+.cf-navigation-ok {
+  background: var(--color-main);
+  border: 2px solid var(--color-main);
+  color: var(--color-white);
+}
+.button-primary:hover, .button-primary-sm:hover,
+.cf-navigation-next:hover,
+.cf-navigation-ok:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.button-primary:active, .button-primary-sm:active, .button-primary:focus, .button-primary-sm:focus,
+.cf-navigation-next:active,
+.cf-navigation-next:focus,
+.cf-navigation-ok:active,
+.cf-navigation-ok:focus {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+.button-primary:disabled, .button-primary-sm:disabled,
+.cf-navigation-next:disabled,
+.cf-navigation-ok:disabled {
+  cursor: not-allowed;
+  background-color: var(--color-disabled);
+  border-color: var(--color-disabled);
+}
+
+/* ---------------------- secondary / back ---------------------- */
+.button-secondary, .button-secondary-sm,
+.cf-navigation-back {
+  background: transparent;
+  color: var(--color-main);
+  border: 2px solid var(--color-main);
+  position: relative;
+}
+.button-secondary:hover, .button-secondary-sm:hover,
+.cf-navigation-back:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+.button-secondary:active, .button-secondary-sm:active, .button-secondary:focus, .button-secondary-sm:focus,
+.cf-navigation-back:active,
+.cf-navigation-back:focus {
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+.button-secondary:disabled, .button-secondary-sm:disabled,
+.cf-navigation-back:disabled {
+  color: var(--color-disabled);
+  border-color: var(--color-disabled);
+}
+.button-secondary:disabled:focus, .button-secondary-sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary-sm:disabled:hover, .button-secondary:disabled:active, .button-secondary-sm:disabled:active,
+.cf-navigation-back:disabled:focus,
+.cf-navigation-back:disabled:hover,
+.cf-navigation-back:disabled:active {
+  background: transparent;
+  color: var(--color-disabled);
+  outline: none;
+  cursor: not-allowed;
+}
+
+/* ------------------------------------------------------------------------------------- */
+.button-primary-sm {
+  font-size: 16px;
+  padding: 0.8rem 1.1rem;
+}
+
+.button-secondary-sm {
+  font-size: 16px;
+  padding: 0.8rem 1.1rem;
 }
 
 /* ------------------------------------------------------------------------------------- */
