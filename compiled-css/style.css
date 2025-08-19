@@ -64,9 +64,6 @@ body {
 /* ------------------------------------------------------------------------------------- */
 /* affects entire page */
 .cf-page {
-  font-optical-sizing: auto;
-  font-style: normal;
-  line-height: 1.5;
   background-color: var(--color-background);
   background-size: cover;
   min-height: 100vh;
@@ -459,6 +456,9 @@ legend {
 .cf-text-box--number {
   width: 150px;
 }
+.cf-text-box--date {
+  width: 150px;
+}
 
 .cf-text-area {
   width: 100%;
@@ -666,12 +666,12 @@ h6 {
   }
 }
 
-p, .cf-question--login .helpful-link {
+p, .cf-question--login .helpful-link, .cf-page {
   font-size: 18px;
   line-height: 1.5;
 }
 @media (max-width: 575px) {
-  p, .cf-question--login .helpful-link {
+  p, .cf-question--login .helpful-link, .cf-page {
     font-size: 16px;
   }
 }
@@ -1709,18 +1709,18 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 #IF_iwi_iwiSelect .cf-question__text {
   margin: 0;
 }
-#IF_iwi_iwiSelect .cf-question__text > p, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link {
+#IF_iwi_iwiSelect .cf-question__text > p, #IF_iwi_iwiSelect .cf-question__text > .cf-page, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   font-size: 16px;
 }
-#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle {
+#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle {
   white-space: nowrap;
   font-weight: 600;
 }
-#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle:focus, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle:focus {
+#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle:focus, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle:focus {
   color: -webkit-activelink;
 }
 #IF_iwi_iwiSelect #IF_iwi_iwiSelect_content {
@@ -1772,8 +1772,9 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   margin: 0;
   width: 100%;
 }
-#IF_iwi_manualDisplay #manual-selection p, #IF_iwi_manualDisplay #manual-selection .cf-question--login .helpful-link, .cf-question--login #IF_iwi_manualDisplay #manual-selection .helpful-link,
+#IF_iwi_manualDisplay #manual-selection p, #IF_iwi_manualDisplay #manual-selection .cf-page, #IF_iwi_manualDisplay #manual-selection .cf-question--login .helpful-link, .cf-question--login #IF_iwi_manualDisplay #manual-selection .helpful-link,
 #IF_iwi_manualDisplay .selection-card p,
+#IF_iwi_manualDisplay .selection-card .cf-page,
 #IF_iwi_manualDisplay .selection-card .cf-question--login .helpful-link,
 .cf-question--login #IF_iwi_manualDisplay .selection-card .helpful-link {
   margin-top: 0;
@@ -1836,7 +1837,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   margin: 0;
   width: 100%;
 }
-#IF_iwi_iwiListFinal .selection-card p, #IF_iwi_iwiListFinal .selection-card .cf-question--login .helpful-link, .cf-question--login #IF_iwi_iwiListFinal .selection-card .helpful-link {
+#IF_iwi_iwiListFinal .selection-card p, #IF_iwi_iwiListFinal .selection-card .cf-page, #IF_iwi_iwiListFinal .selection-card .cf-question--login .helpful-link, .cf-question--login #IF_iwi_iwiListFinal .selection-card .helpful-link {
   margin-top: 0;
   margin-bottom: 10px;
 }
