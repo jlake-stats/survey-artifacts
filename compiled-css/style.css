@@ -493,61 +493,6 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* individual categories */
-.cf-radio-answer,
-.cf-checkbox-answer {
-  padding: 0.9rem 1.2rem;
-  align-items: center;
-}
-
-.cf-radio,
-.cf-checkbox {
-  border-color: var(--color-main);
-  background-color: var(--color-white);
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  border-width: 1px;
-  fill: var(--color-white);
-  vertical-align: middle;
-}
-
-.cf-radio--selected {
-  background-color: var(--color-white);
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-}
-.cf-radio--selected:before {
-  background-color: var(--color-main);
-  position: static;
-}
-
-.cf-checkbox--selected {
-  background-color: var(--color-main);
-  width: 24px;
-  height: 24px;
-}
-.cf-checkbox--selected:before {
-  background-color: var(--color-main);
-  position: relative;
-}
-
-/* ------------------------------------------------------------------------------------- */
-/* Radio & Checkboxes */
-.cf-radio {
-  border-radius: 50%;
-}
-
-.cf-checkbox {
-  border-radius: 0.2rem;
-}
-
-.cf-radio-answer__text {
-  margin-top: 0;
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* individual text entry */
 .cf-text-area {
   width: 100%;
@@ -572,6 +517,59 @@ input[type=text] {
 .cf-text-area:focus {
   outline: 0.1rem solid var(--color-main);
   box-shadow: none;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Radio & Checkboxes */
+.cf-radio-answer,
+.cf-checkbox-answer {
+  padding: 0.9rem 1.2rem;
+  align-items: center;
+}
+
+.cf-radio,
+.cf-checkbox {
+  border-color: var(--color-main);
+  background-color: var(--color-white);
+  width: 24px;
+  height: 24px;
+  border-style: solid;
+  border-width: 1px;
+  fill: var(--color-white);
+  vertical-align: middle;
+}
+
+.cf-radio {
+  border-radius: 50%;
+}
+
+.cf-radio-answer__text {
+  margin-top: 0;
+}
+
+.cf-radio--selected {
+  background-color: var(--color-white);
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.cf-radio--selected:before {
+  background-color: var(--color-main);
+  position: static;
+}
+
+.cf-checkbox {
+  border-radius: 0.2rem;
+}
+
+.cf-checkbox--selected {
+  background-color: var(--color-main);
+  width: 24px;
+  height: 24px;
+}
+.cf-checkbox--selected:before {
+  background-color: var(--color-main);
+  position: relative;
 }
 
 /* ------------------------------------------------------------------------------------- */
