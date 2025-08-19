@@ -575,16 +575,24 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 /* Radio & Checkboxes */
-.cf-radio-answer,
+.cf-radio-answer {
+  padding: 0.9rem 1.2rem;
+  align-items: center;
+}
+.cf-radio-answer .cf-radio-answer__text {
+  margin: 0;
+}
+.cf-radio-answer .cf-text-box {
+  margin: 0;
+}
+
 .cf-checkbox-answer {
   padding: 0.9rem 1.2rem;
   align-items: center;
 }
-.cf-radio-answer .cf-radio-answer__text,
-.cf-checkbox-answer .cf-radio-answer__text {
+.cf-checkbox-answer .cf-checkbox-answer__text {
   margin: 0;
 }
-.cf-radio-answer .cf-text-box,
 .cf-checkbox-answer .cf-text-box {
   margin: 0;
 }
