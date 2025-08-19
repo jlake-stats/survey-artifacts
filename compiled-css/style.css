@@ -524,6 +524,14 @@ legend {
   padding: 0.9rem 1.2rem;
   align-items: center;
 }
+.cf-radio-answer .cf-radio-answer__text,
+.cf-checkbox-answer .cf-radio-answer__text {
+  margin: 0;
+}
+.cf-radio-answer .cf-text-box,
+.cf-checkbox-answer .cf-text-box {
+  margin: 0;
+}
 
 .cf-radio,
 .cf-checkbox {
@@ -539,10 +547,6 @@ legend {
 
 .cf-radio {
   border-radius: 50%;
-}
-
-.cf-radio-answer__text {
-  margin-top: 0;
 }
 
 .cf-radio--selected {
