@@ -321,7 +321,6 @@ legend {
 }
 
 .cf-question__text {
-  color: var(--color-font);
   border-bottom: none;
   background-color: var(--color-white);
   margin-top: 1rem;
@@ -330,7 +329,6 @@ legend {
 }
 
 .cf-question__instruction {
-  color: var(--color-font);
   font-style: normal;
   border-left: 0.5rem solid var(--color-aquablue);
   background-color: var(--color-aquablue10);
