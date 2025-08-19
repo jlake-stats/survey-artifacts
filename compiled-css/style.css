@@ -308,6 +308,9 @@ legend {
     padding: 0.5rem 1rem 1rem 1rem;
   }
 }
+.cf-question:last-child {
+  margin-bottom: 1rem;
+}
 
 .cf-question__title {
   color: var(--color-font);
