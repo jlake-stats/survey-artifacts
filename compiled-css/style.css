@@ -584,10 +584,7 @@ legend {
   font-size: 16px;
   font-weight: bold;
   padding: 0;
-}
-
-.cf-error-block--bottom {
-  border-top: var(--color-red);
+  border: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
