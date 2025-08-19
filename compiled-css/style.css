@@ -456,30 +456,11 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-input.cf-open-list-answer__input,
-input.cf-numeric-list-answer__input,
 input[type=number],
 input[type=text] {
-  display: block;
-  width: auto;
+  width: 100%;
   max-width: 100%;
-  min-width: 60px;
-  padding: 6px 8px;
   font-size: inherit;
-  box-sizing: border-box;
-  text-align: right;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-@media (max-width: 575px) {
-  input.cf-open-list-answer__input,
-  input.cf-numeric-list-answer__input,
-  input[type=number],
-  input[type=text] {
-    max-width: 100%;
-    width: 100%;
-  }
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -578,7 +559,6 @@ input[type=text] {
 .cf-text-box {
   width: 100%;
   max-width: 100%;
-  height: 3rem;
   padding: 10px;
 }
 
