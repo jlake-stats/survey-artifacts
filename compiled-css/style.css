@@ -293,51 +293,19 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* affects the question card */
 .cf-question {
   background-color: var(--color-white);
   border: 1px solid var(--color-float-border);
   border-radius: 1rem;
   box-shadow: 0 2px 4px var(--color-float-shadow);
-  padding-top: 1.5rem;
-  padding-right: 3rem;
-  padding-bottom: 4.2rem;
-  padding-left: 3rem;
-  margin: auto;
-  margin-bottom: 1rem;
+  padding: 1rem 3rem 3rem 3rem;
+  margin: 0 auto 1rem auto;
   max-width: var(--width-max-question-box);
-  min-height: 0.1rem;
+  min-height: 0;
 }
 @media (max-width: 575px) {
   .cf-question {
-    padding-right: 1rem;
-    padding-bottom: 3.2rem;
-    padding-left: 1rem;
-  }
-}
-.cf-question:last-child {
-  margin-bottom: 1rem;
-}
-
-.cf-question--info {
-  background-color: var(--color-white);
-  border: 1px solid var(--color-float-border);
-  border-radius: 1rem;
-  box-shadow: 0 2px 4px var(--color-float-shadow);
-  padding-top: 0;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  padding-bottom: 3rem;
-  margin: auto;
-  margin-bottom: 1rem;
-  max-width: var(--width-max-question-box);
-  min-height: 0.1rem;
-}
-@media (max-width: 575px) {
-  .cf-question--info {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
   }
 }
 
