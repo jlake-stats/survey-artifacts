@@ -432,6 +432,7 @@ legend {
 
 .cf-question__instruction {
   font-style: normal;
+  color: inherit;
   border-left: 0.5rem solid var(--color-aquablue);
   background-color: var(--color-aquablue10);
   padding: 0.5rem 3rem 0.75rem 2rem;
