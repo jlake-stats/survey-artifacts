@@ -425,7 +425,6 @@ legend {
   border-width: 1px;
   border-color: var(--color-border);
   border-radius: var(--border-radius);
-  border-bottom: none;
   font-size: inherit;
   line-height: inherit;
   margin-bottom: 10px;
