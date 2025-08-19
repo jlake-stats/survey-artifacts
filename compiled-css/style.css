@@ -420,11 +420,12 @@ legend {
 .cf-text-box,
 .cf-text-area {
   color: var(--color-font);
-  border-bottom: none;
   background-color: var(--color-white);
   border-style: solid;
   border-width: 1px;
+  border-color: var(--color-border);
   border-radius: var(--border-radius);
+  border-bottom: none;
   font-size: inherit;
   line-height: inherit;
   margin-bottom: 10px;
@@ -432,11 +433,6 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 .cf-list__item {
-  background-color: var(--color-white);
-  border-radius: var(--border-radius);
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--color-border);
   cursor: pointer;
   transition: border-color 0.15s ease;
 }
