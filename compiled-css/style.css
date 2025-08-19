@@ -731,179 +731,6 @@ input[type=text] {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Help button */
-.cf-question__text:has(> .question-help__toggle-link) {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-
-.question-help__toggle-link {
-  align-items: center;
-  background: none;
-  border: none;
-  color: var(--color-main);
-  display: flex;
-  flex-direction: column;
-  font-weight: 600;
-  padding: 0;
-  margin-left: 15px;
-  text-align: center;
-  cursor: pointer;
-}
-.question-help__toggle-link .question-help__toggle-link-text {
-  margin: 0.3rem 0 0.5rem;
-  font-size: 16px;
-  line-height: 1;
-}
-.question-help__toggle-link .question-help__toggle-link-image {
-  display: block;
-  position: relative;
-  font-size: 0;
-  line-height: 0;
-}
-.question-help__toggle-link .question-help__toggle-link-image:before {
-  content: "?";
-  position: relative;
-  display: inline-block;
-  background: var(--color-main);
-  border-radius: 50%;
-  color: var(--color-white);
-  height: 32px;
-  width: 32px;
-  font-size: 22px;
-  line-height: 32px;
-  padding: 0;
-  margin: 0;
-}
-.question-help__toggle-link:hover {
-  color: var(--color-main);
-}
-.question-help__toggle-link:hover .question-help__toggle-link-text {
-  text-decoration: underline;
-}
-.question-help__toggle-link:hover .question-help__toggle-link-image:before {
-  background-color: var(--color-accent);
-}
-.question-help__toggle-link:focus .question-help__toggle-link-image:after {
-  content: " ";
-  position: absolute;
-  top: -0.4rem;
-  left: -0.4rem;
-  right: -0.4rem;
-  bottom: -0.4rem;
-  border-radius: 50%;
-  border: 3px solid var(--color-focus);
-  transition: border-color 0.15s ease;
-}
-
-/* ------------------------------------------------------------------------------------- */
-/* modal */
-.modal {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: none;
-  padding: 0;
-  z-index: 2;
-}
-.modal .modal-inner {
-  background-color: var(--color-white);
-  border-radius: 1rem;
-  margin: 100px auto 30px auto;
-  width: 800px;
-  max-width: 90%;
-  position: relative;
-}
-@media (max-width: 575px) {
-  .modal .modal-inner {
-    max-width: 95%;
-  }
-}
-.modal .modal-inner .modal-close:has(svg) {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: var(--color-main);
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background: none;
-  font-size: 0;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  z-index: 2;
-}
-@media (max-width: 575px) {
-  .modal .modal-inner .modal-close:has(svg) {
-    width: 20px;
-    height: 20px;
-  }
-}
-.modal .modal-inner .modal-close:has(svg) svg {
-  width: 100%;
-  height: 100%;
-}
-.modal .modal-inner .modal-close:has(svg) svg path {
-  fill: var(--color-main);
-}
-.modal .modal-inner .modal-close:has(svg):hover svg path {
-  fill: var(--color-accent);
-}
-.modal .modal-inner .modal-close:has(svg):active, .modal .modal-inner .modal-close:has(svg):focus {
-  outline: 3px solid var(--color-focus);
-  outline-offset: 8px;
-  border-radius: 50%;
-}
-.modal .modal-inner .modal-content {
-  position: relative;
-  padding: 40px 60px;
-}
-@media (max-width: 575px) {
-  .modal .modal-inner .modal-content {
-    padding: 20px 40px;
-  }
-}
-.modal .modal-inner .modal-content .button-primary, .modal .modal-inner .modal-content .button-primary-sm,
-.modal .modal-inner .modal-content .button-secondary,
-.modal .modal-inner .modal-content .button-secondary-sm {
-  float: right;
-  margin-top: 15px;
-}
-.modal .modal-inner::-webkit-scrollbar, .modal .modal-inner::-webkit-scrollbar-button {
-  display: none; /* Chrome */
-}
-
-/* hide page scrollbar */
-/* end hide page scrollbar */
-/* Placed on the body while a modal is open to prevent scrolling. */
-.showing-modal {
-  overflow: hidden;
-}
-
-/* The rest is for the demo only. */
-#open {
-  background-color: var(--color-blue);
-  color: var(--color-white);
-  padding: 10px 20px;
-}
-#open:hover {
-  background-color: var(--color-green);
-}
-
-/* ------------------------------------------------------------------------------------- */
-/* Powered by */
-.cf-powered-by-confirmit {
-  display: none;
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* cf-question--numeric-list & Validation error messages */
 .cf-numeric-list-answer {
   display: flex;
@@ -953,6 +780,12 @@ input[type=text] {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* Powered by */
+.cf-powered-by-confirmit {
+  display: none;
 }
 
 /* ------------------------------------------------------------------------------------- */
