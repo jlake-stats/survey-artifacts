@@ -41,6 +41,7 @@
   --width-max-question-box: 45rem;
   --track-size: calc(var(--thumb-size) * 2.8);
   --thumb-size: 1rem;
+  --border-radius: 12px;
   /* Fonts */
   --font-main: "Inter", Arial, sans-serif;
 }
@@ -296,7 +297,7 @@ legend {
 .cf-question {
   background-color: var(--color-white);
   border: 1px solid var(--color-float-border);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   box-shadow: 0 2px 4px var(--color-float-shadow);
   padding: 1rem 3rem 3rem 3rem;
   margin: 0 auto 1rem auto;
@@ -423,7 +424,7 @@ legend {
   background-color: var(--color-white);
   border-style: solid;
   border-width: 1px;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   font-size: inherit;
   line-height: inherit;
   margin-bottom: 10px;
@@ -432,7 +433,7 @@ legend {
 /* ------------------------------------------------------------------------------------- */
 .cf-list__item {
   background-color: var(--color-white);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   border-style: solid;
   border-width: 1px;
   border-color: var(--color-border);
@@ -721,7 +722,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 .cf-navigation-ok {
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   display: inline-block;
   font-family: var(--font-main);
@@ -964,7 +965,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 }
 .modal .modal-inner {
   background-color: var(--color-white);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   margin: 100px auto 30px auto;
   width: 800px;
   max-width: 90%;
@@ -1241,7 +1242,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   width: 48px;
   height: 24px;
   background: var(--color-white);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   position: relative;
   cursor: pointer;
   transition: background 0.3s;
@@ -1365,7 +1366,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   align-items: center;
   gap: 8px;
   padding: 6px 12px;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   width: 100%;
   cursor: default;
 }
@@ -1586,7 +1587,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   display: flex;
   width: 100%;
   border: 1px solid var(--color-main);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   transition: background-color 0.3s ease;
   padding: 0;
@@ -1600,7 +1601,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   transition: transform 0.3s ease;
   z-index: 1;
   background: var(--color-main);
