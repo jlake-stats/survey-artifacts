@@ -967,6 +967,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 }
 @media (max-width: 575px) {
   .modal .modal-inner {
+    margin: 140px auto 30px auto;
     max-width: 95%;
   }
 }
@@ -1008,11 +1009,11 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 }
 .modal .modal-inner .modal-content {
   position: relative;
-  padding: 40px 60px;
+  padding: 16px 48px 48px 48px;
 }
 @media (max-width: 575px) {
   .modal .modal-inner .modal-content {
-    padding: 20px 40px;
+    padding: 16px 32px 32px 32px;
   }
 }
 .modal .modal-inner .modal-content .button-primary, .modal .modal-inner .modal-content .button-primary-sm,
