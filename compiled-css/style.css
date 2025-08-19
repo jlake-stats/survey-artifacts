@@ -1,7 +1,5 @@
 @charset "UTF-8";
-/* ------------------------------------------------------------------------------------- */
-/* BASE STYLING */
-/* ------------------------------------------------------------------------------------- */
+/* Variables */
 :root {
   /* Colours */
   --color-white: #FFF;
@@ -46,6 +44,113 @@
   --font-main: "Inter", Arial, sans-serif;
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* Typo */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-main);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 36px;
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+@media (max-width: 575px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+}
+@media (max-width: 575px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+}
+@media (max-width: 575px) {
+  h4 {
+    font-size: 26px;
+  }
+}
+
+h5 {
+  font-size: 22px;
+}
+@media (max-width: 575px) {
+  h5 {
+    font-size: 24px;
+  }
+}
+
+h6 {
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  h6 {
+    font-size: 22px;
+  }
+}
+
+p, .cf-question--login .helpful-link, .cf-page {
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (max-width: 575px) {
+  p, .cf-question--login .helpful-link, .cf-page {
+    font-size: 16px;
+  }
+}
+
+ul,
+ol {
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (max-width: 575px) {
+  ul,
+  ol {
+    font-size: 16px;
+  }
+}
+
+a, .cf-question--login .helpful-link {
+  display: inline-block;
+}
+a:hover, .cf-question--login .helpful-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+a:focus-visible, .cf-question--login .helpful-link:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.custom-link {
+  font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* BASE STYLING */
 /* ------------------------------------------------------------------------------------- */
 html,
 body {
@@ -598,110 +703,6 @@ legend {
 /* Powered by */
 .cf-powered-by-confirmit {
   display: none;
-}
-
-/* ------------------------------------------------------------------------------------- */
-/* Typo */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-main);
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 36px;
-}
-@media (max-width: 575px) {
-  h1 {
-    font-size: 36px;
-  }
-}
-
-h2 {
-  font-size: 32px;
-}
-@media (max-width: 575px) {
-  h2 {
-    font-size: 32px;
-  }
-}
-
-h3 {
-  font-size: 28px;
-}
-@media (max-width: 575px) {
-  h3 {
-    font-size: 28px;
-  }
-}
-
-h4 {
-  font-size: 24px;
-}
-@media (max-width: 575px) {
-  h4 {
-    font-size: 26px;
-  }
-}
-
-h5 {
-  font-size: 22px;
-}
-@media (max-width: 575px) {
-  h5 {
-    font-size: 24px;
-  }
-}
-
-h6 {
-  font-size: 20px;
-}
-@media (max-width: 575px) {
-  h6 {
-    font-size: 22px;
-  }
-}
-
-p, .cf-question--login .helpful-link, .cf-page {
-  font-size: 18px;
-  line-height: 1.5;
-}
-@media (max-width: 575px) {
-  p, .cf-question--login .helpful-link, .cf-page {
-    font-size: 16px;
-  }
-}
-
-ul,
-ol {
-  font-size: 18px;
-  line-height: 1.5;
-}
-@media (max-width: 575px) {
-  ul,
-  ol {
-    font-size: 16px;
-  }
-}
-
-a, .cf-question--login .helpful-link {
-  display: inline-block;
-}
-a:hover, .cf-question--login .helpful-link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-a:focus-visible, .cf-question--login .helpful-link:focus-visible {
-  outline: 3px solid var(--color-focus);
-  outline-offset: 3px;
-}
-
-.custom-link {
-  font-size: 16px;
 }
 
 /* ------------------------------------------------------------------------------------- */
