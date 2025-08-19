@@ -178,10 +178,7 @@ body {
 .cf-question--star-rating-single .cf-question__content {
   color: var(--color-font);
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0;
   overflow: visible;
 }
 .cf-question--star-rating-single .cf-question__content .cf-sr-single {
@@ -344,7 +341,6 @@ legend {
   }
 }
 
-/* title field */
 .cf-question__title {
   color: var(--color-font);
 }
@@ -352,16 +348,12 @@ legend {
   display: none;
 }
 
-/* question text */
 .cf-question__text {
   color: var(--color-font);
   border-bottom: none;
   background-color: var(--color-white);
-  font-size: 1.4rem;
-  line-height: 1.2;
-  margin-top: 0.9rem;
-  margin-bottom: 0.75em;
-  padding: 0.9rem 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-weight: normal;
 }
 
@@ -381,16 +373,10 @@ legend {
   display: none;
 }
 
-/* this picks up most input types at the top level except some things about categories and text fields */
 .cf-question__content {
-  color: var(--color-font);
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0;
   overflow: visible;
-  /* visible to show the focus */
 }
 
 /* ------------------------------------------------------------------------------------- */
