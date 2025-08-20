@@ -618,10 +618,6 @@ legend {
   position: static;
 }
 
-.cf-checkbox {
-  border-radius: 50%;
-}
-
 .cf-checkbox--selected {
   background-color: var(--color-main);
   width: 24px;
