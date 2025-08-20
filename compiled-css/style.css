@@ -58,77 +58,82 @@ h6 {
 
 h1 {
   font-size: 36px;
+  font-weight: 700;
 }
 @media (max-width: 575px) {
   h1 {
     font-size: 36px;
+    font-weight: 700;
   }
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 26px;
+  font-weight: 700;
 }
 @media (max-width: 575px) {
   h2 {
-    font-size: 32px;
+    font-size: 26px;
+    font-weight: 700;
   }
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 20px;
+  font-weight: 700;
 }
 @media (max-width: 575px) {
   h3 {
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: 700;
   }
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 700;
 }
 @media (max-width: 575px) {
   h4 {
-    font-size: 26px;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 
 h5 {
-  font-size: 22px;
+  font-size: 16px;
+  font-weight: 700;
 }
 @media (max-width: 575px) {
   h5 {
-    font-size: 24px;
-  }
-}
-
-h6 {
-  font-size: 20px;
-}
-@media (max-width: 575px) {
-  h6 {
-    font-size: 22px;
+    font-size: 16px;
+    font-weight: 700;
   }
 }
 
 p, .cf-question--login .helpful-link, .cf-page {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
 }
 @media (max-width: 575px) {
   p, .cf-question--login .helpful-link, .cf-page {
     font-size: 16px;
+    font-weight: 400;
   }
 }
 
 ul,
 ol {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
 }
 @media (max-width: 575px) {
   ul,
   ol {
     font-size: 16px;
+    font-weight: 400;
   }
 }
 
@@ -146,6 +151,90 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 
 .custom-link {
   font-size: 16px;
+}
+
+.survey-title {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+@media (max-width: 575px) {
+  .survey-title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+.question-text {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+@media (max-width: 575px) {
+  .question-text {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+.field-label {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+@media (max-width: 575px) {
+  .field-label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.lead-text {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media (max-width: 575px) {
+  .lead-text {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.large-text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media (max-width: 575px) {
+  .large-text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.normal-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media (max-width: 575px) {
+  .normal-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.small-text {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+@media (max-width: 575px) {
+  .small-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
 /* ------------------------------------------------------------------------------------- */
