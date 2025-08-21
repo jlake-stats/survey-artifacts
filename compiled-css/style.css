@@ -1976,3 +1976,209 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* FROM AYT javascript file */
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-container :focus {
+  outline: 2px Solid blue;
+}
+
+.search-container label {
+  display: none;
+}
+
+.selected-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -4px 12px -4px;
+  min-height: 32px;
+}
+
+.selected-item {
+  background-color: #fff;
+  padding: 5px 8px 5px 12px;
+  min-height: 80px;
+  height: fit-content;
+  width: 100%;
+  font-weight: bold;
+  color: #000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #c8c8c8;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  margin: 0 4px 8px 4px;
+  margin-top: 5px;
+}
+
+.selected-item span {
+  margin-right: 8px;
+  font-size: 14px;
+  width: 85%;
+}
+
+.remove-btn,
+.edit-btn {
+  cursor: pointer;
+  font-weight: bold;
+  color: #5a6674;
+  background: none;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  padding: 0;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.remove-btn:hover {
+  background-color: #c2e0ff;
+  color: #2684ff;
+}
+
+.search-results {
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 250px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.result-item {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease;
+  -moz-transition: background-color 0.15s ease;
+  -o-transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease;
+}
+
+.result-item-selected {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  -webkit-transition: background-color 0.15s ease;
+  -moz-transition: background-color 0.15s ease;
+  -o-transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease;
+  background: lightgrey !important;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item[aria-selected=true],
+.result-item:hover {
+  background-color: #f5f9ff;
+}
+
+.result-item[aria-selected=true] {
+  border-left: 3px solid #2684ff;
+  padding-left: 11px;
+}
+
+.main-text {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.alt-text {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 3px;
+}
+
+.highlight {
+  background-color: #ffeb99;
+  border-radius: 2px;
+  padding: 1px 0;
+}
+
+.sr-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (max-width: 600px) {
+  .search-container {
+    max-width: 100%;
+  }
+  body {
+    padding: 12px;
+  }
+  .result-item {
+    padding: 14px;
+  }
+  .selected-item {
+    margin-bottom: 6px;
+  }
+  .remove-btn {
+    width: 28px;
+    height: 28px;
+  }
+}
