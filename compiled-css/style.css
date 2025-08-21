@@ -168,36 +168,36 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 .question-text {
   font-size: 22px;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 575px) {
   .question-text {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
 .field-label {
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 575px) {
   .field-label {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
 .lead-text {
   font-size: 20px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
 }
 @media (max-width: 575px) {
   .lead-text {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
   }
 }
 
