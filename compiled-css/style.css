@@ -1557,10 +1557,12 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 @media (min-width: 576px) {
-  #HSP_new_name_content .cf-grid-layout {
+  #HSP_new_name_content .cf-grid-layout,
+  #IF_names_content .cf-grid-layout {
     flex-direction: row;
   }
-  #HSP_new_name_content .cf-grid-layout .cf-grid-layout__row {
+  #HSP_new_name_content .cf-grid-layout .cf-grid-layout__row,
+  #IF_names_content .cf-grid-layout .cf-grid-layout__row {
     margin: 0 15px;
   }
 }
