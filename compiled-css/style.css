@@ -111,13 +111,13 @@ h5 {
   }
 }
 
-p, .cf-question--login .helpful-link, .cf-page {
+p, .cf-question--login .helpful-link, .cf-page, .normal-text {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
 }
 @media (max-width: 575px) {
-  p, .cf-question--login .helpful-link, .cf-page {
+  p, .cf-question--login .helpful-link, .cf-page, .normal-text {
     font-size: 16px;
     font-weight: 400;
   }
@@ -209,18 +209,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .large-text {
     font-size: 18px;
-    font-weight: 400;
-  }
-}
-
-.normal-text {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-@media (max-width: 575px) {
-  .normal-text {
-    font-size: 16px;
     font-weight: 400;
   }
 }
@@ -1828,18 +1816,18 @@ legend {
 #IF_iwi_iwiSelect .cf-question__text {
   margin: 0;
 }
-#IF_iwi_iwiSelect .cf-question__text > p, #IF_iwi_iwiSelect .cf-question__text > .cf-page, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link {
+#IF_iwi_iwiSelect .cf-question__text > p, #IF_iwi_iwiSelect .cf-question__text > .normal-text, #IF_iwi_iwiSelect .cf-question__text > .cf-page, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   font-size: 16px;
 }
-#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle {
+#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question__text > .normal-text #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle {
   white-space: nowrap;
   font-weight: 600;
 }
-#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle:focus, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle:focus {
+#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question__text > .normal-text #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle:focus, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle:focus {
   color: -webkit-activelink;
 }
 #IF_iwi_iwiSelect #IF_iwi_iwiSelect_content {
@@ -1891,8 +1879,9 @@ legend {
   margin: 0;
   width: 100%;
 }
-#IF_iwi_manualDisplay #manual-selection p, #IF_iwi_manualDisplay #manual-selection .cf-page, #IF_iwi_manualDisplay #manual-selection .cf-question--login .helpful-link, .cf-question--login #IF_iwi_manualDisplay #manual-selection .helpful-link,
+#IF_iwi_manualDisplay #manual-selection p, #IF_iwi_manualDisplay #manual-selection .normal-text, #IF_iwi_manualDisplay #manual-selection .cf-page, #IF_iwi_manualDisplay #manual-selection .cf-question--login .helpful-link, .cf-question--login #IF_iwi_manualDisplay #manual-selection .helpful-link,
 #IF_iwi_manualDisplay .selection-card p,
+#IF_iwi_manualDisplay .selection-card .normal-text,
 #IF_iwi_manualDisplay .selection-card .cf-page,
 #IF_iwi_manualDisplay .selection-card .cf-question--login .helpful-link,
 .cf-question--login #IF_iwi_manualDisplay .selection-card .helpful-link {
@@ -1956,7 +1945,7 @@ legend {
   margin: 0;
   width: 100%;
 }
-#IF_iwi_iwiListFinal .selection-card p, #IF_iwi_iwiListFinal .selection-card .cf-page, #IF_iwi_iwiListFinal .selection-card .cf-question--login .helpful-link, .cf-question--login #IF_iwi_iwiListFinal .selection-card .helpful-link {
+#IF_iwi_iwiListFinal .selection-card p, #IF_iwi_iwiListFinal .selection-card .normal-text, #IF_iwi_iwiListFinal .selection-card .cf-page, #IF_iwi_iwiListFinal .selection-card .cf-question--login .helpful-link, .cf-question--login #IF_iwi_iwiListFinal .selection-card .helpful-link {
   margin-top: 0;
   margin-bottom: 10px;
 }
