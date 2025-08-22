@@ -1177,7 +1177,9 @@ legend {
   border-top-right-radius: 0;
 }
 
-.card-mt-only, #IF_religion_predefined {
+.card-mt-only, #DF_rent_details_amount,
+#DF_rent_details_period_predefined,
+#DF_rent_details_period_text, #IF_religion_predefined {
   display: flex;
   flex-direction: column;
   padding-top: 0;
@@ -1189,8 +1191,10 @@ legend {
   z-index: 5;
 }
 @media (min-width: 576px) {
-  .card-mt-only, #IF_religion_predefined {
-    margin-top: -64px;
+  .card-mt-only, #DF_rent_details_amount,
+  #DF_rent_details_period_predefined,
+  #DF_rent_details_period_text, #IF_religion_predefined {
+    margin-top: -65px;
   }
 }
 
@@ -1581,6 +1585,10 @@ legend {
   }
 }
 /* ------------------------------------------------------------------------------------- */
+#IF_education_institution {
+  background: red;
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* LOGIN STYLING */
 /* ------------------------------------------------------------------------------------- */
@@ -2205,6 +2213,10 @@ legend {
     height: 28px;
   }
 }
+label:has(+ .ayt-component) {
+  display: none;
+}
+
 .ayt-component {
   width: 100%;
   padding: 12px;
