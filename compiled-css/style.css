@@ -1177,14 +1177,16 @@ legend {
   border-top-right-radius: 0;
 }
 
-.card-mt-only {
+.card-mt-only, #IF_religion_predefined {
   display: flex;
   flex-direction: column;
   padding-top: 0;
-  margin-top: -84px;
+  margin-top: -80px;
   border-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  position: relative;
+  z-index: 10;
 }
 
 /* ------------------------------------------------------------------------------------- */
