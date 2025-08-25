@@ -1951,7 +1951,7 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_iwiListFinal.cf-question {
-  margin-top: -24px;
+  margin-top: -16px;
   border-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -2220,6 +2220,7 @@ label:has(+ .ayt-component) {
 }
 
 .ayt-component {
+  position: relative;
   width: 100%;
   padding: 12px;
   height: auto;
