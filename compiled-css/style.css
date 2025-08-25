@@ -1179,8 +1179,8 @@ legend {
 
 .card-mt-only, #IF_education_institution_MERGE.cf-question--open-list,
 #DF_rent_details_amount.cf-question--open-list,
-#DF_rent_details_period_predefined,
-#DF_rent_details_period_text, #IF_religion_predefined {
+#DF_rent_details_period_predefined:not(.cf-dynamic-question-placeholder),
+#DF_rent_details_period_text:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
   display: flex;
   flex-direction: column;
   padding-top: 0;
@@ -1194,8 +1194,8 @@ legend {
 @media (min-width: 576px) {
   .card-mt-only, #IF_education_institution_MERGE.cf-question--open-list,
   #DF_rent_details_amount.cf-question--open-list,
-  #DF_rent_details_period_predefined,
-  #DF_rent_details_period_text, #IF_religion_predefined {
+  #DF_rent_details_period_predefined:not(.cf-dynamic-question-placeholder),
+  #DF_rent_details_period_text:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
     margin-top: -65px;
   }
 }
