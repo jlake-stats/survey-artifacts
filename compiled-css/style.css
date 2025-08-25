@@ -1177,7 +1177,7 @@ legend {
   border-top-right-radius: 0;
 }
 
-.card-mt-only, #IF_education_institution_MERGE,
+.card-mt-only, #IF_education_institution_MERGE.cf-question--open-list,
 #DF_rent_details_amount,
 #DF_rent_details_period_predefined,
 #DF_rent_details_period_text, #IF_religion_predefined {
@@ -1192,7 +1192,7 @@ legend {
   z-index: 5;
 }
 @media (min-width: 576px) {
-  .card-mt-only, #IF_education_institution_MERGE,
+  .card-mt-only, #IF_education_institution_MERGE.cf-question--open-list,
   #DF_rent_details_amount,
   #DF_rent_details_period_predefined,
   #DF_rent_details_period_text, #IF_religion_predefined {
