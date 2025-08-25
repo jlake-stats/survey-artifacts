@@ -1925,14 +1925,12 @@ legend {
   }
 }
 #IF_iwi_manualDisplay .search-container #IF_iwi_manual_input {
-  position: relative;
   z-index: 4;
 }
 #IF_iwi_manualDisplay .search-container #IF_iwi_manual_input + .search-results {
   z-index: 3;
 }
 #IF_iwi_manualDisplay .search-container #IF_iwi_manualRegion_input {
-  position: relative;
   z-index: 2;
 }
 #IF_iwi_manualDisplay .search-container #IF_iwi_manualRegion_input + .search-results {
@@ -1983,14 +1981,12 @@ legend {
   }
 }
 #IF_iwi_iwiListFinal .search-container #IF_iwi_edit_input {
-  position: relative;
   z-index: 4;
 }
 #IF_iwi_iwiListFinal .search-container #IF_iwi_edit_input + .search-results {
   z-index: 3;
 }
 #IF_iwi_iwiListFinal .search-container #IF_iwi_editRegion_input {
-  position: relative;
   z-index: 2;
 }
 #IF_iwi_iwiListFinal .search-container #IF_iwi_editRegion_input + .search-results {
