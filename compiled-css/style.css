@@ -1030,7 +1030,7 @@ legend {
   overflow-y: auto;
   display: none;
   padding: 0;
-  z-index: 2;
+  z-index: 20;
 }
 .modal .modal-inner {
   background-color: var(--color-white);
