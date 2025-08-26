@@ -2231,6 +2231,7 @@ textarea.ayt-component {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .ayt-component + .search-results {
+  display: block;
   border: 1px solid #ddd;
   border-top: none;
   max-height: 250px;
@@ -2243,6 +2244,9 @@ textarea.ayt-component {
   padding: 0;
   list-style-type: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ayt-component + .search-results:not(:has(li)) {
+  border: 0;
 }
 .ayt-component ~ .sr-status {
   position: absolute;
