@@ -1181,7 +1181,10 @@ legend {
 #DF_rent_details_period_predefined:not(.cf-dynamic-question-placeholder),
 #DF_rent_details_period_text:not(.cf-dynamic-question-placeholder),
 #DF_heating_text:not(.cf-dynamic-question-placeholder),
-#DF_motor_vehicle_count_text:not(.cf-dynamic-question-placeholder), #IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
+#DF_motor_vehicle_count_text:not(.cf-dynamic-question-placeholder), #IF_date_of_birth_AGE:not(.cf-dynamic-question-placeholder),
+#IF_gender_text:not(.cf-dynamic-question-placeholder),
+#IF_ethnic_group_text:not(.cf-dynamic-question-placeholder),
+#IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
 #IF_ur_address_one_year_ago_country:not(.cf-dynamic-question-placeholder),
 #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
   display: flex;
@@ -1199,7 +1202,10 @@ legend {
   #DF_rent_details_period_predefined:not(.cf-dynamic-question-placeholder),
   #DF_rent_details_period_text:not(.cf-dynamic-question-placeholder),
   #DF_heating_text:not(.cf-dynamic-question-placeholder),
-  #DF_motor_vehicle_count_text:not(.cf-dynamic-question-placeholder), #IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
+  #DF_motor_vehicle_count_text:not(.cf-dynamic-question-placeholder), #IF_date_of_birth_AGE:not(.cf-dynamic-question-placeholder),
+  #IF_gender_text:not(.cf-dynamic-question-placeholder),
+  #IF_ethnic_group_text:not(.cf-dynamic-question-placeholder),
+  #IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
   #IF_ur_address_one_year_ago_country:not(.cf-dynamic-question-placeholder),
   #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
     margin-top: -65px;
