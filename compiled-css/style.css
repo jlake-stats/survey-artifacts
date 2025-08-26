@@ -1833,18 +1833,18 @@ legend {
 #IF_iwi_iwiSelect .cf-question__text {
   margin: 0;
 }
-#IF_iwi_iwiSelect .cf-question__text > p, #IF_iwi_iwiSelect .cf-question__text > .normal-text, #IF_iwi_iwiSelect .cf-question__text > .cf-page, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link {
+#IF_iwi_iwiSelect .cf-question__text .field-label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 16px;
 }
-#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question__text > .normal-text #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle {
+#IF_iwi_iwiSelect .cf-question__text .field-label #search-iwi-toggle {
   white-space: nowrap;
   font-weight: 600;
 }
-#IF_iwi_iwiSelect .cf-question__text > p #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question__text > .normal-text #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question__text > .cf-page #search-iwi-toggle:focus, #IF_iwi_iwiSelect .cf-question--login .cf-question__text > .helpful-link #search-iwi-toggle:focus, .cf-question--login #IF_iwi_iwiSelect .cf-question__text > .helpful-link #search-iwi-toggle:focus {
+#IF_iwi_iwiSelect .cf-question__text .field-label #search-iwi-toggle:focus {
   color: -webkit-activelink;
 }
 #IF_iwi_iwiSelect #IF_iwi_iwiSelect_content {
@@ -1867,6 +1867,7 @@ legend {
   overflow-y: scroll;
   max-height: 290px;
   border-top: 1px solid #ddd;
+  margin-top: 0;
 }
 #IF_iwi_iwiSelect .search-container .search-results .result-item {
   font-size: 16px;
