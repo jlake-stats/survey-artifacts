@@ -2232,6 +2232,7 @@ textarea.ayt-component {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .ayt-component + .search-results {
+  display: block;
   border: 1px solid #ddd;
   border-top: none;
   max-height: 250px;
