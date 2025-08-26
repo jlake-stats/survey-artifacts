@@ -1901,6 +1901,12 @@ legend {
   margin-top: 0;
   margin-bottom: 10px;
 }
+#IF_iwi_manualDisplay #manual-selection #iwi-manual,
+#IF_iwi_manualDisplay #manual-selection #region-manual,
+#IF_iwi_manualDisplay .selection-card #iwi-manual,
+#IF_iwi_manualDisplay .selection-card #region-manual {
+  margin-bottom: 10px;
+}
 #IF_iwi_manualDisplay #manual-selection .manual-buttons,
 #IF_iwi_manualDisplay .selection-card .manual-buttons {
   display: flex;
