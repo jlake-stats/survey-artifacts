@@ -1623,16 +1623,12 @@ legend {
   }
 }
 /* ------------------------------------------------------------------------------------- */
-@media (min-width: 576px) {
-  #IF_date_of_birth_content .cf-grid-layout {
-    flex-direction: row;
-    margin: 0 -5px;
-  }
+#IF_date_of_birth_content .cf-grid-layout {
+  flex-direction: row;
+  margin: 0 -5px;
 }
-@media (min-width: 576px) {
-  #IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row {
-    margin: 0 5px;
-  }
+#IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row {
+  margin: 0 5px;
 }
 #IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row div {
   width: 100%;
