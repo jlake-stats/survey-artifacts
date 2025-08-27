@@ -1187,7 +1187,12 @@ legend {
 #IF_country_of_birth_text:not(.cf-dynamic-question-placeholder),
 #IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
 #IF_ur_address_one_year_ago_country:not(.cf-dynamic-question-placeholder),
-#IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
+#IF_languages_text:not(.cf-dynamic-question-placeholder),
+#IF_living_arrangements_text:not(.cf-dynamic-question-placeholder),
+#IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder),
+#IF_sexual_identity_text:not(.cf-dynamic-question-placeholder),
+#IF_secondary_school_qual_text:not(.cf-dynamic-question-placeholder),
+#IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
   display: flex;
   flex-direction: column;
   padding-top: 0;
@@ -1209,7 +1214,12 @@ legend {
   #IF_country_of_birth_text:not(.cf-dynamic-question-placeholder),
   #IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
   #IF_ur_address_one_year_ago_country:not(.cf-dynamic-question-placeholder),
-  #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
+  #IF_languages_text:not(.cf-dynamic-question-placeholder),
+  #IF_living_arrangements_text:not(.cf-dynamic-question-placeholder),
+  #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder),
+  #IF_sexual_identity_text:not(.cf-dynamic-question-placeholder),
+  #IF_secondary_school_qual_text:not(.cf-dynamic-question-placeholder),
+  #IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
     margin-top: -65px;
   }
 }
