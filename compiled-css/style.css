@@ -776,9 +776,16 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+.table-row-controls {
+  display: flex;
+  justify-content: flex-end;
+}
 .table-row-controls .add-row,
 .table-row-controls .del-row {
   margin-top: 10px;
+}
+.table-row-controls .del-row {
+  margin-right: auto;
 }
 
 /* ------------------------------------------------------------------------------------- */
