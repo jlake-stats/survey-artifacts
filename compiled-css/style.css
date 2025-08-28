@@ -1620,6 +1620,7 @@ legend {
   #IF_names_content .cf-grid-layout .cf-grid-layout__row,
   .grid-col-2 .cf-grid-layout .cf-grid-layout__row {
     margin: 0 15px;
+    align-self: flex-start;
   }
 }
 /* ------------------------------------------------------------------------------------- */
