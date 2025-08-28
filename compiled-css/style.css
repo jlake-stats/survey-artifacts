@@ -968,7 +968,6 @@ legend {
 .cf-question__text:has(> .question-help__toggle-link) {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
 }
 
 .question-help__toggle-link {
@@ -979,13 +978,14 @@ legend {
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  padding: 0;
-  margin-left: 15px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: -15px;
   text-align: center;
   cursor: pointer;
 }
 .question-help__toggle-link .question-help__toggle-link-text {
-  margin: 0.3rem 0 0.5rem;
+  margin: 5px 0 0;
   font-size: 16px;
   line-height: 1;
 }
