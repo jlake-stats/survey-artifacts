@@ -2144,7 +2144,7 @@ textarea.ayt-component {
 }
 .ayt-component + .search-results {
   position: absolute;
-  top: calc(100% + 1px);
+  top: calc(100% + 2px);
   display: block;
   background: white;
   width: 100%;
