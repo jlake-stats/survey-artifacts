@@ -621,7 +621,7 @@ legend {
 /* Text entry and text area */
 .cf-text-box:focus,
 .cf-text-area:focus {
-  outline: 0.1rem solid var(--color-main);
+  outline: 2px solid var(--color-main);
 }
 
 .cf-text-box {
@@ -2139,8 +2139,12 @@ textarea.ayt-component {
   transition: border-color 0.2s, box-shadow 0.2s;
   z-index: 10;
 }
+.ayt-component:focus {
+  outline: 2px solid var(--color-focus);
+}
 .ayt-component + .search-results {
   position: absolute;
+  top: calc(100% + 1px);
   display: block;
   background: white;
   width: 100%;
@@ -2152,7 +2156,7 @@ textarea.ayt-component {
   padding: 0;
   list-style-type: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 9;
+  z-index: 11;
 }
 .ayt-component + .search-results:not(:has(li)) {
   border: 0;
