@@ -507,19 +507,21 @@ legend {
   font-weight: normal;
 }
 
-.cf-question__instruction {
+.cf-question__instruction, #IF_iwi_region #iwi-instruction {
   font-style: normal;
   color: inherit;
   border-left: 0.5rem solid var(--color-aquablue);
   background-color: var(--color-aquablue10);
   padding: 0.5rem 3rem 0.75rem 2rem;
+  margin-bottom: 1em;
   /* hide empty instruction boxes */
 }
-.cf-question__instruction ul,
-.cf-question__instruction ol {
+.cf-question__instruction ul, #IF_iwi_region #iwi-instruction ul,
+.cf-question__instruction ol,
+#IF_iwi_region #iwi-instruction ol {
   padding-left: 2em;
 }
-.cf-question__instruction:not(:has(*)) {
+.cf-question__instruction:not(:has(*)), #IF_iwi_region #iwi-instruction:not(:has(*)) {
   display: none;
 }
 
@@ -1658,7 +1660,7 @@ legend {
   padding: 0;
   order: 1;
 }
-.cf-question--login .cf-question__instruction {
+.cf-question--login .cf-question__instruction, .cf-question--login #IF_iwi_region #iwi-instruction, #IF_iwi_region .cf-question--login #iwi-instruction {
   order: 2;
 }
 .cf-question--login .cf-error-block {
@@ -1747,11 +1749,6 @@ legend {
   justify-content: normal;
   margin-bottom: 0;
 }
-#IF_iwi_region #iwi-instruction {
-  font-size: 14px;
-  padding: 20px 25px;
-  background: #f3f3f3;
-}
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button {
   position: relative;
   display: flex;
@@ -1832,7 +1829,6 @@ legend {
 }
 #IF_iwi_region #iwi-svg-container path:hover,
 #IF_iwi_region #iwi-svg-container path:focus {
-  /* opacity: 0.6; */
   fill: #b3cbaa;
   cursor: pointer;
 }
@@ -1908,7 +1904,6 @@ legend {
 #IF_iwi_iwiSelect .search-container .search-results {
   position: relative;
   max-height: 290px;
-  border-top: 1px solid #ddd;
 }
 #IF_iwi_iwiSelect .search-container .search-results .result-item {
   font-size: 16px;
