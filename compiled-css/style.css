@@ -1245,6 +1245,195 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+.search-container {
+  position: relative;
+  width: 100%;
+}
+.search-container label {
+  display: none;
+}
+
+label:has(+ .ayt-component) {
+  display: none;
+}
+
+textarea.ayt-component, .ayt-component.cf-text-area {
+  height: 50px;
+}
+
+.ayt-component {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 12px;
+  margin: 0;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  z-index: 10;
+}
+.ayt-component:focus {
+  outline: 2px solid var(--color-focus);
+}
+.ayt-component + .search-results {
+  position: absolute;
+  top: calc(100% + 2px);
+  display: block;
+  background: white;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-top: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 11;
+}
+.ayt-component + .search-results:not(:has(li)) {
+  border: 0;
+}
+.ayt-component + .search-results .result-item {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.ayt-component + .search-results .result-item:last-child {
+  border-bottom: none;
+}
+.ayt-component + .search-results .result-item[aria-selected=true], .ayt-component + .search-results .result-item:hover {
+  background-color: #f5f9ff;
+}
+.ayt-component + .search-results .result-item[aria-selected=true] {
+  border-left: 3px solid #2684ff;
+  padding-left: 11px;
+}
+.ayt-component + .search-results .result-item .main-text {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.ayt-component + .search-results .result-item .alt-text {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 3px;
+}
+.ayt-component + .search-results .result-item .highlight {
+  background-color: #ffeb99;
+  border-radius: 2px;
+  padding: 1px 0;
+}
+.ayt-component + .search-results .result-item-selected {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  background: lightgrey !important;
+}
+.ayt-component ~ .sr-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* LOGIN STYLING */
+/* ------------------------------------------------------------------------------------- */
+.cf-question--login {
+  padding: 2.4rem 4.2rem 4.2rem 4.2rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 575px) {
+  .cf-question--login {
+    padding: 1.4rem 2.2rem 2.2rem 2.2rem;
+  }
+}
+.cf-question--login .cf-question__text {
+  padding: 0;
+  order: 1;
+}
+.cf-question--login .cf-question__instruction, .cf-question--login #IF_iwi_region #iwi-instruction, #IF_iwi_region .cf-question--login #iwi-instruction {
+  order: 2;
+}
+.cf-question--login .cf-error-block {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  order: 4;
+}
+.cf-question--login .cf-error-block .cf-error-list {
+  font-size: 16px;
+}
+.cf-question--login .cf-question__content {
+  padding: 0;
+  order: 3;
+}
+.cf-question--login .cf-login {
+  width: 370px;
+  max-width: 100%;
+}
+@media (max-width: 575px) {
+  .cf-question--login .cf-login {
+    width: 100%;
+  }
+}
+.cf-question--login .cf-login .cf-login__field {
+  margin: 0;
+}
+.cf-question--login .cf-login .cf-login__field-icon {
+  display: none;
+}
+.cf-question--login .cf-login .cf-login__field-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  height: unset;
+  padding: 10px 15px;
+  font-size: 22px;
+  text-align: left;
+  letter-spacing: 0.4em;
+}
+@media (max-width: 575px) {
+  .cf-question--login .cf-login .cf-login__field-input {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
+}
+.cf-question--login .cf-login .cf-login__field-input::placeholder {
+  font-weight: 900;
+}
+.cf-question--login .login-submit {
+  margin-top: 40px;
+  align-self: flex-start;
+  order: 4;
+}
+.cf-question--login .helpful-link {
+  display: block;
+  margin-top: 40px;
+  border: none;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  align-self: flex-start;
+  text-decoration: underline;
+  order: 5;
+}
+.cf-question--login .helpful-link:hover {
+  color: var(--color-focus);
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* #QBAS_Contact_content custom input styling */
 /* #QBAS_PostalUpdate_content custom input styling */
 #QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text,
@@ -1651,94 +1840,6 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
-/* LOGIN STYLING */
-/* ------------------------------------------------------------------------------------- */
-.cf-question--login {
-  padding: 2.4rem 4.2rem 4.2rem 4.2rem;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 575px) {
-  .cf-question--login {
-    padding: 1.4rem 2.2rem 2.2rem 2.2rem;
-  }
-}
-.cf-question--login .cf-question__text {
-  padding: 0;
-  order: 1;
-}
-.cf-question--login .cf-question__instruction, .cf-question--login #IF_iwi_region #iwi-instruction, #IF_iwi_region .cf-question--login #iwi-instruction {
-  order: 2;
-}
-.cf-question--login .cf-error-block {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  order: 4;
-}
-.cf-question--login .cf-error-block .cf-error-list {
-  font-size: 16px;
-}
-.cf-question--login .cf-question__content {
-  padding: 0;
-  order: 3;
-}
-.cf-question--login .cf-login {
-  width: 370px;
-  max-width: 100%;
-}
-@media (max-width: 575px) {
-  .cf-question--login .cf-login {
-    width: 100%;
-  }
-}
-.cf-question--login .cf-login .cf-login__field {
-  margin: 0;
-}
-.cf-question--login .cf-login .cf-login__field-icon {
-  display: none;
-}
-.cf-question--login .cf-login .cf-login__field-input {
-  flex: 1 1 auto;
-  min-width: 0;
-  margin: 0;
-  height: unset;
-  padding: 10px 15px;
-  font-size: 22px;
-  text-align: left;
-  letter-spacing: 0.4em;
-}
-@media (max-width: 575px) {
-  .cf-question--login .cf-login .cf-login__field-input {
-    font-size: 18px;
-    letter-spacing: 0.1em;
-  }
-}
-.cf-question--login .cf-login .cf-login__field-input::placeholder {
-  font-weight: 900;
-}
-.cf-question--login .login-submit {
-  margin-top: 40px;
-  align-self: flex-start;
-  order: 4;
-}
-.cf-question--login .helpful-link {
-  display: block;
-  margin-top: 40px;
-  border: none;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  align-self: flex-start;
-  text-decoration: underline;
-  order: 5;
-}
-.cf-question--login .helpful-link:hover {
-  color: var(--color-focus);
-}
-
-/* ------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
 /* IWI MAP STYLING */
 /* ------------------------------------------------------------------------------------- */
 #IF_iwi_region {
@@ -1899,8 +2000,9 @@ legend {
   padding-top: 0;
   padding-bottom: 0;
 }
-#IF_iwi_iwiSelect #IF_iwi_iwiSelect_input {
+#IF_iwi_iwiSelect .ayt-component {
   display: none;
+  border-bottom: none;
 }
 #IF_iwi_iwiSelect .search-container .no-match {
   padding: 0 1.2rem 0.9rem 1.2rem;
@@ -1911,6 +2013,7 @@ legend {
 #IF_iwi_iwiSelect .search-container .search-results {
   position: relative;
   max-height: 290px;
+  border-top: 1px solid #ddd;
 }
 #IF_iwi_iwiSelect .search-container .search-results .result-item {
   font-size: 16px;
@@ -2110,103 +2213,3 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-.search-container {
-  position: relative;
-  width: 100%;
-}
-.search-container label {
-  display: none;
-}
-
-label:has(+ .ayt-component) {
-  display: none;
-}
-
-textarea.ayt-component, .ayt-component.cf-text-area {
-  height: 50px;
-}
-
-.ayt-component {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  padding: 12px;
-  margin: 0;
-  font-size: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: border-color 0.2s, box-shadow 0.2s;
-  z-index: 10;
-}
-.ayt-component:focus {
-  outline: 2px solid var(--color-focus);
-}
-.ayt-component + .search-results {
-  position: absolute;
-  top: calc(100% + 2px);
-  display: block;
-  background: white;
-  width: 100%;
-  max-height: 250px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  border-top: none;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 11;
-}
-.ayt-component + .search-results:not(:has(li)) {
-  border: 0;
-}
-.ayt-component + .search-results .result-item {
-  padding: 12px 14px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
-}
-.ayt-component + .search-results .result-item:last-child {
-  border-bottom: none;
-}
-.ayt-component + .search-results .result-item[aria-selected=true], .ayt-component + .search-results .result-item:hover {
-  background-color: #f5f9ff;
-}
-.ayt-component + .search-results .result-item[aria-selected=true] {
-  border-left: 3px solid #2684ff;
-  padding-left: 11px;
-}
-.ayt-component + .search-results .result-item .main-text {
-  font-weight: 600;
-  margin-bottom: 3px;
-}
-.ayt-component + .search-results .result-item .alt-text {
-  font-size: 0.85em;
-  color: #666;
-  margin-top: 3px;
-}
-.ayt-component + .search-results .result-item .highlight {
-  background-color: #ffeb99;
-  border-radius: 2px;
-  padding: 1px 0;
-}
-.ayt-component + .search-results .result-item-selected {
-  padding: 12px 14px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
-  background: lightgrey !important;
-}
-.ayt-component ~ .sr-status {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
