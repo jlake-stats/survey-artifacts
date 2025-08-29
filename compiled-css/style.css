@@ -2057,6 +2057,10 @@ legend {
   margin-top: 0;
   margin-bottom: 10px;
 }
+#IF_iwi_iwiListFinal .selection-card #iwi-edit,
+#IF_iwi_iwiListFinal .selection-card #region-edit {
+  margin-bottom: 10px;
+}
 #IF_iwi_iwiListFinal .selection-card #changes-cont {
   display: flex;
   margin: 0 -5px;
