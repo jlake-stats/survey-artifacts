@@ -226,6 +226,16 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 }
 
 /* ------------------------------------------------------------------------------------- */
+textarea, textarea.ayt-component, .ayt-component.cf-text-area, .cf-text-area {
+  width: 100%;
+  font-family: var(--font-main);
+  line-height: 1.5;
+  resize: none;
+  padding: 12px;
+  border-radius: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* BASE STYLING */
 /* ------------------------------------------------------------------------------------- */
@@ -615,11 +625,11 @@ legend {
   transition: border-color 0.15s ease;
 }
 .cf-list__item:focus-within {
-  border-color: var(--color-main);
+  outline: 2px solid var(--color-main);
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Text entry and text area */
+/* Text entry and text area wrapper */
 .cf-text-box:focus,
 .cf-text-area:focus {
   outline: 2px solid var(--color-main);
@@ -639,10 +649,8 @@ legend {
 }
 
 .cf-text-area {
-  width: 100%;
   max-width: 100%;
-  font-family: var(--font-main);
-  line-height: 1.5;
+  height: 50px;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -2115,9 +2123,8 @@ label:has(+ .ayt-component) {
   display: none;
 }
 
-textarea.ayt-component {
+textarea.ayt-component, .ayt-component.cf-text-area {
   height: 50px;
-  resize: none;
 }
 
 .ayt-component {
