@@ -592,7 +592,6 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
 /* individual categories and text fields bulk changes */
 .cf-list__item,
 .cf-text-box,
@@ -1900,9 +1899,6 @@ legend {
 #IF_iwi_iwiSelect #IF_iwi_iwiSelect_input {
   display: none;
 }
-#IF_iwi_iwiSelect .search-container {
-  padding-bottom: 290px;
-}
 #IF_iwi_iwiSelect .search-container .no-match {
   padding: 0 1.2rem 0.9rem 1.2rem;
 }
@@ -1910,9 +1906,9 @@ legend {
   display: none;
 }
 #IF_iwi_iwiSelect .search-container .search-results {
+  position: relative;
   max-height: 290px;
   border-top: 1px solid #ddd;
-  margin-top: 0;
 }
 #IF_iwi_iwiSelect .search-container .search-results .result-item {
   font-size: 16px;
