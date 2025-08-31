@@ -225,6 +225,34 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   }
 }
 
+.int-instruction {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #005c75;
+}
+@media (max-width: 575px) {
+  .int-instruction {
+    font-size: 22px;
+    font-weight: 500;
+    color: #005c75;
+  }
+}
+
+.showcard {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #005c75;
+}
+@media (max-width: 575px) {
+  .showcard {
+    font-size: 22px;
+    font-weight: 600;
+    color: #005c75;
+  }
+}
+
 /* ------------------------------------------------------------------------------------- */
 textarea, textarea.ayt-component, .ayt-component.cf-text-area, .cf-text-area {
   width: 100%;
