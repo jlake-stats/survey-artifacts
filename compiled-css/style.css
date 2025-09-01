@@ -1240,7 +1240,9 @@ legend {
 
 .card-mt-only, #HSF_new_address_DKRF:not(.cf-dynamic-question-placeholder),
 #HSF_here_age_DKRF:not(.cf-dynamic-question-placeholder),
-#HSP_new_age_DKRF:not(.cf-dynamic-question-placeholder), #DF_dwelling_description_text:not(.cf-dynamic-question-placeholder),
+#HSP_new_age_DKRF:not(.cf-dynamic-question-placeholder),
+#DF_rent_details_amount_DKRF:not(.cf-dynamic-question-placeholder),
+#DF_rooms_DKRF:not(.cf-dynamic-question-placeholder), #DF_dwelling_description_text:not(.cf-dynamic-question-placeholder),
 #DF_rent_details_period_predefined:not(.cf-dynamic-question-placeholder),
 #DF_rent_details_period_text:not(.cf-dynamic-question-placeholder),
 #DF_heating_text:not(.cf-dynamic-question-placeholder),
@@ -1269,7 +1271,9 @@ legend {
 @media (min-width: 576px) {
   .card-mt-only, #HSF_new_address_DKRF:not(.cf-dynamic-question-placeholder),
   #HSF_here_age_DKRF:not(.cf-dynamic-question-placeholder),
-  #HSP_new_age_DKRF:not(.cf-dynamic-question-placeholder), #DF_dwelling_description_text:not(.cf-dynamic-question-placeholder),
+  #HSP_new_age_DKRF:not(.cf-dynamic-question-placeholder),
+  #DF_rent_details_amount_DKRF:not(.cf-dynamic-question-placeholder),
+  #DF_rooms_DKRF:not(.cf-dynamic-question-placeholder), #DF_dwelling_description_text:not(.cf-dynamic-question-placeholder),
   #DF_rent_details_period_predefined:not(.cf-dynamic-question-placeholder),
   #DF_rent_details_period_text:not(.cf-dynamic-question-placeholder),
   #DF_heating_text:not(.cf-dynamic-question-placeholder),
