@@ -226,7 +226,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 }
 
 .int-instruction {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
   color: #005c75;
@@ -240,14 +240,14 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 }
 
 .showcard {
-  font-size: 28px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 600;
   color: #005c75;
 }
 @media (max-width: 575px) {
   .showcard {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: #005c75;
   }
@@ -262,6 +262,20 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   .int-response {
     font-size: 16px;
     font-weight: 400;
+    color: #005c75;
+  }
+}
+
+.int-question {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #005c75;
+}
+@media (max-width: 575px) {
+  .int-question {
+    font-size: 18px;
+    font-weight: 500;
     color: #005c75;
   }
 }
