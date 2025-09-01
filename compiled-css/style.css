@@ -253,6 +253,19 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   }
 }
 
+.int-response {
+  font-size: 16px;
+  font-weight: 400;
+  color: #005c75;
+}
+@media (max-width: 575px) {
+  .int-response {
+    font-size: 16px;
+    font-weight: 400;
+    color: #005c75;
+  }
+}
+
 /* ------------------------------------------------------------------------------------- */
 textarea, textarea.ayt-component, .ayt-component.cf-text-area, .cf-text-area {
   width: 100%;
