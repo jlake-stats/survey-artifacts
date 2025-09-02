@@ -15,6 +15,7 @@
   --color-tealblue: #005c75;
   --color-tealblue15: #CED6DD;
   --color-navyblue: #172a45;
+  --color-brightblue: #0000ff;
   --color-orange: #ed7218;
   --color-purple: #c92c99;
   /* Main colours */
@@ -32,6 +33,7 @@
   --color-float-shadow: rgba(0, 0, 0, .098);
   --color-instruction-background: var(--color-aquablue10);
   --color-instruction-border: var(--color-accent);
+  --color-interview: var(--color-brightblue);
   --color-progress: var(--color-green);
   --color-progress-background: var(--color-lightgrey);
   --thumb-color: var(--color-white);
@@ -64,7 +66,6 @@ h1 {
 @media (max-width: 575px) {
   h1 {
     font-size: 36px;
-    font-weight: 700;
   }
 }
 
@@ -75,7 +76,6 @@ h2 {
 @media (max-width: 575px) {
   h2 {
     font-size: 26px;
-    font-weight: 700;
   }
 }
 
@@ -86,7 +86,6 @@ h3 {
 @media (max-width: 575px) {
   h3 {
     font-size: 20px;
-    font-weight: 700;
   }
 }
 
@@ -97,7 +96,6 @@ h4 {
 @media (max-width: 575px) {
   h4 {
     font-size: 18px;
-    font-weight: 700;
   }
 }
 
@@ -108,7 +106,6 @@ h5 {
 @media (max-width: 575px) {
   h5 {
     font-size: 16px;
-    font-weight: 700;
   }
 }
 
@@ -120,7 +117,6 @@ p, .cf-question--login .helpful-link, .cf-page, .normal-text {
 @media (max-width: 575px) {
   p, .cf-question--login .helpful-link, .cf-page, .normal-text {
     font-size: 16px;
-    font-weight: 400;
   }
 }
 
@@ -134,7 +130,6 @@ ol {
   ul,
   ol {
     font-size: 16px;
-    font-weight: 400;
   }
 }
 
@@ -162,7 +157,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .survey-title {
     font-size: 22px;
-    font-weight: 600;
   }
 }
 
@@ -174,7 +168,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .question-text {
     font-size: 22px;
-    font-weight: 500;
   }
 }
 
@@ -182,11 +175,11 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
+  margin-bottom: 0;
 }
 @media (max-width: 575px) {
   .field-label {
     font-size: 16px;
-    font-weight: 500;
   }
 }
 
@@ -198,7 +191,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .lead-text {
     font-size: 20px;
-    font-weight: 600;
   }
 }
 
@@ -210,7 +202,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .large-text {
     font-size: 18px;
-    font-weight: 400;
   }
 }
 
@@ -222,7 +213,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .small-text {
     font-size: 14px;
-    font-weight: 400;
   }
 }
 
@@ -230,13 +220,11 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
-  color: #0000ff;
+  color: var(--color-interview);
 }
 @media (max-width: 575px) {
   .int-instruction {
-    font-size: 22px;
-    font-weight: 500;
-    color: #0000ff;
+    font-size: 18px;
   }
 }
 
@@ -244,26 +232,21 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 600;
-  color: #0000ff;
+  color: var(--color-interview);
 }
 @media (max-width: 575px) {
   .showcard {
     font-size: 18px;
-    font-weight: 600;
-    color: #0000ff;
   }
 }
 
 .int-response {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  color: #0000ff;
 }
 @media (max-width: 575px) {
   .int-response {
-    font-size: 16px;
-    font-weight: 400;
-    color: #0000ff;
+    font-size: 18px;
   }
 }
 
@@ -275,7 +258,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .int-question {
     font-size: 18px;
-    font-weight: 500;
   }
 }
 
