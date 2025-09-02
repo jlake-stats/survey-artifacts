@@ -393,7 +393,7 @@ body {
   width: auto;
   max-width: 100%;
   padding: 0;
-  margin: 0 0 10px 0;
+  margin: 0 0 1rem 0;
 }
 .cf-grid-layout__row .cf-grid-layout__row-control {
   width: 100%;
@@ -548,8 +548,8 @@ legend {
 .cf-question__text {
   border-bottom: none;
   background-color: var(--color-white);
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-weight: normal;
 }
 
