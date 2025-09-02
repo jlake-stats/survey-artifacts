@@ -1280,7 +1280,11 @@ legend {
 #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder),
 #IF_sexual_identity_text:not(.cf-dynamic-question-placeholder),
 #IF_secondary_school_qual_text:not(.cf-dynamic-question-placeholder),
-#IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
+#IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #HSF_here_name,
+#HSF_here_age,
+#HSF_here_gender,
+#HSF_here_relationship,
+#HSF_here_relationship_other:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
   display: flex;
   flex-direction: column;
   padding-top: 0;
@@ -1321,7 +1325,11 @@ legend {
   #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder),
   #IF_sexual_identity_text:not(.cf-dynamic-question-placeholder),
   #IF_secondary_school_qual_text:not(.cf-dynamic-question-placeholder),
-  #IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
+  #IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #HSF_here_name,
+  #HSF_here_age,
+  #HSF_here_gender,
+  #HSF_here_relationship,
+  #HSF_here_relationship_other:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
     margin-top: -65px;
   }
 }
