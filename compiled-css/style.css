@@ -690,6 +690,25 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* Dropdown / Select */
+.cf-dropdown {
+  color: var(--color-font);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-border);
+  border-radius: 0;
+  font-size: inherit;
+  line-height: inherit;
+  height: unset;
+  padding: 0.9rem 1.2rem;
+  background-color: var(--color-white);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath d='M1 5 L10 15 L19 5' stroke='%234287d1' stroke-width='2' fill='transparent'/%3E%3C/svg%3E");
+  background-position: right 16px center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* Radio & Checkboxes */
 .cf-radio-answer {
   padding: 0.9rem 1.2rem;
