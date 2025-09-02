@@ -4,6 +4,7 @@
   /* Colours */
   --color-white: #FFF;
   --color-black: #000;
+  --color-lightestgrey: #f4f4f4;
   --color-lightgrey: #D3D3D2;
   --color-grey: #706F6E;
   --color-charcoal: #403D3D;
@@ -21,7 +22,7 @@
   --color-accent: var(--color-tealblue);
   /* Specific colours */
   --color-font: var(--color-black);
-  --color-background: #f4f4f4;
+  --color-background: var(--color-lightestgrey);
   --color-border: var(--color-lightgrey);
   --color-hover: rgba(39, 37, 37, .2);
   --color-focus: var(--color-main);
@@ -2294,3 +2295,10 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
+body.cati .cf-question__instruction, body.cati #IF_iwi_region #iwi-instruction, #IF_iwi_region body.cati #iwi-instruction,
+body.capi .cf-question__instruction,
+body.capi #IF_iwi_region #iwi-instruction,
+#IF_iwi_region body.capi #iwi-instruction {
+  border-left: 0.5rem solid var(--color-lightgrey);
+  background-color: var(--color-lightestgrey);
+}
