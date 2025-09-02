@@ -1299,7 +1299,6 @@ legend {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   position: relative;
-  z-index: 5;
 }
 @media (min-width: 576px) {
   .card-mt-only, #HSF_new_address_DKRF:not(.cf-dynamic-question-placeholder),
