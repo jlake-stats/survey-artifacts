@@ -1283,7 +1283,7 @@ legend {
 #IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #HSF_here_name,
 #HSF_here_age,
 #HSF_here_gender,
-#HSF_here_relationship,
+#HSF_here_relationship:not(.cf-dynamic-question-placeholder),
 #HSF_here_relationship_other:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
   display: flex;
   flex-direction: column;
@@ -1328,7 +1328,7 @@ legend {
   #IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #HSF_here_name,
   #HSF_here_age,
   #HSF_here_gender,
-  #HSF_here_relationship,
+  #HSF_here_relationship:not(.cf-dynamic-question-placeholder),
   #HSF_here_relationship_other:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
     margin-top: -65px;
   }
