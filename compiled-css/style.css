@@ -560,12 +560,14 @@ legend {
   background-color: var(--color-aquablue10);
   padding: 0.5rem 3rem 0.75rem 2rem;
   margin-bottom: 1em;
-  /* hide empty instruction boxes */
 }
 .cf-question__instruction ul, #IF_iwi_region #iwi-instruction ul,
 .cf-question__instruction ol,
 #IF_iwi_region #iwi-instruction ol {
   padding-left: 2em;
+}
+.cf-question__instruction, #IF_iwi_region #iwi-instruction {
+  /* hide empty instruction boxes */
 }
 .cf-question__instruction:not(:has(*)), #IF_iwi_region #iwi-instruction:not(:has(*)) {
   display: none;
@@ -1262,6 +1264,7 @@ legend {
 #IF_date_of_birth_DKRF:not(.cf-dynamic-question-placeholder),
 #IF_age_DKRF:not(.cf-dynamic-question-placeholder),
 #IF_arrival_in_nz_DKRF:not(.cf-dynamic-question-placeholder),
+#IF_education_institution_DKRF:not(.cf-dynamic-question-placeholder),
 #IF_post_school_subject_DKRF:not(.cf-dynamic-question-placeholder),
 #IF_hours_worked_DKRF:not(.cf-dynamic-question-placeholder),
 #IF_occupation_DKRF:not(.cf-dynamic-question-placeholder),
@@ -1310,6 +1313,7 @@ legend {
   #IF_date_of_birth_DKRF:not(.cf-dynamic-question-placeholder),
   #IF_age_DKRF:not(.cf-dynamic-question-placeholder),
   #IF_arrival_in_nz_DKRF:not(.cf-dynamic-question-placeholder),
+  #IF_education_institution_DKRF:not(.cf-dynamic-question-placeholder),
   #IF_post_school_subject_DKRF:not(.cf-dynamic-question-placeholder),
   #IF_hours_worked_DKRF:not(.cf-dynamic-question-placeholder),
   #IF_occupation_DKRF:not(.cf-dynamic-question-placeholder),
@@ -1647,25 +1651,30 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   font-size: 16px;
   font-weight: bold;
   color: var(--color-white);
-  /* Language Text (Scoped) */
-  /* Fix Spacing Issue (Scoped to language-group) */
-  /* Toggle Button (Scoped) */
-  /* Active Toggle (Scoped) */
 }
 @media (max-width: 575px) {
   .language-group .language-switch {
     font-size: 12px;
   }
 }
+.language-group .language-switch {
+  /* Language Text (Scoped) */
+}
 .language-group .language-switch .english,
 .language-group .language-switch .maori {
   transition: color 0.3s;
+}
+.language-group .language-switch {
+  /* Fix Spacing Issue (Scoped to language-group) */
 }
 .language-group .language-switch .english {
   margin-right: 14px; /* Only right margin for English */
 }
 .language-group .language-switch .maori {
   margin-left: 14px; /* Only left margin for Māori */
+}
+.language-group .language-switch {
+  /* Toggle Button (Scoped) */
 }
 .language-group .language-switch label {
   width: 48px;
@@ -1690,6 +1699,9 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 .language-group .language-switch input[type=checkbox] {
   display: none;
+}
+.language-group .language-switch {
+  /* Active Toggle (Scoped) */
 }
 .language-group .language-switch input:checked + label {
   background: var(--color-orange);
