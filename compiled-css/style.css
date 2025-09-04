@@ -2332,3 +2332,17 @@ body.capi #IF_iwi_region #iwi-instruction,
   border-left: 0.5rem solid var(--color-lightgrey);
   background-color: var(--color-lightestgrey);
 }
+
+@media (max-width: 991px) {
+  body.capi .cf-header .cf-header__inner .cf-header__logo {
+    width: auto;
+  }
+}
+@media (max-width: 991px) {
+  body.capi .cf-header .cf-header__inner .cf-header__text {
+    width: auto;
+  }
+}
+body.capi .cf-header .cf-header__inner .header-logout {
+  display: none;
+}
