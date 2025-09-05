@@ -1092,16 +1092,10 @@ legend {
 .question-help__toggle-link:hover .question-help__toggle-link-image:before {
   background-color: var(--color-accent);
 }
-.question-help__toggle-link:focus .question-help__toggle-link-image:after {
-  content: " ";
-  position: absolute;
-  top: -0.4rem;
-  left: -0.4rem;
-  right: -0.4rem;
-  bottom: -0.4rem;
-  border-radius: 50%;
-  border: 3px solid var(--color-focus);
-  transition: border-color 0.15s ease;
+.question-help__toggle-link:focus .question-help__toggle-link-image:before {
+  background-color: var(--color-accent);
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
 }
 
 /* ------------------------------------------------------------------------------------- */
