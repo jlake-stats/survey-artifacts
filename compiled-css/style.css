@@ -684,6 +684,11 @@ legend {
 }
 .cf-text-box--number {
   width: 160px;
+  -moz-appearance: textfield;
+}
+.cf-text-box--number::-webkit-outer-spin-button, .cf-text-box--number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .cf-text-box--date {
   width: 160px;
