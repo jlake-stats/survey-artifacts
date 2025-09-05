@@ -656,6 +656,7 @@ legend {
   font-size: inherit;
   line-height: inherit;
   margin-bottom: 10px;
+  z-index: 1;
 }
 
 /* ------------------------------------------------------------------------------------- */
