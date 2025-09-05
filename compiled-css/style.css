@@ -707,7 +707,7 @@ legend {
   background-color: var(--color-white);
   background-image: url("https://au.hxplatform.com/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/common/prod/arrow-down-teal.svg");
   background-position: right 16px center;
-  background-size: auto;
+  background-size: 20px auto;
   background-repeat: no-repeat;
 }
 
