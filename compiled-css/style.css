@@ -656,6 +656,7 @@ legend {
   font-size: inherit;
   line-height: inherit;
   margin-bottom: 10px;
+  position: relative;
   z-index: 1;
 }
 
@@ -710,6 +711,8 @@ legend {
   background-position: right 16px center;
   background-size: 20px auto;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
 }
 .cf-dropdown:focus {
   outline: 2px solid var(--color-main);
