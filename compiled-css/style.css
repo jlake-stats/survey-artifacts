@@ -711,6 +711,9 @@ legend {
   background-size: 20px auto;
   background-repeat: no-repeat;
 }
+.cf-dropdown:focus {
+  outline: 2px solid var(--color-main);
+}
 
 /* ------------------------------------------------------------------------------------- */
 /* Radio & Checkboxes */
