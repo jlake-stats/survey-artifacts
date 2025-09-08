@@ -651,7 +651,6 @@ legend {
   border-style: solid;
   border-width: 1px;
   border-color: var(--color-border);
-  border-radius: var(--border-radius);
   font-size: inherit;
   line-height: inherit;
   margin-bottom: 10px;
@@ -663,6 +662,7 @@ legend {
 .cf-list__item {
   cursor: pointer;
   transition: border-color 0.15s ease;
+  border-radius: var(--border-radius);
 }
 .cf-list__item:focus-within {
   outline: 2px solid var(--color-main);
