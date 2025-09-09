@@ -675,6 +675,8 @@ legend {
 /* Text entry and text area wrapper */
 .cf-text-box:focus,
 .cf-text-area:focus {
+  background-color: var(--color-white);
+  border-color: var(--color-border);
   outline: 2px solid var(--color-main);
 }
 
