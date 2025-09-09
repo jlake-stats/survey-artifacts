@@ -367,7 +367,6 @@ body {
 }
 .cf-header .cf-header__text a, .cf-header .cf-header__text .cf-question--login .helpful-link, .cf-question--login .cf-header .cf-header__text .helpful-link {
   margin-left: 20px;
-  font-size: 20px;
   color: var(--color-white);
   text-decoration: none;
 }
@@ -1646,7 +1645,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   background: transparent;
   color: var(--color-white);
   border: 2px solid var(--color-white);
-  font-size: 16px;
   margin-left: 40px;
 }
 .cf-header .cf-header__inner .header-logout:hover, .cf-header .cf-header__inner .header-logout:focus {
