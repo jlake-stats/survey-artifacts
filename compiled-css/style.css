@@ -878,7 +878,9 @@ legend {
 /* Buttons */
 .button-primary, .button-primary-sm,
 .button-secondary,
+.button-secondary-lg,
 .button-secondary-sm,
+.button-primary-lg,
 .cf-navigation-next,
 .cf-navigation-back,
 .cf-navigation-ok {
@@ -941,20 +943,20 @@ legend {
 }
 
 /* ---------------------- secondary / back ---------------------- */
-.button-secondary, .button-secondary-sm,
+.button-secondary, .button-secondary-lg, .button-secondary-sm, .button-primary-lg,
 .cf-navigation-back {
   background: transparent;
   color: var(--color-main);
   border: 2px solid var(--color-main);
   position: relative;
 }
-.button-secondary:hover, .button-secondary-sm:hover,
+.button-secondary:hover, .button-secondary-lg:hover, .button-secondary-sm:hover, .button-primary-lg:hover,
 .cf-navigation-back:hover {
   background: var(--color-accent);
   color: var(--color-white);
   border-color: var(--color-accent);
 }
-.button-secondary:active, .button-secondary-sm:active, .button-secondary:focus, .button-secondary-sm:focus,
+.button-secondary:active, .button-secondary-lg:active, .button-secondary-sm:active, .button-primary-lg:active, .button-secondary:focus, .button-secondary-lg:focus, .button-secondary-sm:focus, .button-primary-lg:focus,
 .cf-navigation-back:active,
 .cf-navigation-back:focus {
   background: var(--color-accent);
@@ -963,12 +965,12 @@ legend {
   outline: 3px solid var(--color-focus);
   outline-offset: 3px;
 }
-.button-secondary:disabled, .button-secondary-sm:disabled,
+.button-secondary:disabled, .button-secondary-lg:disabled, .button-secondary-sm:disabled, .button-primary-lg:disabled,
 .cf-navigation-back:disabled {
   color: var(--color-disabled);
   border-color: var(--color-disabled);
 }
-.button-secondary:disabled:focus, .button-secondary-sm:disabled:focus, .button-secondary:disabled:hover, .button-secondary-sm:disabled:hover, .button-secondary:disabled:active, .button-secondary-sm:disabled:active,
+.button-secondary:disabled:focus, .button-secondary-lg:disabled:focus, .button-secondary-sm:disabled:focus, .button-primary-lg:disabled:focus, .button-secondary:disabled:hover, .button-secondary-lg:disabled:hover, .button-secondary-sm:disabled:hover, .button-primary-lg:disabled:hover, .button-secondary:disabled:active, .button-secondary-lg:disabled:active, .button-secondary-sm:disabled:active, .button-primary-lg:disabled:active,
 .cf-navigation-back:disabled:focus,
 .cf-navigation-back:disabled:hover,
 .cf-navigation-back:disabled:active {
@@ -981,12 +983,20 @@ legend {
 /* ------------------------------------------------------------------------------------- */
 .button-primary-sm {
   font-size: 16px;
-  padding: 0.8rem 1.1rem;
+  padding: 12px 24px;
+}
+.button-primary-lg {
+  font-size: 22px;
+  padding: 20px 28px;
 }
 
 .button-secondary-sm {
   font-size: 16px;
-  padding: 0.8rem 1.1rem;
+  padding: 12px 24px;
+}
+.button-secondary-lg {
+  font-size: 22px;
+  padding: 20px 28px;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -1180,7 +1190,9 @@ legend {
 }
 .modal .modal-inner .modal-content .button-primary, .modal .modal-inner .modal-content .button-primary-sm,
 .modal .modal-inner .modal-content .button-secondary,
-.modal .modal-inner .modal-content .button-secondary-sm {
+.modal .modal-inner .modal-content .button-primary-lg,
+.modal .modal-inner .modal-content .button-secondary-sm,
+.modal .modal-inner .modal-content .button-secondary-lg {
   float: right;
   margin-top: 15px;
 }
