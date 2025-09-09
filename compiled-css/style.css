@@ -43,6 +43,7 @@
   --track-size: calc(var(--thumb-size) * 2.8);
   --thumb-size: 1rem;
   --border-radius: 12px;
+  --input-width-xs: 80px;
   --input-width-sm: 120px;
   --input-width-md: 160px;
   /* Fonts */
@@ -1986,7 +1987,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   margin-bottom: 10px;
 }
 #DF_rooms_content .cf-grid-layout__row .cf-text-box--number {
-  width: var(--input-width-sm);
+  width: var(--input-width-xs);
 }
 
 /* ------------------------------------------------------------------------------------- */
