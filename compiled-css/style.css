@@ -569,6 +569,13 @@ legend {
 #IF_iwi_region #iwi-instruction ol {
   padding-left: 2em;
 }
+@media (max-width: 575px) {
+  .cf-question__instruction ul, #IF_iwi_region #iwi-instruction ul,
+  .cf-question__instruction ol,
+  #IF_iwi_region #iwi-instruction ol {
+    padding-left: 1em;
+  }
+}
 .cf-question__instruction, #IF_iwi_region #iwi-instruction {
   /* hide empty instruction boxes */
 }
