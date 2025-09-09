@@ -1988,7 +1988,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   margin-bottom: 10px;
 }
 #DF_rooms_content .cf-grid-layout__row .cf-text-box--number {
-  width: var(--input-width-xs);
+  width: var(--input-width-sm);
 }
 
 /* ------------------------------------------------------------------------------------- */
