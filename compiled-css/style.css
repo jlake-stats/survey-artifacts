@@ -43,9 +43,10 @@
   --track-size: calc(var(--thumb-size) * 2.8);
   --thumb-size: 1rem;
   --border-radius: 12px;
-  --input-width-xs: 80px;
-  --input-width-sm: 120px;
-  --input-width-md: 160px;
+  --input-width-xs: 60px;
+  --input-width-sm: 80px;
+  --input-width-md: 120px;
+  --input-width-lg: 160px;
   /* Fonts */
   --font-main: "Inter", Arial, sans-serif;
 }
