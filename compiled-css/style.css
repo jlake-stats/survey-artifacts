@@ -1999,6 +1999,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 #IF_hours_worked_content .cf-grid-layout__row .field-label,
 .suffix-input .cf-grid-layout__row .field-label {
+  margin-top: 0;
   margin-bottom: 10px;
 }
 #IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator,
@@ -2006,6 +2007,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   display: flex;
   flex-direction: row;
   width: auto;
+  align-items: center;
 }
 #IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper,
 .suffix-input .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
@@ -2019,6 +2021,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   flex: none;
   width: auto;
   padding: 0 10px;
+  margin: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
