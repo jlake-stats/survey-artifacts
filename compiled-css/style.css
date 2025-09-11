@@ -1993,23 +1993,28 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
-#IF_hours_worked_content .cf-grid-layout__row {
+#IF_hours_worked_content .cf-grid-layout__row,
+.suffix-input .cf-grid-layout__row {
   flex-direction: column;
 }
-#IF_hours_worked_content .cf-grid-layout__row .field-label {
+#IF_hours_worked_content .cf-grid-layout__row .field-label,
+.suffix-input .cf-grid-layout__row .field-label {
   margin-bottom: 10px;
 }
-#IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator {
+#IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator,
+.suffix-input .cf-grid-layout__row .cf-affix-input-decorator {
   display: flex;
   flex-direction: row;
   width: auto;
 }
-#IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
+#IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper,
+.suffix-input .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
   display: flex;
   flex: none;
   width: auto;
 }
-#IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
+#IF_hours_worked_content .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix,
+.suffix-input .cf-grid-layout__row .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
   display: flex;
   flex: none;
   width: auto;
