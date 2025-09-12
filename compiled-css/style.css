@@ -1985,11 +1985,23 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
-#IF_nbr_children_born_number_content .cf-grid-layout__row {
+#IF_nbr_children_born_number_content .cf-grid-layout__row,
+#IF_arrival_in_nz_content .cf-grid-layout__row,
+#DF_rooms_content .cf-grid-layout__row,
+.number-input .cf-grid-layout__row {
   flex-direction: column;
 }
-#IF_nbr_children_born_number_content .cf-grid-layout__row .field-label {
+#IF_nbr_children_born_number_content .cf-grid-layout__row .field-label,
+#IF_arrival_in_nz_content .cf-grid-layout__row .field-label,
+#DF_rooms_content .cf-grid-layout__row .field-label,
+.number-input .cf-grid-layout__row .field-label {
   margin-bottom: 10px;
+}
+#IF_nbr_children_born_number_content .cf-grid-layout__row .cf-text-box--number,
+#IF_arrival_in_nz_content .cf-grid-layout__row .cf-text-box--number,
+#DF_rooms_content .cf-grid-layout__row .cf-text-box--number,
+.number-input .cf-grid-layout__row .cf-text-box--number {
+  width: var(--input-width-sm);
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -2030,17 +2042,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-#DF_rooms_content .cf-grid-layout__row {
-  flex-direction: column;
-}
-#DF_rooms_content .cf-grid-layout__row .field-label {
-  margin-bottom: 10px;
-}
-#DF_rooms_content .cf-grid-layout__row .cf-text-box--number {
-  width: var(--input-width-sm);
-}
-
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* IWI MAP STYLING */
