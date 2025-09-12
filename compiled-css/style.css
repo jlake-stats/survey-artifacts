@@ -1950,7 +1950,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   #HSF_here_name_content .cf-grid-layout,
   #HSP_new_name_content .cf-grid-layout,
   #IF_names_content .cf-grid-layout,
-  #IF_arrival_in_nz_content .cf-grid-layout,
   .grid-col-2 .cf-grid-layout {
     flex-direction: row;
     margin: 0 -15px;
@@ -1958,7 +1957,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   #HSF_here_name_content .cf-grid-layout .cf-grid-layout__row,
   #HSP_new_name_content .cf-grid-layout .cf-grid-layout__row,
   #IF_names_content .cf-grid-layout .cf-grid-layout__row,
-  #IF_arrival_in_nz_content .cf-grid-layout .cf-grid-layout__row,
   .grid-col-2 .cf-grid-layout .cf-grid-layout__row {
     margin: 0 15px;
     align-self: flex-start;
@@ -1984,6 +1982,20 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   width: 80px;
   max-width: 100%;
   text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------- */
+#IF_arrival_in_nz_content .cf-grid-layout__row .cf-grid-layout__row-text {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+#IF_arrival_in_nz_content .cf-grid-layout__row .cf-grid-layout__row-control {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
 /* ------------------------------------------------------------------------------------- */
