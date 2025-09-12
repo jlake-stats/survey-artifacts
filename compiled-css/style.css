@@ -1950,6 +1950,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   #HSF_here_name_content .cf-grid-layout,
   #HSP_new_name_content .cf-grid-layout,
   #IF_names_content .cf-grid-layout,
+  #IF_arrival_in_nz_content .cf-grid-layout,
   .grid-col-2 .cf-grid-layout {
     flex-direction: row;
     margin: 0 -15px;
@@ -1957,6 +1958,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   #HSF_here_name_content .cf-grid-layout .cf-grid-layout__row,
   #HSP_new_name_content .cf-grid-layout .cf-grid-layout__row,
   #IF_names_content .cf-grid-layout .cf-grid-layout__row,
+  #IF_arrival_in_nz_content .cf-grid-layout .cf-grid-layout__row,
   .grid-col-2 .cf-grid-layout .cf-grid-layout__row {
     margin: 0 15px;
     align-self: flex-start;
@@ -1985,25 +1987,35 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
-#IF_nbr_children_born_number_content .cf-grid-layout__row,
-#IF_arrival_in_nz_content .cf-grid-layout__row,
-#DF_rooms_content .cf-grid-layout__row,
-.number-input .cf-grid-layout__row {
+.number-input .cf-grid-layout__row, #IF_nbr_children_born_number_content .cf-grid-layout__row,
+#DF_rooms_content .cf-grid-layout__row {
   flex-direction: column;
 }
-#IF_nbr_children_born_number_content .cf-grid-layout__row .field-label,
-#IF_arrival_in_nz_content .cf-grid-layout__row .field-label,
-#DF_rooms_content .cf-grid-layout__row .field-label,
-.number-input .cf-grid-layout__row .field-label {
+.number-input .cf-grid-layout__row span, #IF_nbr_children_born_number_content .cf-grid-layout__row span,
+#DF_rooms_content .cf-grid-layout__row span,
+.number-input .cf-grid-layout__row p,
+#IF_nbr_children_born_number_content .cf-grid-layout__row p,
+#DF_rooms_content .cf-grid-layout__row p,
+.number-input .cf-grid-layout__row .normal-text,
+#IF_nbr_children_born_number_content .cf-grid-layout__row .normal-text,
+#DF_rooms_content .cf-grid-layout__row .normal-text,
+.number-input .cf-grid-layout__row .cf-page,
+#IF_nbr_children_born_number_content .cf-grid-layout__row .cf-page,
+#DF_rooms_content .cf-grid-layout__row .cf-page,
+.number-input .cf-grid-layout__row .cf-question--login .helpful-link,
+#IF_nbr_children_born_number_content .cf-grid-layout__row .cf-question--login .helpful-link,
+#DF_rooms_content .cf-grid-layout__row .cf-question--login .helpful-link,
+.cf-question--login .number-input .cf-grid-layout__row .helpful-link,
+.cf-question--login #IF_nbr_children_born_number_content .cf-grid-layout__row .helpful-link,
+.cf-question--login #DF_rooms_content .cf-grid-layout__row .helpful-link {
   margin-bottom: 10px;
 }
-#IF_nbr_children_born_number_content .cf-grid-layout__row .cf-text-box--number,
-#IF_arrival_in_nz_content .cf-grid-layout__row .cf-text-box--number,
-#DF_rooms_content .cf-grid-layout__row .cf-text-box--number,
-.number-input .cf-grid-layout__row .cf-text-box--number {
+.number-input .cf-grid-layout__row .cf-text-box--number, #IF_nbr_children_born_number_content .cf-grid-layout__row .cf-text-box--number,
+#DF_rooms_content .cf-grid-layout__row .cf-text-box--number {
   width: var(--input-width-sm);
 }
 
+/* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 #IF_hours_worked_content .cf-grid-layout__row,
 .suffix-input .cf-grid-layout__row {
