@@ -117,6 +117,7 @@ p, .cf-question--login .helpful-link, .cf-page, .normal-text {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 @media (max-width: 575px) {
   p, .cf-question--login .helpful-link, .cf-page, .normal-text {
@@ -180,7 +181,6 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
-  margin-bottom: 0;
 }
 @media (max-width: 575px) {
   .field-label {
