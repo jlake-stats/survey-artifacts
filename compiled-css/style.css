@@ -1985,9 +1985,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   width: auto;
   flex: unset;
 }
-#IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row .field-label {
-  margin-bottom: 10px;
-}
 #IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row .cf-text-box--number {
   width: 80px;
   max-width: 100%;
