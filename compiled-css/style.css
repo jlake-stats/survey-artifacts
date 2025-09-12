@@ -695,6 +695,7 @@ legend {
 }
 .cf-text-box--number {
   width: var(--input-width-md);
+  max-width: 100%;
   -moz-appearance: textfield;
 }
 .cf-text-box--number::-webkit-outer-spin-button, .cf-text-box--number::-webkit-inner-spin-button {
@@ -1986,8 +1987,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   flex: unset;
 }
 #IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row .cf-text-box--number {
-  width: 80px;
-  max-width: 100%;
+  width: var(--input-width-sm);
   text-align: center;
 }
 
