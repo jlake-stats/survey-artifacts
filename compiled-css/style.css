@@ -117,6 +117,7 @@ p, .cf-question--login .helpful-link, .cf-page, .normal-text {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 @media (max-width: 575px) {
@@ -1380,6 +1381,15 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+.number-input .cf-grid-layout__row, #IF_nbr_children_born_number_content .cf-grid-layout__row,
+#DF_rooms_content .cf-grid-layout__row {
+  flex-direction: column;
+}
+.number-input .cf-grid-layout__row .cf-text-box--number, #IF_nbr_children_born_number_content .cf-grid-layout__row .cf-text-box--number,
+#DF_rooms_content .cf-grid-layout__row .cf-text-box--number {
+  width: var(--input-width-sm);
+}
+
 .search-container {
   position: relative;
   width: 100%;
@@ -1999,35 +2009,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 #IF_arrival_in_nz_content .cf-grid-layout .cf-grid-layout__row .cf-grid-layout__row-control {
   width: auto;
   flex: unset;
-}
-
-/* ------------------------------------------------------------------------------------- */
-.number-input .cf-grid-layout__row, #IF_nbr_children_born_number_content .cf-grid-layout__row,
-#DF_rooms_content .cf-grid-layout__row {
-  flex-direction: column;
-}
-.number-input .cf-grid-layout__row span, #IF_nbr_children_born_number_content .cf-grid-layout__row span,
-#DF_rooms_content .cf-grid-layout__row span,
-.number-input .cf-grid-layout__row p,
-#IF_nbr_children_born_number_content .cf-grid-layout__row p,
-#DF_rooms_content .cf-grid-layout__row p,
-.number-input .cf-grid-layout__row .normal-text,
-#IF_nbr_children_born_number_content .cf-grid-layout__row .normal-text,
-#DF_rooms_content .cf-grid-layout__row .normal-text,
-.number-input .cf-grid-layout__row .cf-page,
-#IF_nbr_children_born_number_content .cf-grid-layout__row .cf-page,
-#DF_rooms_content .cf-grid-layout__row .cf-page,
-.number-input .cf-grid-layout__row .cf-question--login .helpful-link,
-#IF_nbr_children_born_number_content .cf-grid-layout__row .cf-question--login .helpful-link,
-#DF_rooms_content .cf-grid-layout__row .cf-question--login .helpful-link,
-.cf-question--login .number-input .cf-grid-layout__row .helpful-link,
-.cf-question--login #IF_nbr_children_born_number_content .cf-grid-layout__row .helpful-link,
-.cf-question--login #DF_rooms_content .cf-grid-layout__row .helpful-link {
-  margin-bottom: 10px;
-}
-.number-input .cf-grid-layout__row .cf-text-box--number, #IF_nbr_children_born_number_content .cf-grid-layout__row .cf-text-box--number,
-#DF_rooms_content .cf-grid-layout__row .cf-text-box--number {
-  width: var(--input-width-sm);
 }
 
 /* ------------------------------------------------------------------------------------- */
