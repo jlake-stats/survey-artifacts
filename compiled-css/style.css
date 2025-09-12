@@ -1989,13 +1989,13 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   flex: none;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
 }
 #IF_arrival_in_nz_content .cf-grid-layout__row .cf-grid-layout__row-control {
   flex: none;
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
 }
 
 /* ------------------------------------------------------------------------------------- */
