@@ -665,6 +665,7 @@ legend {
   line-height: inherit;
   margin-bottom: 10px;
   position: relative;
+  max-width: 100%;
   z-index: 1;
 }
 
@@ -689,13 +690,11 @@ legend {
 
 .cf-text-box {
   width: 100%;
-  max-width: 100%;
   padding: 10px;
   height: auto;
 }
 .cf-text-box--number {
   width: var(--input-width-md);
-  max-width: 100%;
   -moz-appearance: textfield;
 }
 .cf-text-box--number::-webkit-outer-spin-button, .cf-text-box--number::-webkit-inner-spin-button {
