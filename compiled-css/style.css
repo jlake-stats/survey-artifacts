@@ -1980,8 +1980,9 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 #IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row {
   margin: 0 5px;
 }
-#IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row div {
-  width: 100%;
+#IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row .cf-grid-layout__row-text,
+#IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row .cf-grid-layout__row-control {
+  width: auto;
   flex: unset;
 }
 #IF_date_of_birth_content .cf-grid-layout .cf-grid-layout__row .field-label {
