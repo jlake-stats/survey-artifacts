@@ -1827,7 +1827,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 .hsp-status {
   font-size: 16px;
   line-height: 1;
-  padding: 0.8rem 1.1rem;
+  padding: 12px 24px;
   display: inline-block;
   font-weight: 600;
   text-align: right;
@@ -1875,17 +1875,18 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 
 /* ------------------------------------------------------------------------------------- */
 .hsp-name {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
 }
 
 .hsp-icon-dwelling,
 .hsp-icon-person {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: inline-block;
 }
 
 .hsp-icon-dwelling {
