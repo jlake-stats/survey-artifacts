@@ -1119,7 +1119,6 @@ legend {
   background-color: var(--color-accent);
 }
 .question-help__toggle-link:focus .question-help__toggle-link-image:before {
-  background-color: var(--color-accent);
   outline: 3px solid var(--color-focus);
   outline-offset: 3px;
 }
