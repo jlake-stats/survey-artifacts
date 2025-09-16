@@ -2257,7 +2257,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   border-bottom: none;
 }
 #IF_iwi_iwiSelect .search-container .no-match {
-  padding: 0 1.2rem 0.9rem 1.2rem;
+  padding: 0 20px 16px 20px;
 }
 #IF_iwi_iwiSelect .search-container #IF_iwi_iwiSelect_input {
   display: none;
@@ -2284,9 +2284,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   background: #558497;
   border-color: #558497;
   margin-bottom: 10px;
-}
-#IF_iwi_manualDisplay #iwi-manual-toggle:focus:after, #IF_iwi_manualDisplay #iwi-manual-toggle:active:after {
-  border: 0.2rem solid transparent;
 }
 #IF_iwi_manualDisplay #manual-selection,
 #IF_iwi_manualDisplay .selection-card {
