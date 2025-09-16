@@ -556,30 +556,11 @@ legend {
   font-weight: normal;
 }
 
-.cf-question__instruction, #IF_iwi_region #iwi-instruction {
-  font-style: normal;
+.cf-question__instruction {
   color: inherit;
-  border-left: 0.5rem solid var(--color-aquablue);
-  background-color: var(--color-aquablue10);
-  padding: 0.5rem 3rem 0.75rem 2rem;
-  margin-bottom: 1em;
-}
-.cf-question__instruction ul, #IF_iwi_region #iwi-instruction ul,
-.cf-question__instruction ol,
-#IF_iwi_region #iwi-instruction ol {
-  padding-left: 2em;
-}
-@media (max-width: 575px) {
-  .cf-question__instruction ul, #IF_iwi_region #iwi-instruction ul,
-  .cf-question__instruction ol,
-  #IF_iwi_region #iwi-instruction ol {
-    padding-left: 1em;
-  }
-}
-.cf-question__instruction, #IF_iwi_region #iwi-instruction {
   /* hide empty instruction boxes */
 }
-.cf-question__instruction:not(:has(*)), #IF_iwi_region #iwi-instruction:not(:has(*)) {
+.cf-question__instruction:not(:has(*)) {
   display: none;
 }
 
@@ -1424,6 +1405,30 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+.instruction-box, #IF_iwi_region #iwi-instruction, .cf-question__instruction {
+  font-style: normal;
+  color: inherit;
+  border-left: 0.5rem solid var(--color-aquablue);
+  background-color: var(--color-aquablue10);
+  padding: 0.5rem 3rem 0.75rem 2rem;
+  margin-bottom: 1em;
+}
+.instruction-box ul, #IF_iwi_region #iwi-instruction ul, .cf-question__instruction ul,
+.instruction-box ol,
+#IF_iwi_region #iwi-instruction ol,
+.cf-question__instruction ol {
+  padding-left: 2em;
+}
+@media (max-width: 575px) {
+  .instruction-box ul, #IF_iwi_region #iwi-instruction ul, .cf-question__instruction ul,
+  .instruction-box ol,
+  #IF_iwi_region #iwi-instruction ol,
+  .cf-question__instruction ol {
+    padding-left: 1em;
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
 .search-container {
   position: relative;
   width: 100%;
@@ -1542,7 +1547,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   padding: 0;
   order: 1;
 }
-.cf-question--login .cf-question__instruction, .cf-question--login #IF_iwi_region #iwi-instruction, #IF_iwi_region .cf-question--login #iwi-instruction {
+.cf-question--login .cf-question__instruction {
   order: 2;
 }
 .cf-question--login .cf-error-block {
@@ -2457,10 +2462,8 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
-body.cati .cf-question__instruction, body.cati #IF_iwi_region #iwi-instruction, #IF_iwi_region body.cati #iwi-instruction,
-body.capi .cf-question__instruction,
-body.capi #IF_iwi_region #iwi-instruction,
-#IF_iwi_region body.capi #iwi-instruction {
+body.cati .cf-question__instruction,
+body.capi .cf-question__instruction {
   border-left: 0.5rem solid var(--color-lightgrey);
   background-color: var(--color-lightestgrey);
 }
