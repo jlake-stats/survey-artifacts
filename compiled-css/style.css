@@ -1388,6 +1388,31 @@ legend {
   width: var(--input-width-sm);
 }
 
+/* ------------------------------------------------------------------------------------- */
+.icon {
+  position: relative;
+  padding-left: 28px;
+  display: inline-block;
+}
+.icon::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-dwelling::before {
+  background-image: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/household.svg");
+}
+
+.icon-person::before {
+  background-image: url("/isa/HVPTLRBQMXMACVOIIKEHHMGPJDDDPPPD/Files/person.svg");
+}
+
+/* ------------------------------------------------------------------------------------- */
 .search-container {
   position: relative;
   width: 100%;
