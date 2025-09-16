@@ -2462,7 +2462,15 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 
 /* ------------------------------------------------------------------------------------- */
 body.cati .cf-question__instruction,
-body.capi .cf-question__instruction {
+body.cati #iwi-instruction,
+body.cati .instruction-box,
+body.cati #IF_iwi_region #iwi-instruction,
+#IF_iwi_region body.cati #iwi-instruction,
+body.capi .cf-question__instruction,
+body.capi #iwi-instruction,
+body.capi .instruction-box,
+body.capi #IF_iwi_region #iwi-instruction,
+#IF_iwi_region body.capi #iwi-instruction {
   border-color: var(--color-lightgrey);
   background-color: var(--color-lightestgrey);
 }
