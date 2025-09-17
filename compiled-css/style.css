@@ -899,7 +899,7 @@ legend {
   min-width: 140px;
   max-width: 100%;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 /* ---------------------- primary / next / ok ---------------------- */
