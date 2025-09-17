@@ -1287,6 +1287,7 @@ legend {
 #IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
 #IF_ur_address_one_year_ago_country:not(.cf-dynamic-question-placeholder),
 #IF_languages_text:not(.cf-dynamic-question-placeholder),
+#IF_religion_predefined,
 #IF_living_arrangements_text:not(.cf-dynamic-question-placeholder),
 #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder),
 #IF_nbr_children_born_predefined:not(.cf-dynamic-question-placeholder),
@@ -1300,7 +1301,7 @@ legend {
 #HSF_here_age,
 #HSF_here_gender,
 #HSF_here_relationship:not(.cf-dynamic-question-placeholder),
-#HSF_here_relationship_other:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
+#HSF_here_relationship_other:not(.cf-dynamic-question-placeholder) {
   display: flex;
   flex-direction: column;
   padding-top: 0;
@@ -1337,6 +1338,7 @@ legend {
   #IF_ur_address_one_year_ago_text:not(.cf-dynamic-question-placeholder),
   #IF_ur_address_one_year_ago_country:not(.cf-dynamic-question-placeholder),
   #IF_languages_text:not(.cf-dynamic-question-placeholder),
+  #IF_religion_predefined,
   #IF_living_arrangements_text:not(.cf-dynamic-question-placeholder),
   #IF_education_institution_MERGE:not(.cf-dynamic-question-placeholder),
   #IF_nbr_children_born_predefined:not(.cf-dynamic-question-placeholder),
@@ -1350,7 +1352,7 @@ legend {
   #HSF_here_age,
   #HSF_here_gender,
   #HSF_here_relationship:not(.cf-dynamic-question-placeholder),
-  #HSF_here_relationship_other:not(.cf-dynamic-question-placeholder), #IF_religion_predefined {
+  #HSF_here_relationship_other:not(.cf-dynamic-question-placeholder) {
     margin-top: -65px;
   }
 }
