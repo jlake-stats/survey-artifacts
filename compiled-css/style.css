@@ -313,7 +313,7 @@ body {
 .cf-header {
   font-weight: bolder;
   background: var(--color-navyblue);
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   transition: top 0.5s ease;
@@ -397,7 +397,7 @@ body {
   width: auto;
   max-width: 100%;
   padding: 0;
-  margin: 0 0 1rem 0;
+  margin: 0 0 16px 0;
 }
 .cf-grid-layout__row .cf-grid-layout__row-control {
   width: 100%;
@@ -488,12 +488,8 @@ body {
 
 /* ------------------------------------------------------------------------------------- */
 /* affects area around the array of questions */
-.cf-page__question-list {
-  /* margin-bottom: 1rem; */
-}
 @media (min-width: 575px) {
   .cf-page__question-list {
-    /* padding: 1rem; */
     align-items: center;
     position: relative;
     margin: auto;
@@ -527,18 +523,18 @@ legend {
   background-color: var(--color-white);
   border: 1px solid var(--color-float-border);
   border-radius: var(--border-radius);
-  padding: 1.5rem 3rem 3rem 3rem;
-  margin: 0 auto 1rem auto;
+  padding: 24px 48px 48px 48px;
+  margin: 0 auto 16px auto;
   max-width: var(--width-max-question-box);
   min-height: 0;
 }
 @media (max-width: 575px) {
   .cf-question {
-    padding: 0.5rem 1rem 1rem 1rem;
+    padding: 8px 16px 16px 16px;
   }
 }
 .cf-question:last-child {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .cf-question__title {
@@ -551,8 +547,8 @@ legend {
 .cf-question__text {
   border-bottom: none;
   background-color: var(--color-white);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
   font-weight: normal;
 }
 
@@ -782,10 +778,9 @@ legend {
 .cf-navigation {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
   width: 100%;
   max-width: var(--width-max-question-box);
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 32px auto;
   padding: 0;
   background: none;
 }
