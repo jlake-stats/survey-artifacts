@@ -2257,7 +2257,10 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   border-bottom: none;
 }
 #IF_iwi_iwiSelect .search-container .no-match {
-  padding: 0 20px 16px 20px;
+  padding: 24px 32px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
 }
 #IF_iwi_iwiSelect .search-container #IF_iwi_iwiSelect_input {
   display: none;
