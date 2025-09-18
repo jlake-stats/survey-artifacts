@@ -2083,6 +2083,18 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
+#IF_education_institution #IF_education_institution_content .cf-open-list-answer__control {
+  display: none;
+}
+
+#IF_education_institution_MERGE #IF_education_institution_MERGE_text {
+  display: none;
+}
+#IF_education_institution_MERGE #IF_education_institution_MERGE_content .cf-open-list-answer__control {
+  display: none;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* IWI MAP STYLING */
