@@ -1983,7 +1983,8 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   display: none;
 }
 
-.cf-searchable-question__other-answers, .cf-searchable-question__exclusive-answers {
+.cf-searchable-question__other-answers,
+.cf-searchable-question__exclusive-answers {
   border-top: none;
 }
 
