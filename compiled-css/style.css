@@ -548,7 +548,6 @@ legend {
 .cf-question__text {
   border-bottom: none;
   background-color: var(--color-white);
-  margin-top: 16px;
   margin-bottom: 0;
   font-weight: normal;
 }
