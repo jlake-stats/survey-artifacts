@@ -2274,6 +2274,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   position: relative;
   max-height: 290px;
   border-top: 1px solid #ddd;
+  box-shadow: none;
 }
 #IF_iwi_iwiSelect .search-container .search-results .result-item {
   font-size: 16px;
