@@ -1449,7 +1449,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   border: 1px solid #ccc;
   border-radius: 0;
   padding: 12px;
-  margin: 0;
+  margin-bottom: 12px;
   font-size: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: border-color 0.2s, box-shadow 0.2s;
