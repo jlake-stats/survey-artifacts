@@ -117,7 +117,7 @@ p, .cf-question--login .helpful-link, .cf-page, .normal-text {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 @media (max-width: 575px) {
   p, .cf-question--login .helpful-link, .cf-page, .normal-text {
