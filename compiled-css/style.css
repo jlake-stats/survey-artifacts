@@ -1254,7 +1254,6 @@ legend {
 .card-mt {
   display: flex;
   flex-direction: column;
-  padding-top: 0;
   margin-top: 0;
   border-top: 0;
   border-top-left-radius: 0;
@@ -1302,7 +1301,6 @@ body.cawi #HSF_here_relationship:not(.cf-dynamic-question-placeholder), #HSF_new
 #IF_post_school_level_text:not(.cf-dynamic-question-placeholder), #HSP_new_relationship_other:not(.cf-dynamic-question-placeholder), #HSF_here_relationship_other:not(.cf-dynamic-question-placeholder) {
   display: flex;
   flex-direction: column;
-  padding-top: 0;
   margin-top: -32px;
   border-top: 0;
   border-top-left-radius: 0;
