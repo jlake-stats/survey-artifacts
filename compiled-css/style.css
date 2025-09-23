@@ -662,6 +662,9 @@ legend {
   cursor: pointer;
   border-radius: var(--border-radius);
 }
+.cf-list__item:focus {
+  outline: 2px solid var(--color-main);
+}
 
 /* ------------------------------------------------------------------------------------- */
 /* Text entry and text area wrapper */
@@ -1832,9 +1835,11 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 #HSP_navigation .hsp-bottom-buttons .cf-list__item {
   background: none;
   border: 0;
+  outline: none;
 }
 #HSP_navigation .hsp-bottom-buttons .cf-list__item:hover, #HSP_navigation .hsp-bottom-buttons .cf-list__item:focus {
   border: 0;
+  outline: none;
   box-shadow: none;
 }
 #HSP_navigation .hsp-bottom-buttons .cf-button--selected {
