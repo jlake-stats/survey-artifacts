@@ -1057,6 +1057,9 @@ legend {
   display: flex;
   flex-direction: row-reverse;
 }
+.cf-question__text:has(> .question-help__toggle-link) + .cf-question__instruction {
+  margin-top: 16px;
+}
 
 .question-help__toggle-link {
   align-items: center;
