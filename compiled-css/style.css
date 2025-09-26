@@ -66,6 +66,7 @@ h5,
 h6 {
   color: var(--color-main);
   line-height: 1.2;
+  margin-top: 0;
 }
 
 h1 {
@@ -122,6 +123,7 @@ p, .cf-question--login .helpful-link, .cf-page, .normal-text {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 12px;
 }
 @media (max-width: 575px) {
