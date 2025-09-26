@@ -1056,9 +1056,11 @@ legend {
 .cf-question__text:has(> .question-help__toggle-link) {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 16px;
 }
-.cf-question__text:has(> .question-help__toggle-link) + .cf-question__instruction {
-  margin-top: 16px;
+.cf-question__text:has(> .question-help__toggle-link) * {
+  margin-bottom: 0;
 }
 
 .question-help__toggle-link {
