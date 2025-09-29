@@ -1187,11 +1187,11 @@ legend {
 }
 .modal .modal-inner .modal-content {
   position: relative;
-  padding: 16px 48px 48px 48px;
+  padding: 48px;
 }
 @media (max-width: 575px) {
   .modal .modal-inner .modal-content {
-    padding: 16px 32px 32px 32px;
+    padding: 32px;
   }
 }
 .modal .modal-inner .modal-content .button-primary, .modal .modal-inner .modal-content .button-primary-sm,
