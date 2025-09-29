@@ -839,6 +839,9 @@ legend {
   padding: 0;
   border: 0;
 }
+.cf-error-block .cf-error-list:has(li) {
+  margin-bottom: 12px;
+}
 
 /* ------------------------------------------------------------------------------------- */
 /* toast error */
