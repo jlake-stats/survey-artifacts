@@ -138,12 +138,18 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  padding-left: 2em;
 }
 @media (max-width: 575px) {
   ul,
   ol {
     font-size: 16px;
+    padding-left: 1em;
   }
+}
+ul:has(li),
+ol:has(li) {
+  margin-bottom: 12px;
 }
 
 a, .cf-question--login .helpful-link {
