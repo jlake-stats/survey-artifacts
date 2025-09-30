@@ -76,7 +76,7 @@ h1 {
 }
 @media (max-width: 575px) {
   h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
@@ -189,6 +189,7 @@ a:focus-visible, .cf-question--login .helpful-link:focus-visible {
 @media (max-width: 575px) {
   .question-text {
     font-size: 22px;
+    margin-bottom: 12px;
   }
 }
 
@@ -1552,13 +1553,13 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 /* LOGIN STYLING */
 /* ------------------------------------------------------------------------------------- */
 .cf-question--login {
-  padding: 2.4rem 4.2rem 4.2rem 4.2rem;
+  padding: 48px;
   display: flex;
   flex-direction: column;
 }
 @media (max-width: 575px) {
   .cf-question--login {
-    padding: 1.4rem 2.2rem 2.2rem 2.2rem;
+    padding: 24px;
   }
 }
 .cf-question--login .cf-question__text {
@@ -2151,7 +2152,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   cursor: pointer;
   transition: background-color 0.3s ease;
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
   background-color: var(--color-white);
 }
 #IF_iwi_region #iwi-map-toggle.iwi-toggle-button::after {
