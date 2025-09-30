@@ -149,6 +149,7 @@ ol {
 }
 ul:has(li),
 ol:has(li) {
+  margin-top: 0;
   margin-bottom: 12px;
 }
 
