@@ -1432,7 +1432,7 @@ body.cawi #HSF_here_relationship:not(.cf-dynamic-question-placeholder), #HSF_new
 .instruction-box, #IF_iwi_region #iwi-instruction, .cf-question__instruction {
   border-left: 8px solid var(--color-aquablue);
   background-color: var(--color-aquablue10);
-  padding: 8px 32px 12px 32px;
+  padding: 12px 32px;
   margin-bottom: 16px;
 }
 .instruction-box ul, #IF_iwi_region #iwi-instruction ul, .cf-question__instruction ul,
@@ -1571,7 +1571,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   order: 2;
 }
 .cf-question--login .cf-error-block {
-  margin-top: 0.5rem;
+  margin-top: 12px;
   margin-bottom: 0;
   order: 4;
 }
