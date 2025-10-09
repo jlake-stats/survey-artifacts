@@ -317,6 +317,7 @@ body {
   background-color: var(--color-background);
   background-size: cover;
   min-height: 100vh;
+  margin-bottom: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
