@@ -888,6 +888,9 @@ legend {
     display: none;
   }
 }
+.cf-header .cf-header__text .header-link {
+  margin-right: auto;
+}
 
 /* Buttons */
 .button-primary, .button-primary-sm,
