@@ -327,82 +327,6 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* header */
-.cf-header {
-  font-weight: bolder;
-  background: var(--color-navyblue);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  transition: top 0.5s ease;
-  z-index: 30;
-  width: 100%;
-}
-.cf-header .cf-header__inner {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 12px 24px;
-  flex-wrap: nowrap;
-}
-@media (max-width: 1024px) {
-  .cf-header .cf-header__inner {
-    margin: 0 auto;
-  }
-}
-@media (max-width: 991px) {
-  .cf-header .cf-header__inner {
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 575px) {
-  .cf-header .cf-header__inner {
-    padding: 12px 16px;
-  }
-}
-@media (max-width: 480px) {
-  .cf-header .cf-header__inner {
-    margin: 0 auto;
-  }
-}
-.cf-header .cf-header__logo {
-  margin-right: 20px;
-}
-.cf-header .cf-header__logo .cf-header-logo__img {
-  width: 100px;
-  max-width: 100%;
-  max-height: none;
-}
-.cf-header .cf-header__text {
-  color: var(--color-white);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 575px) {
-  .cf-header .cf-header__text {
-    width: auto;
-  }
-}
-.cf-header .cf-header__text a, .cf-header .cf-header__text .cf-question--login .helpful-link, .cf-question--login .cf-header .cf-header__text .helpful-link {
-  margin-left: 20px;
-  color: var(--color-white);
-  text-decoration: none;
-}
-.cf-header .cf-header__text a:hover, .cf-header .cf-header__text .cf-question--login .helpful-link:hover, .cf-question--login .cf-header .cf-header__text .helpful-link:hover {
-  text-decoration: underline;
-}
-.cf-header .cf-header__text .headline {
-  margin: 0;
-}
-@media (max-width: 575px) {
-  .cf-header .cf-header__text .headline {
-    display: none;
-  }
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* Grid */
 .cf-grid-layout__row {
   display: flex;
@@ -886,6 +810,85 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* header */
+.cf-header {
+  font-weight: bolder;
+  background: var(--color-navyblue);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  transition: top 0.5s ease;
+  z-index: 30;
+  width: 100%;
+}
+.cf-header .cf-header__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 1024px) {
+  .cf-header .cf-header__inner {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .cf-header .cf-header__inner {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 575px) {
+  .cf-header .cf-header__inner {
+    padding: 12px 16px;
+  }
+}
+@media (max-width: 480px) {
+  .cf-header .cf-header__inner {
+    margin: 0 auto;
+  }
+}
+.cf-header .cf-header__logo {
+  margin-right: 20px;
+}
+.cf-header .cf-header__logo .cf-header-logo__img {
+  width: 100px;
+  max-width: 100%;
+  max-height: none;
+}
+.cf-header .cf-header__text {
+  color: var(--color-white);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .cf-header .cf-header__text {
+    width: auto;
+  }
+}
+.cf-header .cf-header__text a, .cf-header .cf-header__text .cf-question--login .helpful-link, .cf-question--login .cf-header .cf-header__text .helpful-link {
+  margin-left: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.cf-header .cf-header__text a:hover, .cf-header .cf-header__text .cf-question--login .helpful-link:hover, .cf-question--login .cf-header .cf-header__text .helpful-link:hover {
+  text-decoration: underline;
+}
+.cf-header .cf-header__text .headline,
+.cf-header .cf-header__text .survey-title {
+  margin: 0;
+  color: var(--color-white);
+}
+@media (max-width: 575px) {
+  .cf-header .cf-header__text .headline,
+  .cf-header .cf-header__text .survey-title {
+    display: none;
+  }
+}
+
 /* Buttons */
 .button-primary, .button-primary-sm,
 .button-secondary,
