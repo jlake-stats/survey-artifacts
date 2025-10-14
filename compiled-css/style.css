@@ -1020,11 +1020,12 @@ legend {
 /* Custom tables */
 .custom-table {
   width: 100%;
+  margin-bottom: 12px;
 }
 .custom-table table,
 .custom-table td,
 .custom-table th {
-  border: 0px;
+  border: 0;
 }
 .custom-table td {
   vertical-align: top;
@@ -1045,23 +1046,24 @@ legend {
   width: 100%;
   border-collapse: collapse;
   margin-top: 0.5em;
-  border-top: 1px solid #D3D3D2;
-  border-bottom: 1px solid #D3D3D2;
+  border-top: 1px solid var(--color-lightgrey);
+  border-bottom: 1px solid var(--color-lightgrey);
   font-size: 16px;
 }
-.basic-table th, .basic-table td {
+.basic-table th,
+.basic-table td {
   text-align: center;
   padding: 10px;
 }
 .basic-table thead th {
   font-weight: bold;
-  border-bottom: 1px solid #000; /* black line under headers */
+  border-bottom: 1px solid var(--color-black); /* black line under headers */
 }
 .basic-table tbody tr:nth-child(odd) {
-  background-color: #f4f4f4; /* light grey */
+  background-color: var(--color-lightestgrey);
 }
 .basic-table tbody tr:nth-child(even) {
-  background-color: #fff; /* white */
+  background-color: var(--color-white);
 }
 
 /* ------------------------------------------------------------------------------------- */
