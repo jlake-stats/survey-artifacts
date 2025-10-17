@@ -1652,6 +1652,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 #QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text,
 #QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text {
   min-width: 200px;
+  margin-left: auto;
 }
 
 /* QBAS_RTotalWPIP_QBAS_RTotalWPIP custom input styling */
@@ -1665,6 +1666,7 @@ textarea.ayt-component, .ayt-component.cf-text-area {
   #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
   #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
     width: 200px;
+    margin-left: auto;
   }
 }
 
