@@ -514,69 +514,6 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* Input */
-/* Base cf-affix-input-decorator */
-.cf-affix-input-decorator {
-  font-size: 18px;
-  width: 100%;
-  align-items: center;
-}
-.cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
-  width: 100%;
-}
-.cf-affix-input-decorator .cf-affix-input-decorator__input-prefix,
-.cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
-  flex: 0 0 auto;
-  flex-shrink: 0;
-  white-space: nowrap;
-  margin-top: 0;
-  line-height: 1;
-}
-.cf-affix-input-decorator .cf-affix-input-decorator__input-prefix {
-  padding-right: 5px;
-}
-.cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
-  padding-left: 0;
-}
-
-/* ------------------------------------------------------------------------------------- */
-/* Backup / Custom cf-affix-input-decorator */
-.custom-input-xxx .cf-affix-input-decorator {
-  font-size: 18px;
-  width: 100%;
-  vertical-align: sub;
-  font-weight: bold;
-  display: inline-flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  gap: 6px;
-}
-.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 1;
-  flex-grow: 0;
-  flex-basis: auto;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
-.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-prefix,
-.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
-  flex: 0 0 auto;
-  flex-shrink: 0;
-  white-space: nowrap;
-  margin-top: 15px;
-  line-height: 1;
-}
-.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-prefix {
-  padding-right: 5px;
-}
-.custom-input-xxx .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
-  padding-left: 0;
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* individual categories and text fields bulk changes */
 .cf-list__item,
 .cf-text-box,
@@ -740,12 +677,45 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* Base cf-affix-input-decorator */
+.cf-affix-input-decorator {
+  font-size: 18px;
+  width: 100%;
+  align-items: center;
+}
+.cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
+  width: 100%;
+}
+.cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper .cf-text-box {
+  margin-bottom: 0;
+}
+.cf-affix-input-decorator .cf-affix-input-decorator__input-prefix,
+.cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin-top: 0;
+  line-height: 1;
+}
+.cf-affix-input-decorator .cf-affix-input-decorator__input-prefix {
+  padding-right: 5px;
+}
+.cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
+  padding-left: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* cf-question--numeric-list & Validation error messages */
 .cf-numeric-list-answer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
+}
+@media (max-width: 575px) {
+  .cf-numeric-list-answer {
+    margin-bottom: 12px;
+  }
 }
 .cf-numeric-list-answer div:nth-child(1),
 .cf-numeric-list-answer div:nth-child(2) {
@@ -757,6 +727,11 @@ legend {
 }
 .cf-numeric-list-answer .cf-numeric-list-answer__text {
   margin: 0;
+}
+@media (max-width: 575px) {
+  .cf-numeric-list-answer .cf-numeric-list-answer__text {
+    align-self: unset;
+  }
 }
 .cf-numeric-list-answer .cf-text-box--number {
   margin: 0;
