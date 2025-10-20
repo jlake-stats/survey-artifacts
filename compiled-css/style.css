@@ -519,6 +519,7 @@ legend {
 .cf-affix-input-decorator {
   font-size: 18px;
   width: 100%;
+  align-items: center;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
   width: 100%;
@@ -528,7 +529,7 @@ legend {
   flex: 0 0 auto;
   flex-shrink: 0;
   white-space: nowrap;
-  margin-top: 15px;
+  margin-top: 0;
   line-height: 1;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-prefix {
@@ -743,6 +744,7 @@ legend {
 .cf-numeric-list-answer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0;
 }
 .cf-numeric-list-answer div:nth-child(1),
@@ -754,6 +756,9 @@ legend {
   flex: 1 1 100%;
 }
 .cf-numeric-list-answer .cf-numeric-list-answer__text {
+  margin: 0;
+}
+.cf-numeric-list-answer .cf-text-box--number {
   margin: 0;
 }
 
@@ -1649,10 +1654,18 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 /* ------------------------------------------------------------------------------------- */
 /* #QBAS_Contact_content custom input styling */
 /* #QBAS_PostalUpdate_content custom input styling */
+#QBAS_Contact_content,
+#QBAS_PostalUpdate_content {
+  align-items: center;
+}
 #QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text,
 #QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text {
   min-width: 200px;
   margin-left: auto;
+}
+#QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text .cf-text-box,
+#QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text .cf-text-box {
+  margin-bottom: 0;
 }
 
 /* QBAS_RTotalWPIP_QBAS_RTotalWPIP custom input styling */
@@ -1661,12 +1674,24 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 /* $ XXX .00 */
 /* .c-dollar-form component */
 @media (min-width: 575px) {
+  .c-dollar-form,
+  #QBAS_RTotalWPIP_QBAS_RTotalWPIP,
+  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP,
+  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal {
+    align-items: center;
+  }
   .c-dollar-form .cf-open-list-answer__control,
   #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
   #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
   #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
     width: 200px;
     margin-left: auto;
+  }
+  .c-dollar-form .cf-open-list-answer__control .cf-text-box,
+  #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control .cf-text-box,
+  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control .cf-text-box,
+  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control .cf-text-box {
+    margin-bottom: 0;
   }
 }
 
