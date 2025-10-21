@@ -435,7 +435,7 @@ body {
 
 /* ------------------------------------------------------------------------------------- */
 /* affects area around the array of questions */
-@media (min-width: 575px) {
+@media (min-width: 576px) {
   .cf-page__question-list {
     align-items: center;
     position: relative;
@@ -1647,22 +1647,30 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 /* QBAS_RecTotalWPIP_QBAS_RecTotalWPIP custom input styling */
 /* QBAS_UpdateConsentVal_QBAS_UpdateConsentVal custom input styling */
 /* $ XXX .00 */
-/* .c-dollar-form component */
-@media (min-width: 575px) {
-  .c-dollar-form,
+/* .dollar-form component */
+@media (max-width: 575px) {
+  .dollar-form .cf-open-list-answer__control,
+  #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
+  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
+  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
+    margin-top: 12px;
+  }
+}
+@media (min-width: 576px) {
+  .dollar-form,
   #QBAS_RTotalWPIP_QBAS_RTotalWPIP,
   #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP,
   #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal {
     align-items: center;
   }
-  .c-dollar-form .cf-open-list-answer__control,
+  .dollar-form .cf-open-list-answer__control,
   #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
   #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
   #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
     width: 200px;
     margin-left: auto;
   }
-  .c-dollar-form .cf-open-list-answer__control .cf-text-box,
+  .dollar-form .cf-open-list-answer__control .cf-text-box,
   #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control .cf-text-box,
   #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control .cf-text-box,
   #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control .cf-text-box {
