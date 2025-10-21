@@ -687,6 +687,7 @@ legend {
   font-size: 18px;
   width: 100%;
   align-items: center;
+  position: relative;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
   width: 100%;
@@ -708,6 +709,12 @@ legend {
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
   padding-left: 0;
+}
+.cf-affix-input-decorator .cf-error-block {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
 }
 
 /* ------------------------------------------------------------------------------------- */
