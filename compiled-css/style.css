@@ -690,6 +690,7 @@ legend {
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
   width: 100%;
+  text-align: right;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper .cf-text-box {
   margin-bottom: 0;
