@@ -1660,58 +1660,64 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* #QBAS_Contact_content custom input styling */
-/* #QBAS_PostalUpdate_content custom input styling */
-#QBAS_Contact_content,
-#QBAS_PostalUpdate_content {
+body#qbas {
+  background-color: red;
+  /* #QBAS_Contact_content custom input styling */
+  /* #QBAS_PostalUpdate_content custom input styling */
+}
+body#qbas #QBAS_Contact_content,
+body#qbas #QBAS_PostalUpdate_content {
   align-items: center;
 }
-#QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text,
-#QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text {
+body#qbas #QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text,
+body#qbas #QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text {
   min-width: 200px;
   margin-left: auto;
 }
-#QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text .cf-text-box,
-#QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text .cf-text-box {
+body#qbas #QBAS_Contact_content .cf-open-list-answer .cf-grid-layout__row-text .cf-text-box,
+body#qbas #QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-text .cf-text-box {
   margin-bottom: 0;
 }
-
-/* QBAS_RTotalWPIP_QBAS_RTotalWPIP custom input styling */
-/* QBAS_RecTotalWPIP_QBAS_RecTotalWPIP custom input styling */
-/* QBAS_UpdateConsentVal_QBAS_UpdateConsentVal custom input styling */
-/* $ XXX .00 */
-/* .dollar-form component */
+body#qbas {
+  /* QBAS_RTotalWPIP_QBAS_RTotalWPIP custom input styling */
+  /* QBAS_RecTotalWPIP_QBAS_RecTotalWPIP custom input styling */
+  /* QBAS_UpdateConsentVal_QBAS_UpdateConsentVal custom input styling */
+  /* $ XXX .00 */
+  /* .dollar-form component */
+}
 @media (max-width: 575px) {
-  .dollar-form .cf-open-list-answer__control,
-  #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
-  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
-  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
+  body#qbas .dollar-form .cf-open-list-answer__control,
+  body#qbas #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
+  body#qbas #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
+  body#qbas #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
     margin-top: 12px;
   }
 }
 @media (min-width: 576px) {
-  .dollar-form,
-  #QBAS_RTotalWPIP_QBAS_RTotalWPIP,
-  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP,
-  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal {
+  body#qbas .dollar-form,
+  body#qbas #QBAS_RTotalWPIP_QBAS_RTotalWPIP,
+  body#qbas #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP,
+  body#qbas #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal {
     align-items: center;
   }
-  .dollar-form .cf-open-list-answer__control,
-  #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
-  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
-  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
+  body#qbas .dollar-form .cf-open-list-answer__control,
+  body#qbas #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control,
+  body#qbas #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control,
+  body#qbas #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control {
     width: 200px;
     margin-left: auto;
   }
-  .dollar-form .cf-open-list-answer__control .cf-text-box,
-  #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control .cf-text-box,
-  #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control .cf-text-box,
-  #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control .cf-text-box {
+  body#qbas .dollar-form .cf-open-list-answer__control .cf-text-box,
+  body#qbas #QBAS_RTotalWPIP_QBAS_RTotalWPIP .cf-open-list-answer__control .cf-text-box,
+  body#qbas #QBAS_RecTotalWPIP_QBAS_RecTotalWPIP .cf-open-list-answer__control .cf-text-box,
+  body#qbas #QBAS_UpdateConsentVal_QBAS_UpdateConsentVal .cf-open-list-answer__control .cf-text-box {
     margin-bottom: 0;
   }
 }
+body#qbas {
+  /* ------------------------------------------------------------------------------------- */
+}
 
-/* ------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* CENSUS STYLING */
 /* ------------------------------------------------------------------------------------- */
