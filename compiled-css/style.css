@@ -1661,7 +1661,6 @@ textarea.ayt-component, .ayt-component.cf-text-area {
 
 /* ------------------------------------------------------------------------------------- */
 body#qbas {
-  background-color: red;
   /* #QBAS_Contact_content custom input styling */
   /* #QBAS_PostalUpdate_content custom input styling */
 }
@@ -1679,6 +1678,7 @@ body#qbas #QBAS_PostalUpdate_content .cf-open-list-answer .cf-grid-layout__row-t
   margin-bottom: 0;
 }
 body#qbas {
+  /* ------------------------------------------------------------------------------------- */
   /* QBAS_RTotalWPIP_QBAS_RTotalWPIP custom input styling */
   /* QBAS_RecTotalWPIP_QBAS_RecTotalWPIP custom input styling */
   /* QBAS_UpdateConsentVal_QBAS_UpdateConsentVal custom input styling */
