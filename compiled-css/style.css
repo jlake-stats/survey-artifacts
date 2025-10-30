@@ -1722,102 +1722,70 @@ body#qbas {
 /* CENSUS STYLING */
 /* ------------------------------------------------------------------------------------- */
 @media (max-width: 991px) {
-  body.cawi .cf-header .cf-header__inner .cf-header__logo,
-  body.cati .cf-header .cf-header__inner .cf-header__logo,
-  body.capi .cf-header .cf-header__inner .cf-header__logo {
+  body#census .cf-header .cf-header__inner .cf-header__logo {
     margin: 0;
     width: 100%;
     justify-content: space-between;
   }
 }
-body.cawi .cf-header .cf-header__inner .cf-header__logo .header-logout,
-body.cati .cf-header .cf-header__inner .cf-header__logo .header-logout,
-body.capi .cf-header .cf-header__inner .cf-header__logo .header-logout {
+body#census .cf-header .cf-header__inner .cf-header__logo .header-logout {
   display: none;
 }
 @media (max-width: 991px) {
-  body.cawi .cf-header .cf-header__inner .cf-header__logo .header-logout,
-  body.cati .cf-header .cf-header__inner .cf-header__logo .header-logout,
-  body.capi .cf-header .cf-header__inner .cf-header__logo .header-logout {
+  body#census .cf-header .cf-header__inner .cf-header__logo .header-logout {
     display: inline-block;
   }
 }
-body.cawi .cf-header .cf-header__inner .cf-header__text,
-body.cati .cf-header .cf-header__inner .cf-header__text,
-body.capi .cf-header .cf-header__inner .cf-header__text {
+body#census .cf-header .cf-header__inner .cf-header__text {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 @media (max-width: 991px) {
-  body.cawi .cf-header .cf-header__inner .cf-header__text,
-  body.cati .cf-header .cf-header__inner .cf-header__text,
-  body.capi .cf-header .cf-header__inner .cf-header__text {
+  body#census .cf-header .cf-header__inner .cf-header__text {
     margin: 10px 0 0 0;
     width: 100%;
     justify-content: space-between;
   }
 }
-body.cawi .cf-header .cf-header__inner .cf-header__text .header-logout,
-body.cati .cf-header .cf-header__inner .cf-header__text .header-logout,
-body.capi .cf-header .cf-header__inner .cf-header__text .header-logout {
+body#census .cf-header .cf-header__inner .cf-header__text .header-logout {
   display: inline-block;
 }
 @media (max-width: 991px) {
-  body.cawi .cf-header .cf-header__inner .cf-header__text .header-logout,
-  body.cati .cf-header .cf-header__inner .cf-header__text .header-logout,
-  body.capi .cf-header .cf-header__inner .cf-header__text .header-logout {
+  body#census .cf-header .cf-header__inner .cf-header__text .header-logout {
     display: none;
   }
 }
-body.cawi .cf-header .cf-header__inner .cf-header__text .header-address,
-body.cati .cf-header .cf-header__inner .cf-header__text .header-address,
-body.capi .cf-header .cf-header__inner .cf-header__text .header-address {
+body#census .cf-header .cf-header__inner .cf-header__text .header-address {
   margin-right: auto;
 }
-body.cawi .cf-header .cf-header__inner .cf-header__text .header-address :first-child,
-body.cati .cf-header .cf-header__inner .cf-header__text .header-address :first-child,
-body.capi .cf-header .cf-header__inner .cf-header__text .header-address :first-child {
+body#census .cf-header .cf-header__inner .cf-header__text .header-address :first-child {
   display: block;
   font-size: 12px;
 }
-body.cawi .cf-header .cf-header__inner .cf-header__text .header-address :last-child,
-body.cati .cf-header .cf-header__inner .cf-header__text .header-address :last-child,
-body.capi .cf-header .cf-header__inner .cf-header__text .header-address :last-child {
+body#census .cf-header .cf-header__inner .cf-header__text .header-address :last-child {
   display: block;
 }
 @media (max-width: 575px) {
-  body.cawi .cf-header .cf-header__inner .cf-header__text .header-address :last-child,
-  body.cati .cf-header .cf-header__inner .cf-header__text .header-address :last-child,
-  body.capi .cf-header .cf-header__inner .cf-header__text .header-address :last-child {
+  body#census .cf-header .cf-header__inner .cf-header__text .header-address :last-child {
     font-size: 12px;
     line-height: 24px;
   }
 }
-body.cawi .cf-header .cf-header__inner .cf-header__text .header-address + span,
-body.cati .cf-header .cf-header__inner .cf-header__text .header-address + span,
-body.capi .cf-header .cf-header__inner .cf-header__text .header-address + span {
+body#census .cf-header .cf-header__inner .cf-header__text .header-address + span {
   margin-right: auto;
 }
 @media (max-width: 991px) {
-  body.cawi .cf-header .cf-header__inner .cf-header__text .header-address + span,
-  body.cati .cf-header .cf-header__inner .cf-header__text .header-address + span,
-  body.capi .cf-header .cf-header__inner .cf-header__text .header-address + span {
+  body#census .cf-header .cf-header__inner .cf-header__text .header-address + span {
     display: none;
   }
 }
-body.cawi .cf-header .cf-header__inner .header-logout,
-body.cati .cf-header .cf-header__inner .header-logout,
-body.capi .cf-header .cf-header__inner .header-logout {
+body#census .cf-header .cf-header__inner .header-logout {
   background: transparent;
   color: var(--color-white);
   border: 2px solid var(--color-white);
   margin-left: 40px;
 }
-body.cawi .cf-header .cf-header__inner .header-logout:hover, body.cawi .cf-header .cf-header__inner .header-logout:focus,
-body.cati .cf-header .cf-header__inner .header-logout:hover,
-body.cati .cf-header .cf-header__inner .header-logout:focus,
-body.capi .cf-header .cf-header__inner .header-logout:hover,
-body.capi .cf-header .cf-header__inner .header-logout:focus {
+body#census .cf-header .cf-header__inner .header-logout:hover, body#census .cf-header .cf-header__inner .header-logout:focus {
   background: var(--color-accent);
   color: var(--color-white);
   border-color: var(--color-accent);
