@@ -822,7 +822,7 @@ legend {
     margin: 0 auto;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .cf-header .cf-header__inner {
     flex-wrap: wrap;
   }
