@@ -691,7 +691,6 @@ legend {
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper {
   width: 100%;
-  text-align: right;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-wrapper .cf-text-box {
   margin-bottom: 0;
@@ -718,34 +717,6 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* cf-question--numeric-list & Validation error messages */
-.cf-numeric-list-answer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
-}
-@media (max-width: 575px) {
-  .cf-numeric-list-answer {
-    margin-bottom: 12px;
-  }
-}
-.cf-numeric-list-answer div:nth-child(1),
-.cf-numeric-list-answer div:nth-child(2) {
-  flex: 1 1 50%;
-  margin: 0;
-}
-.cf-numeric-list-answer div:nth-child(3) {
-  flex: 1 1 100%;
-}
-.cf-numeric-list-answer .cf-numeric-list-answer__text {
-  margin: 0;
-}
-.cf-numeric-list-answer .cf-text-box--number {
-  margin: 0;
-}
-
-/* ------------------------------------------------------------------------------------- */
 /* Question list */
 .cf-question--open-list .cf-open-list-answer + .cf-open-list-answer {
   margin-top: 12px;
@@ -753,6 +724,30 @@ legend {
 .cf-question--open-list .cf-open-list-answer .cf-open-list-answer__text {
   font-size: 18px;
   margin: 0;
+}
+
+/* Question list - numeric */
+.cf-question--numeric-list .cf-numeric-list-answer + .cf-numeric-list-answer {
+  margin-top: 12px;
+}
+.cf-question--numeric-list .cf-numeric-list-answer .cf-numeric-list-answer__text {
+  font-size: 18px;
+  margin: 0;
+}
+.cf-question--numeric-list .cf-numeric-list-answer .cf-text-box--number {
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* cf-question--numeric-list & Validation error messages */
+/* TODO add specific IDs or class name if possible */
+.cf-numeric-list-answer div:nth-child(1),
+.cf-numeric-list-answer div:nth-child(2) {
+  flex: 1 1 50%;
+  margin: 0;
+}
+.cf-numeric-list-answer div:nth-child(3) {
+  flex: 1 1 100%;
 }
 
 /* ------------------------------------------------------------------------------------- */
