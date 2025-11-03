@@ -718,8 +718,11 @@ legend {
 
 /* ------------------------------------------------------------------------------------- */
 /* Question list */
-.cf-question--open-list .cf-open-list-answer + .cf-open-list-answer {
-  margin-top: 12px;
+.cf-question--open-list .cf-open-list-answer {
+  margin-bottom: 12px;
+}
+.cf-question--open-list .cf-open-list-answer:last-of-type {
+  margin-bottom: 0;
 }
 .cf-question--open-list .cf-open-list-answer .cf-open-list-answer__text {
   font-size: 18px;
@@ -727,8 +730,11 @@ legend {
 }
 
 /* Question list - numeric */
-.cf-question--numeric-list .cf-numeric-list-answer + .cf-numeric-list-answer {
-  margin-top: 12px;
+.cf-question--numeric-list .cf-numeric-list-answer {
+  margin-bottom: 12px;
+}
+.cf-question--numeric-list .cf-numeric-list-answer:last-of-type {
+  margin-bottom: 0;
 }
 .cf-question--numeric-list .cf-numeric-list-answer .cf-numeric-list-answer__text {
   font-size: 18px;
