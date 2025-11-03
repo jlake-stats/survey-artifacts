@@ -746,7 +746,11 @@ legend {
 }
 
 /* ------------------------------------------------------------------------------------- */
-.cf-open-list-answer .cf-open-list-answer__text {
+/* Question list */
+.cf-question--open-list .cf-open-list-answer + .cf-open-list-answer {
+  margin-top: 12px;
+}
+.cf-question--open-list .cf-open-list-answer .cf-open-list-answer__text {
   font-size: 18px;
   margin: 0;
 }
