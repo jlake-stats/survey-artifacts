@@ -731,6 +731,7 @@ legend {
 
 /* Question list - numeric */
 .cf-question--numeric-list .cf-numeric-list-answer {
+  align-items: baseline;
   margin-bottom: 12px;
 }
 .cf-question--numeric-list .cf-numeric-list-answer:last-of-type {
@@ -1071,7 +1072,7 @@ legend {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .cf-question__text:has(> .question-help__toggle-link) * {
   margin-bottom: 0;
@@ -1460,7 +1461,7 @@ body.cawi #HSF_here_relationship:not(.cf-dynamic-question-placeholder), #HSF_new
   border-left: 8px solid var(--color-aquablue);
   background-color: var(--color-aquablue10);
   padding: 12px 32px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .instruction-box ul, #IF_iwi_region #iwi-instruction ul, .cf-question__instruction ul,
 .instruction-box ol,
