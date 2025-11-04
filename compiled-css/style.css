@@ -1460,22 +1460,14 @@ body.cawi #HSF_here_relationship:not(.cf-dynamic-question-placeholder), #HSF_new
 .instruction-box, #IF_iwi_region #iwi-instruction, .cf-question__instruction {
   border-left: 8px solid var(--color-aquablue);
   background-color: var(--color-aquablue10);
-  padding: 12px 32px;
+  padding: 24px 32px 12px 32px;
   margin-bottom: 24px;
 }
 .instruction-box ul, #IF_iwi_region #iwi-instruction ul, .cf-question__instruction ul,
 .instruction-box ol,
 #IF_iwi_region #iwi-instruction ol,
 .cf-question__instruction ol {
-  padding-left: 2em;
-}
-@media (max-width: 575px) {
-  .instruction-box ul, #IF_iwi_region #iwi-instruction ul, .cf-question__instruction ul,
-  .instruction-box ol,
-  #IF_iwi_region #iwi-instruction ol,
-  .cf-question__instruction ol {
-    padding-left: 1em;
-  }
+  padding-left: 1em;
 }
 
 /* ------------------------------------------------------------------------------------- */
