@@ -704,10 +704,10 @@ legend {
   line-height: 1;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-prefix {
-  padding-right: 5px;
+  padding-right: 8px;
 }
 .cf-affix-input-decorator .cf-affix-input-decorator__input-suffix {
-  padding-left: 0;
+  padding-left: 4px;
 }
 .cf-affix-input-decorator .cf-error-block {
   position: absolute;
