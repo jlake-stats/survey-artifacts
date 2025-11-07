@@ -710,10 +710,7 @@ legend {
   padding-left: 4px;
 }
 .cf-affix-input-decorator .cf-error-block {
-  position: absolute;
-  top: calc(100% + 6px);
-  left: 0;
-  right: 0;
+  margin-top: 12px;
 }
 
 /* ------------------------------------------------------------------------------------- */
