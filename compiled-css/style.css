@@ -2561,3 +2561,7 @@ body.capi #IF_iwi_region #iwi-instruction,
 body.capi .cf-header .cf-header__inner .header-logout {
   display: none;
 }
+
+#print-page {
+  margin: 20px;
+}
