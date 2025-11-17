@@ -764,6 +764,7 @@ legend {
   border: 0;
 }
 .cf-error-block .cf-error-list:has(li) {
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 
