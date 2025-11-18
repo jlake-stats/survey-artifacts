@@ -2576,23 +2576,23 @@ body.capi .cf-header .cf-header__inner .header-logout {
 #print-page .pdf-header table td:last-child {
   text-align: right;
 }
-#print-page .pdf-contenct table {
+#print-page .pdf-content table {
   margin: 20px 0;
   width: 100%;
   border-collapse: collapse;
   page-break-inside: avoid;
   break-inside: avoid;
 }
-#print-page .pdf-contenct table td, #print-page .pdf-contenct table th {
+#print-page .pdf-content table td, #print-page .pdf-content table th {
   border: 1px solid #ccc;
   padding: 10px;
   vertical-align: top;
 }
-#print-page .pdf-contenct table th {
+#print-page .pdf-content table th {
   background-color: #f2f2f2;
   text-align: left;
 }
-#print-page .pdf-contenct table td:first-child {
+#print-page .pdf-content table td:first-child {
   font-weight: bold;
   width: 35%;
   background-color: #fafafa;
