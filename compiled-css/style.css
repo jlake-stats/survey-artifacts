@@ -2569,3 +2569,6 @@ body.capi .cf-header .cf-header__inner .header-logout {
 #print-page {
   margin: 20px;
 }
+#print-page .table-wrapper {
+  margin: 10px 0;
+}
