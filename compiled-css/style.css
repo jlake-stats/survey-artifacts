@@ -2570,18 +2570,17 @@ body.capi .cf-header .cf-header__inner .header-logout {
   page-break-inside: avoid;
   margin: 20px;
 }
-#print-page .pdf-header table {
+#print-page table {
   width: 100%;
+  margin: 20px 0;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 #print-page .pdf-header table td:last-child {
   text-align: right;
 }
 #print-page .pdf-content table {
-  margin: 20px 0;
-  width: 100%;
   border-collapse: collapse;
-  page-break-inside: avoid;
-  break-inside: avoid;
 }
 #print-page .pdf-content table td, #print-page .pdf-content table th {
   border: 1px solid #ccc;
