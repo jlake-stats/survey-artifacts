@@ -738,7 +738,10 @@ legend {
   font-size: 18px;
   margin: 0;
 }
-.cf-question--numeric-list .cf-numeric-list-answer .cf-text-box--number {
+.cf-question--numeric-list .cf-numeric-list-answer .cf-affix-input-decorator {
+  text-align: right;
+}
+.cf-question--numeric-list .cf-numeric-list-answer .cf-affix-input-decorator .cf-text-box--number {
   margin: 0;
 }
 
