@@ -2567,28 +2567,32 @@ body.capi .cf-header .cf-header__inner .header-logout {
 }
 
 #print-page {
+  page-break-inside: avoid;
   margin: 20px;
 }
-#print-page .table-wrapper {
-  margin: 20px 0;
+#print-page .pdf-header table {
+  width: 100%;
 }
-#print-page .table-wrapper table {
-  margin: 0;
+#print-page .pdf-header table td:last-child {
+  text-align: right;
+}
+#print-page .pdf-contenct table {
+  margin: 20px 0;
   width: 100%;
   border-collapse: collapse;
   page-break-inside: avoid;
   break-inside: avoid;
 }
-#print-page .table-wrapper table td, #print-page .table-wrapper table th {
+#print-page .pdf-contenct table td, #print-page .pdf-contenct table th {
   border: 1px solid #ccc;
   padding: 10px;
   vertical-align: top;
 }
-#print-page .table-wrapper table th {
+#print-page .pdf-contenct table th {
   background-color: #f2f2f2;
   text-align: left;
 }
-#print-page .table-wrapper table td:first-child {
+#print-page .pdf-contenct table td:first-child {
   font-weight: bold;
   width: 35%;
   background-color: #fafafa;
