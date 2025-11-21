@@ -2567,11 +2567,19 @@ body.capi .cf-header .cf-header__inner .header-logout {
 }
 
 #print-page {
-  margin: 20px;
+  display: table;
+  table-layout: fixed;
+  padding-top: 1.5cm;
+  padding-right: 1.6cm;
+  padding-bottom: 2.5cm;
+  padding-left: 1.6cm;
 }
 #print-page .pdf-header .pdf-header-logo {
-  width: 100px;
-  height: auto;
+  text-align: right;
+}
+#print-page .pdf-header .pdf-header-logo img {
+  width: auto;
+  height: 50px;
 }
 #print-page .pdf-header table {
   width: 100%;
@@ -2585,6 +2593,18 @@ body.capi .cf-header .cf-header__inner .header-logout {
   border-collapse: collapse;
   page-break-inside: avoid;
   break-inside: avoid;
+}
+#print-page .pdf-content table thead h1,
+#print-page .pdf-content table thead h2,
+#print-page .pdf-content table thead h3,
+#print-page .pdf-content table thead h4,
+#print-page .pdf-content table thead h5,
+#print-page .pdf-content table thead p,
+#print-page .pdf-content table thead .normal-text,
+#print-page .pdf-content table thead .cf-page,
+#print-page .pdf-content table thead .cf-question--login .helpful-link,
+.cf-question--login #print-page .pdf-content table thead .helpful-link {
+  margin-bottom: 0;
 }
 #print-page .pdf-content table td, #print-page .pdf-content table th {
   border: 1px solid #ccc;
